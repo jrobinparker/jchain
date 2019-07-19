@@ -10,7 +10,7 @@ class Banner extends React.Component {
         <div className="banner-text">
           <span className="banner-header">building the future</span>
           jchain: the next generation blockchain network
-          <div className="banner-button">what is jchain?</div>
+          <div className="banner-button" onClick={() => document.getElementById("about").scrollIntoView({behavior: 'smooth'})}>what is jchain?</div>
         </div>
           <Blocks className="banner-image" />
       </div>
