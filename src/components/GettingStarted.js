@@ -11,7 +11,7 @@ export default function GettingStarted() {
         <div className="getting-started-overview">
           <Start />
           <div className="getting-started-text">
-            <p>our ultra-simple SDK makes it easy to get started linking your blockchain up to the jchain network</p>
+            <p>our ultra-simple SDK makes it easy to link your blockchain up to the jchain network</p>
             <div className="getting-started-button">
               get started!
             </div>

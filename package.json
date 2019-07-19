@@ -5,6 +5,7 @@
   "dependencies": {
     "animejs": "^3.0.1",
     "babel-loader": "^8.0.6",
+    "faker": "^4.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"

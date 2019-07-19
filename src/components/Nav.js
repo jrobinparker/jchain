@@ -7,8 +7,7 @@ export default function Nav() {
       <div className="nav-links">
         <a onClick={() => document.getElementById("about").scrollIntoView({behavior: 'smooth'})}>what is jchain?</a>
         <a onClick={() => document.getElementById("getting-started").scrollIntoView({behavior: 'smooth'})}>getting started</a>
-        <a>meet the team</a>
-        <a>our advisors</a>
+        <a onClick={() => document.getElementById("meet-team").scrollIntoView({behavior: 'smooth'})}>meet the team</a>
       </div>
     </nav>
   )
