@@ -1,10 +1,13 @@
 import React from 'react';
+import Nav from './components/Nav';
+import Banner from './components/Banner';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>jchain: the future of blockchain</h1>
+      <Nav />
+      <Banner />
     </div>
   );
 }
