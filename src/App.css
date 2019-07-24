@@ -5,7 +5,28 @@ body {
   width: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+.App {
   background: url('./earth.jpg');
+  background-position: center;
+  background-size: cover;
+  animation: moveRight 120s linear infinite;
+}
+
+@keyframes moveRight {
+  from {
+    background-position: 0 0;
+   }
+  to {
+    background-position: -1500px 0;
+   }
+}
+
+@-webkit-keyframes moveRight {
+  from { background-position: 0 0; }
+    to { background-position: -1500px 0;
+     }
 }
 
 li {
@@ -124,22 +145,22 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
   width: 200px;
 }
 
+.banner, .about, .getting-started, .meet-team {
+  width: 80%;
+  position: relative;
+  left: 15%;
+}
+
 .banner {
   height: 103vh;
 }
 
 .banner-content {
-  width: 80%;
-  color: #D1DDE6;
   position: relative;
   top: 30%;
-  left: 13%;
-  padding: 10px 0px 10px 0px;
-  border-radius: 2px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-around;
 }
 
 .banner-text {
@@ -181,7 +202,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-self: center;
   align-items: center;
   color: white;
 }
@@ -193,16 +213,22 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
 .about-content {
   position: relative;
   top: 30%;
+  left: -6.5%;
 }
 
 .about-overview {
+  width: 100%;
   position: relative;
   top: 15%;
+  left: 5%;
   display: flex;
-  justify-content: space-between;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
 .feature {
+  width: 33%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -272,17 +298,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
 
 .getting-started {
   height: 100vh;
+  position: relative;
   display: flex;
   align-self: center;
   align-items: center;
   justify-content: flex-start;
   color: white;
-}
-
-.getting-started-content {
-  position: relative;
-  top: -3%;
-  left: 15%;
 }
 
 .getting-started-overview {
@@ -311,7 +332,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
 }
 
 .meet-team {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -321,19 +342,20 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
 
 .meet-team-content {
   position: relative;
-  top: 10%;
+  top: 30%;
   width: 100%;
 }
 
 .meet-team-header {
-  position: relative;
-  left: 15%;
 }
 
 .meet-team-photos {
+  width: 100%;
   position: relative;
   top: 15%;
   display: flex;
+  align-self: flex-start;
+  align-items: center;
   justify-content: space-around;
 }
 
