@@ -5,7 +5,7 @@ class Nav extends React.Component {
   render() {
   return (
     <nav className="nav" id="nav">
-      <a style={{ marginLeft: '5%' }}>jchain</a>
+      <a style={{ marginLeft: '5%' }} onClick={() => document.getElementById("App").scrollIntoView({behavior: 'smooth'})}>jchain</a>
       <div className="nav-links">
         <a onClick={() => document.getElementById("about").scrollIntoView({behavior: 'smooth'})}>what is jchain?</a>
         <a onClick={() => document.getElementById("getting-started").scrollIntoView({behavior: 'smooth'})}>getting started</a>

@@ -29,9 +29,6 @@ body {
      }
 }
 
-#footer {
-}
-
 li {
   text-align: center;
   list-style: none;
@@ -157,10 +154,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
   width: 200px;
 }
 
-.banner, .about, .getting-started, .meet-team {
-  width: 80%;
-  position: relative;
-  left: 15%;
+.container {
+  margin: 0% 10% 0% 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 
 .banner {
@@ -170,6 +169,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
 .banner-content {
   position: relative;
   top: 30%;
+  left: 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -206,37 +206,18 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
   margin-top: -100px;
 }
 
-#blocksImg {
-  cursor: pointer;
-}
-
-.about {
+.about, .getting-started, .meet-team {
   height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  color: white;
-}
-
-.about + h1, .about + h4 {
-  text-align: center;
-}
-
-.about-content {
-  position: relative;
-  top: 30%;
-  left: -6.5%;
+  justify-content: center;
 }
 
 .about-overview {
-  width: 100%;
   position: relative;
-  top: 15%;
-  left: 5%;
+  top: 10%;
   display: flex;
-  align-self: flex-start;
-  align-items: center;
-  justify-content: center;
 }
 
 .hidden {
@@ -316,16 +297,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
   margin-right: 30px;
 }
 
-.getting-started {
-  height: 100vh;
-  position: relative;
-  display: flex;
-  align-self: center;
-  align-items: center;
-  justify-content: flex-start;
-  color: white;
-}
-
 .getting-started-overview {
   display: flex;
   flex-direction: row;
@@ -351,29 +322,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
   box-shadow: 2px 0px 21px 0px rgba(0,0,0,0.55);
 }
 
-.meet-team {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  align-items: center;
-  justify-content: flex-start;
-  color: white;
-}
-
-.meet-team-content {
-  position: relative;
-  top: 30%;
-  width: 100%;
-}
-
 .meet-team-photos {
-  width: 100%;
   position: relative;
   top: 15%;
   display: flex;
-  align-self: flex-start;
-  align-items: center;
   justify-content: space-around;
 }
 
@@ -381,7 +333,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: fadeInUp 1s ease-in;
 }
 
 .team-member img {
@@ -395,25 +346,17 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
 }
 
 footer {
+  margin-top: 10%;
   padding: 50px 0 50px 0;
 }
 
 .footer {
-  position: relative;
-  left: 4%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .footer a {
   margin-top: 10px;
-}
-
-.footer-item2, .footer-item3 {
-  display: flex;
-  flex-direction: column;
-  width: 15%;
 }
 
 .footer-item1 {
@@ -421,6 +364,11 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.footer-item2, .footer-item3 {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-item2 {
@@ -442,7 +390,5 @@ footer {
 .footer-disclaimer {
   font-size: .75rem;
   margin-top: 5%;
-  position: relative;
-  left: 5%;
   text-align: center
 }

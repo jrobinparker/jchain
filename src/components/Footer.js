@@ -13,21 +13,21 @@ export default function Footer() {
             <i class="fab fa-telegram-plane" />
           </div>
         </div>
-        <div className="footer-item2">
-          <h2>about</h2>
-            <a>about jchain</a>
-            <a>our team</a>
-            <a>our advisors</a>
-            <a>exchanges</a>
-        </div>
-        <div className="footer-item3">
-          <h2>resources</h2>
-            <a>whitepaper</a>
-            <a>jchain guides</a>
-        </div>
+          <div className="footer-item2">
+            <h2>about</h2>
+              <a>about jchain</a>
+              <a>our team</a>
+              <a>our advisors</a>
+              <a>exchanges</a>
+          </div>
+          <div className="footer-item3">
+            <h2>resources</h2>
+              <a>whitepaper</a>
+              <a>jchain guides</a>
+          </div>
       </div>
       <div className="footer-disclaimer">
-        DISCLAIMER: this is a portfolio project by jeremy parker. jchain is not an actual blockchain app and there are no exchanges that offer the cryptocurrency.
+        DISCLAIMER: this is a portfolio project by jeremy parker. jchain is not an actual blockchain app or cryptocurrency.
       </div>
     </footer>
   )

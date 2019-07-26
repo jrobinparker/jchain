@@ -31,18 +31,18 @@ class App extends React.Component {
       const overview = document.querySelector(".about-overview")
       const gettingStarted = document.querySelector(".getting-started-overview")
       const meetTeam = document.querySelector(".meet-team-photos")
-
-      if (scrollPos === 819) {
+      console.log(scrollPos)
+      if (scrollPos >= 819) {
         overview.classList.remove('hidden');
         overview.classList.add('fade-in-up')
       }
 
-      if (scrollPos === 1565) {
+      if (scrollPos >= 1565) {
         gettingStarted.classList.remove('hidden');
         gettingStarted.classList.add('fade-in-up')
       }
 
-      if (scrollPos === 2311) {
+      if (scrollPos >= 2311) {
         meetTeam.classList.remove('hidden');
         meetTeam.classList.add('fade-in-up')
       }
@@ -61,11 +61,13 @@ class App extends React.Component {
     <div className="App" id="App">
       <div className="bg">
         <Nav />
-        <Banner />
-        <RightNav />
-        <About />
-        <GettingStarted />
-        <MeetTeam />
+        <div className="container">
+          <Banner />
+          <RightNav />
+          <About />
+          <GettingStarted />
+          <MeetTeam />
+        </div>
         <Footer />
       </div>
     </div>
