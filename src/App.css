@@ -327,7 +327,8 @@ a {
   width: 15%;
   text-align: center;
   padding: 10px;
-  background-color: black;
+  background-color: #2a628f;
+  cursor: pointer;
   border-radius: 5px;
   margin-top: 20px;
   -webkit-box-shadow: 2px 0px 21px 0px rgba(0,0,0,0.55);
