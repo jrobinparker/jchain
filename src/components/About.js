@@ -4,8 +4,7 @@ import { ReactComponent as Handshake } from '../handshake.svg';
 import { ReactComponent as Connect } from '../networking.svg';
 
 
-class About extends React.Component {
-  render() {
+export default function About() {
   return (
     <div className="about" id="about">
       <div className="about-content">
@@ -34,6 +33,4 @@ class About extends React.Component {
       </div>
     </div>
   )
-}}
-
-export default About
+}

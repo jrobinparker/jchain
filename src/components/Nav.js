@@ -1,8 +1,6 @@
 import React from 'react';
 
-class Nav extends React.Component {
-
-  render() {
+export default function Nav() {
   return (
     <nav className="nav" id="nav">
       <a style={{ marginLeft: '5%' }} onClick={() => document.getElementById("App").scrollIntoView({behavior: 'smooth'})}>jchain</a>
@@ -14,6 +12,3 @@ class Nav extends React.Component {
     </nav>
   )
 }
-}
-
-export default Nav

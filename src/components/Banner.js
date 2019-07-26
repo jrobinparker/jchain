@@ -1,9 +1,7 @@
 import React from 'react';
 import { ReactComponent as Blocks } from '../Blocks.svg';
 
-class Banner extends React.Component {
-  render() {
-
+export default function Banner() {
   return (
     <div className="banner" id="banner">
       <div className="banner-content">
@@ -17,6 +15,3 @@ class Banner extends React.Component {
     </div>
   )
 }
-}
-
-export default Banner
