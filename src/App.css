@@ -1,3 +1,4 @@
+/* App and background */
 body {
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
@@ -5,6 +6,16 @@ body {
   width: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+li {
+  text-align: center;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .App {
@@ -29,23 +40,15 @@ body {
      }
 }
 
-li {
-  text-align: center;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .bg {
   background: rgb(255,251,251);
-background: -moz-linear-gradient(180deg, rgba(255,251,251,.1) 35%, rgba(0,110,106,1) 100%);
-background: -webkit-linear-gradient(180deg, rgba(255,251,251,.1) 35%, rgba(0,110,106,1) 100%);
-background: linear-gradient(180deg, rgba(255,251,251,.1) 35%, rgba(0,110,106,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endColorstr="#006e6a",GradientType=1);
+  background: -moz-linear-gradient(180deg, rgba(255,251,251,.1) 35%, rgba(0,110,106,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(255,251,251,.1) 35%, rgba(0,110,106,1) 100%);
+  background: linear-gradient(180deg, rgba(255,251,251,.1) 35%, rgba(0,110,106,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endColorstr="#006e6a",GradientType=1);
 }
+
+/* Nav */
 
 .nav {
   position: sticky;
@@ -76,6 +79,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
 .nav-links a {
   margin-right: 5%;
 }
+
+/* Right side nav */
 
 .right-nav {
   display: inline-block;
@@ -154,6 +159,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
   width: 200px;
 }
 
+/* App content container */
 .container {
   margin: 0% 10% 0% 10%;
   display: flex;
@@ -161,6 +167,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
   align-items: center;
   align-content: center;
 }
+
+/* Banner */
 
 .banner {
   height: 103vh;
@@ -206,6 +214,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
   margin-top: -100px;
 }
 
+/* What is jchain, Getting Started, and Meet the Team shared styling */
+
 .about, .getting-started, .meet-team {
   height: 100vh;
   width: 100%;
@@ -214,32 +224,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
   justify-content: center;
 }
 
-.about-overview {
-  position: relative;
-  top: 10%;
-  display: flex;
-}
-
 .hidden {
   visibility: hidden;
-}
-
-.feature {
-  width: 33%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.feature .img {
-  width: 100px;
-  height: 100px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 50%;
-  -webkit-box-shadow: 2px 0px 21px 0px rgba(10,10,10,0.55);
-  -moz-box-shadow: 2px 0px 21px 0px rgba(10,10,10,0.55);
-  box-shadow: 2px 0px 21px 0px rgba(10,10,10,0.55);
 }
 
 .fade-in-up {
@@ -270,6 +256,32 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
     }
 }
 
+/* What is jchain */
+
+.about-overview {
+  position: relative;
+  top: 10%;
+  display: flex;
+}
+
+.feature {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature .img {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-box-shadow: 2px 0px 21px 0px rgba(10,10,10,0.55);
+  -moz-box-shadow: 2px 0px 21px 0px rgba(10,10,10,0.55);
+  box-shadow: 2px 0px 21px 0px rgba(10,10,10,0.55);
+}
+
 .img {
   color: #2a628f;
   font-size: 5rem;
@@ -297,6 +309,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
   margin-right: 30px;
 }
 
+/* Getting Started */
 .getting-started-overview {
   display: flex;
   flex-direction: row;
@@ -322,6 +335,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
   box-shadow: 2px 0px 21px 0px rgba(0,0,0,0.55);
 }
 
+/* Meet the Team */
+
 .meet-team-photos {
   position: relative;
   top: 15%;
@@ -344,6 +359,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
   -moz-box-shadow: 2px 0px 21px 0px rgba(0,0,0,0.55);
   box-shadow: 2px 0px 21px 0px rgba(0,0,0,0.55);
 }
+
+/* Footer */
 
 footer {
   margin-top: 10%;
