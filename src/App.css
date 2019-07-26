@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Montserrat', sans-serif;
   color: white;
   width: 100%;
   overflow-x: hidden;
@@ -29,6 +29,9 @@ body {
      }
 }
 
+#footer {
+}
+
 li {
   text-align: center;
   list-style: none;
@@ -54,7 +57,16 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
   width: 100%;
   padding: 15px;
   display: flex;
-  color: #D1DDE6;
+}
+
+.nav-transparent {
+  background-color: rgba(0,110,106,0);
+  animation: fadeOutNav 1s;
+}
+
+.nav-colored {
+  background-color: rgba(0,110,106,1);
+  animation: fadeInNav 1s;
 }
 
 .nav-links {
@@ -260,7 +272,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
 
 @-webkit-keyframes fadeInUp {
     from {
-        transform: translate3d(0,40px,0)
+        transform: translate3d(0,40px,0);
+
     }
 
     to {
@@ -337,6 +350,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
   flex-direction: column;
   align-self: center;
   align-items: center;
+  justify-content: flex-start;
   color: white;
 }
 
@@ -344,9 +358,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
   position: relative;
   top: 30%;
   width: 100%;
-}
-
-.meet-team-header {
 }
 
 .meet-team-photos {
@@ -377,16 +388,15 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
 }
 
 footer {
-  padding-bottom: 50px;
+  padding: 50px 0 50px 0;
 }
 
 .footer {
   position: relative;
-  top: 50%;
-  left: 2%;
+  left: 4%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .footer a {
@@ -400,7 +410,7 @@ footer {
 }
 
 .footer-item1 {
-  width: 15%;
+  width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -425,5 +435,7 @@ footer {
 .footer-disclaimer {
   font-size: .75rem;
   margin-top: 5%;
+  position: relative;
+  left: 5%;
   text-align: center
 }

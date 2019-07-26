@@ -1,7 +1,8 @@
 import React from 'react';
 
-export default function Nav() {
+class Nav extends React.Component {
 
+  render() {
   return (
     <nav className="nav" id="nav">
       <a style={{ marginLeft: '5%' }}>jchain</a>
@@ -13,3 +14,6 @@ export default function Nav() {
     </nav>
   )
 }
+}
+
+export default Nav
