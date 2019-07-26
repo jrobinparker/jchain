@@ -12,7 +12,7 @@ export default function RightNav() {
               .scrollIntoView({behavior: 'smooth'})}
             >
           </div>
-          <div className="right-nav-text-1">what is jchain</div>
+          <div className="right-nav-text-1">what is jchain?</div>
         </div>
 
         <div className="right-nav-link">

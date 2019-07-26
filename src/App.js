@@ -31,7 +31,6 @@ class App extends React.Component {
       const overview = document.querySelector(".about-overview")
       const gettingStarted = document.querySelector(".getting-started-overview")
       const meetTeam = document.querySelector(".meet-team-photos")
-      console.log(scrollPos)
       if (scrollPos >= 819) {
         overview.classList.remove('hidden');
         overview.classList.add('fade-in-up')
@@ -47,7 +46,6 @@ class App extends React.Component {
         meetTeam.classList.add('fade-in-up')
       }
     }
-
 
     app.onscroll = () => {
       setNavStyle()
