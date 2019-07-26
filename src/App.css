@@ -194,6 +194,10 @@ a {
   margin-bottom: 10px;
 }
 
+#banner-button-2, #banner-button-3 {
+  display: none;
+}
+
 .banner-button {
   margin-top: 10px;
   display: block;
@@ -409,4 +413,329 @@ footer {
   font-size: .75rem;
   margin-top: 5%;
   text-align: center
+}
+
+/* Media queries */
+
+/* Smartphones  */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-around;
+  }
+
+  /* Nav elements */
+  .nav, .right-nav {
+    display: none;
+  }
+
+  /* Banner */
+  .banner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 100%;
+    margin-bottom: 100%;
+  }
+
+  .banner-content {
+    position: relative;
+    left: -0.5%;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-text {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+
+  .banner-header {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .banner-button {
+    position: relative;
+    left: 25%;
+    margin-top: 10px;
+    width: 45%;
+    background-color: #2a628f;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    -webkit-box-shadow: 2px 10px 21px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 2px 10px 21px 0px rgba(0,0,0,0.55);
+    box-shadow: 2px 10px 21px 0px rgba(0,0,0,0.55);
+  }
+
+  #banner-button-2, #banner-button-3 {
+    display: block;
+  }
+
+  .banner-image {
+    height: 400px;
+    width: 300px;
+    position: relative;
+    top: 20%;
+    left: 1%;
+  }
+
+  /* About, Getting Started, and Meet Team shared styling */
+  .about, .getting-started, .meet-team {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 100%;
+  }
+
+  .about-content, .about-overview, .feature, .getting-started-content, .getting-started-overview, .meet-team, .meet-team-content, .meet-team-photos, footer, .footer, .footer-item1, .footer-item2, .footer-item3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* About */
+
+  .about-content {
+    padding-bottom: 100%;
+  }
+
+  .about-overview {
+    margin-top: -10%;
+  }
+
+  .feature p {
+    text-align: center;
+  }
+
+  #connect {
+    margin-left: -15%;
+  }
+
+  /* Getting Started */
+
+  .getting-started-text {
+    font-size: 1.25rem;
+    position: relative;
+    left: -8%;
+  }
+
+  .getting-started-button {
+    width: 60%;
+    align-self: center;
+    text-align: center;
+    background-color: #2a628f;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    -webkit-box-shadow: 2px 0px 21px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 2px 0px 21px 0px rgba(0,0,0,0.55);
+    box-shadow: 2px 0px 21px 0px rgba(0,0,0,0.55);
+  }
+
+  /* Meet the Team */
+
+  .meet-team-photos {
+    margin-top: -30%;
+  }
+
+  .team-member {
+    margin-bottom: 10%;
+  }
+
+  /* Footer */
+
+  .footer-social {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-social i {
+    margin: 0 50% 0 50%;
+    font-size: 2rem;
+  }
+
+  .footer-disclaimer {
+    font-size: .75rem;
+    margin-top: 10%;
+    text-align: center;
+    padding: 0 5% 0 5%;
+  }
+}
+
+/* Tablets - portrait */
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+
+  .nav {
+    position: sticky;
+  }
+
+  .container {
+    width: 80%;
+  }
+
+  .banner {
+    width: 90%;
+    position: relative;
+    top: -3%;
+    left: -5%;
+  }
+
+  #banner-button-1, #banner-button-2, #banner-button-3 {
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .right-nav {
+    display: none;
+  }
+
+  .banner-button {
+    width: 60%;
+  }
+
+  .getting-started-button {
+    width: 40%;
+  }
+
+  .team-member {
+    text-align: center;
+  }
+
+}
+
+/* Yuge monitors */
+@media only screen and (max-width: 1025px) and (min-width: 1919px) {
+  body {
+    font-size: 1.5rem;
+  }
+
+  .nav-button {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 30%;
+  }
+
+  .right-nav-text-1, .right-nav-text-2, .right-nav-text-3 {
+    font-size: 1.5rem;
+  }
+
+  /* Banner */
+
+  .banner-text {
+    font-size: 2.5rem;
+    width: 30%;
+  }
+
+  .banner-header {
+    font-size: 1.25rem;
+    margin-bottom: 5%;
+  }
+
+  .banner-button {
+    margin-top: 5%;
+    width: 33%;
+    background-color: #2a628f;
+    text-align: center;
+    font-size: 1.25rem;
+  }
+
+  /* Getting Started */
+
+  .getting-started-text {
+    font-size: 1.5rem;
+  }
+
+  /* Footer */
+
+  .footer i {
+    font-size: 3rem;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 3000px) {
+  body {
+    font-size: 3rem;
+  }
+
+  /* Right side nav */
+
+  .right-nav {
+    right: 2%;
+  }
+
+  .nav-button {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 10%;
+  }
+
+  .right-nav-text-1, .right-nav-text-2, .right-nav-text-3 {
+    font-size: 2rem;
+  }
+
+  .nav-button:hover + .right-nav-text-1 {
+    width: 100%;
+  }
+
+  .nav-button:hover + .right-nav-text-2 {
+    width: 100%;
+  }
+
+  .nav-button:hover + .right-nav-text-3 {
+    width: 100%;
+  }
+
+  /* Banner */
+
+  .banner-text {
+    font-size: 4rem;
+    width: 50%;
+  }
+
+  .banner-header {
+    font-size: 3rem;
+    margin-bottom: 5%;
+  }
+
+
+  .banner-button {
+    margin-top: 5%;
+    width: 33%;
+    background-color: #2a628f;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  /* Getting Started */
+
+  .getting-started-text {
+    font-size: 3rem;
+  }
+
+  /* Footer */
+
+  .footer i {
+    font-size: 5rem;
+  }
+
 }
