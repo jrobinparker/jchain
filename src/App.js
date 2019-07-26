@@ -12,9 +12,11 @@ class App extends React.Component {
 
   componentDidMount() {
 
-    function setScrollIndicator() {
-      let scrollPercent = window.scrollY / 1000
-      let nav = document.getElementById("nav")
+    const app = document.body
+
+    function setNavStyle() {
+      const scrollPercent = window.scrollY / 1000
+      const nav = document.getElementById("nav")
       if (scrollPercent >= 1) {
         nav.style.backgroundColor = 'rgba(0,110,106,1)';
         nav.style.boxShadow = '0px 0px 21px 0px rgba(10,10,10,.7)'
@@ -22,11 +24,34 @@ class App extends React.Component {
         nav.style.backgroundColor = `rgba(0,110,106,${scrollPercent})`;
         nav.style.boxShadow = `0px 0px 21px 0px rgba(10,10,10,${scrollPercent})`
       }
-      console.log(scrollPercent)
     }
 
-    document.body.onscroll = () => {
-      setScrollIndicator()
+    function addFadeIn() {
+      const scrollPos = window.scrollY
+      const overview = document.querySelector(".about-overview")
+      const gettingStarted = document.querySelector(".getting-started-overview")
+      const meetTeam = document.querySelector(".meet-team-photos")
+
+      if (scrollPos === 819) {
+        overview.classList.remove('hidden');
+        overview.classList.add('fade-in-up')
+      }
+
+      if (scrollPos === 1565) {
+        gettingStarted.classList.remove('hidden');
+        gettingStarted.classList.add('fade-in-up')
+      }
+
+      if (scrollPos === 2311) {
+        meetTeam.classList.remove('hidden');
+        meetTeam.classList.add('fade-in-up')
+      }
+    }
+
+
+    app.onscroll = () => {
+      setNavStyle()
+      addFadeIn()
     }
   }
 

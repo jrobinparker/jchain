@@ -8,7 +8,7 @@ export default function GettingStarted() {
     <div className="getting-started-content">
       <h1>ready to get started?</h1>
       <h4>it's easier than ever</h4>
-        <div className="getting-started-overview">
+        <div className="getting-started-overview hidden">
           <Start />
           <div className="getting-started-text">
             <p>our ultra-simple SDK makes it easy to link your blockchain up to the jchain network</p>

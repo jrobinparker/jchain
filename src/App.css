@@ -239,12 +239,15 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
   justify-content: center;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 .feature {
   width: 33%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: fadeInUp 1s ease-in;
 }
 
 .feature .img {
@@ -256,6 +259,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fffbfb",endCo
   -webkit-box-shadow: 2px 0px 21px 0px rgba(10,10,10,0.55);
   -moz-box-shadow: 2px 0px 21px 0px rgba(10,10,10,0.55);
   box-shadow: 2px 0px 21px 0px rgba(10,10,10,0.55);
+}
+
+.fade-in-up {
+  animation: fadeInUp .5s ease-in;
 }
 
 @keyframes fadeInUp {

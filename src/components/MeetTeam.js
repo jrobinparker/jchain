@@ -18,7 +18,7 @@ export default function MeetTeam() {
         <h1>meet the team</h1>
         <h4>blockchain experts from across the globe</h4>
       </div>
-      <div class="meet-team-photos">
+      <div class="meet-team-photos hidden">
         <div class="team-member">
           <img src={`${randomImage1}`} className="avatar"/>
           <div>{randomName1}</div>

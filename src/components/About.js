@@ -11,7 +11,7 @@ class About extends React.Component {
       <div className="about-content">
         <h1>what is jchain?</h1>
         <h4>jchain's blockchain network offers unparalleled interoperability across blockchains</h4>
-        <div className="about-overview">
+        <div className="about-overview hidden">
           <div className="feature">
             <div className="img">
               <Register />
