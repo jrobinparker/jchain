@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReactComponent as Start } from '../backlink.svg';
+import { ReactComponent as Start } from '../assets/backlink.svg';
 
 
 export default function GettingStarted() {

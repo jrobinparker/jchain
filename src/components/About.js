@@ -1,7 +1,7 @@
 import React from 'react';
-import { ReactComponent as Register } from '../card.svg';
-import { ReactComponent as Handshake } from '../handshake.svg';
-import { ReactComponent as Connect } from '../networking.svg';
+import { ReactComponent as Register } from '../assets/card.svg';
+import { ReactComponent as Handshake } from '../assets/handshake.svg';
+import { ReactComponent as Connect } from '../assets/networking.svg';
 
 
 export default function About() {

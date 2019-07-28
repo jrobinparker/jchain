@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReactComponent as Blocks } from '../Blocks.svg';
+import { ReactComponent as Blocks } from '../assets/Blocks.svg';
 
 export default function Banner() {
   return (

@@ -10,7 +10,7 @@ import './App.css';
 
 class App extends React.Component {
 
-  componentDidMount() {
+  render() {
 
     const app = document.body
 
@@ -31,17 +31,17 @@ class App extends React.Component {
       const overview = document.querySelector(".about-overview")
       const gettingStarted = document.querySelector(".getting-started-overview")
       const meetTeam = document.querySelector(".meet-team-photos")
-      if (scrollPos >= 819) {
+      if (scrollPos >= 810 || scrollPos >= 1200) {
         overview.classList.remove('hidden');
         overview.classList.add('fade-in-up')
       }
 
-      if (scrollPos >= 1565) {
+      if (scrollPos >= 1500 || scrollPos >= 2300) {
         gettingStarted.classList.remove('hidden');
         gettingStarted.classList.add('fade-in-up')
       }
 
-      if (scrollPos >= 2311) {
+      if (scrollPos >= 2300 || scrollPos >= 3400) {
         meetTeam.classList.remove('hidden');
         meetTeam.classList.add('fade-in-up')
       }
@@ -51,9 +51,6 @@ class App extends React.Component {
       setNavStyle()
       addFadeIn()
     }
-  }
-
-  render() {
 
   return (
     <div className="App" id="App">
