@@ -3,7 +3,7 @@ import React from 'react';
 export default function Nav() {
   return (
     <nav className="nav" id="nav">
-      <a
+      <div
         style={{ marginLeft: '5%' }}
         onClick={() =>
           document
@@ -11,29 +11,29 @@ export default function Nav() {
           .scrollIntoView({behavior: 'smooth'})}
         >
         jchain
-      </a>
+      </div>
       <div className="nav-links">
-        <a onClick={() =>
+        <div onClick={() =>
           document
             .getElementById("about")
             .scrollIntoView({behavior: 'smooth'})}
         >
           what is jchain?
-        </a>
-        <a onClick={() =>
+        </div>
+        <div onClick={() =>
           document
             .getElementById("getting-started")
             .scrollIntoView({behavior: 'smooth'})}
         >
           getting started
-        </a>
-        <a onClick={() =>
+        </div>
+        <div onClick={() =>
           document
             .getElementById("meet-team")
             .scrollIntoView({behavior: 'smooth'})}
         >
           meet the team
-        </a>
+        </div>
       </div>
     </nav>
   )

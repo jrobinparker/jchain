@@ -15,15 +15,15 @@ export default function Footer() {
         </div>
           <div className="footer-item2">
             <h2>about</h2>
-              <a>about jchain</a>
-              <a>our team</a>
-              <a>our advisors</a>
-              <a>exchanges</a>
+              <div>about jchain</div>
+              <div>our team</div>
+              <div>our advisors</div>
+              <div>exchanges</div>
           </div>
           <div className="footer-item3">
             <h2>resources</h2>
-              <a>whitepaper</a>
-              <a>jchain guides</a>
+              <div>whitepaper</div>
+              <div>jchain guides</div>
           </div>
       </div>
       <div className="footer-disclaimer">
