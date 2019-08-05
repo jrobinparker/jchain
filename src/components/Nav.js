@@ -4,7 +4,7 @@ export default function Nav() {
   return (
     <nav className="nav" id="nav">
       <div
-        style={{ marginLeft: '5%' }}
+        className="nav-brand"
         onClick={() =>
           document
           .getElementById("App")
@@ -13,21 +13,27 @@ export default function Nav() {
         jchain
       </div>
       <div className="nav-links">
-        <div onClick={() =>
+        <div
+          className="nav-link"
+          onClick={() =>
           document
             .getElementById("about")
             .scrollIntoView({behavior: 'smooth'})}
         >
           what is jchain?
         </div>
-        <div onClick={() =>
+        <div
+          className="nav-link"
+          onClick={() =>
           document
             .getElementById("getting-started")
             .scrollIntoView({behavior: 'smooth'})}
         >
           getting started
         </div>
-        <div onClick={() =>
+        <div
+          className="nav-link"
+          onClick={() =>
           document
             .getElementById("meet-team")
             .scrollIntoView({behavior: 'smooth'})}

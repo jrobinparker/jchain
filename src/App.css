@@ -68,15 +68,21 @@ a {
   animation: fadeInNav 1s;
 }
 
+.nav-brand {
+  margin-left: 5%;
+  cursor: pointer;
+}
+
 .nav-links {
   width: 100%;
   margin-left: 50%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
-.nav-links a {
-  margin-right: 5%;
+.nav-link {
+
+  cursor: pointer;
 }
 
 /* Right side nav */
