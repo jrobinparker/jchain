@@ -28,6 +28,7 @@ export default function Footer() {
       </div>
       <div className="footer-disclaimer">
         DISCLAIMER: this is a portfolio project by jeremy parker. jchain is not an actual blockchain app or cryptocurrency.
+        Icons made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
       </div>
     </footer>
   )

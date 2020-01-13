@@ -35,10 +35,10 @@ export default function Nav() {
           className="nav-link"
           onClick={() =>
           document
-            .getElementById("meet-team")
+            .getElementById("news")
             .scrollIntoView({behavior: 'smooth'})}
         >
-          meet the team
+          news
         </div>
       </div>
     </nav>
