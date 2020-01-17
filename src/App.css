@@ -188,6 +188,7 @@ background: linear-gradient(342deg, rgba(0,100,147,1) 0%, rgba(0,0,0,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#006493",endColorstr="#000000",GradientType=1);
 clip-path: ellipse(100% 55% at 48% 44%);
   margin-top: -51px;
+  margin-bottom: 10%;
 }
 
 .banner-img {
@@ -213,7 +214,6 @@ clip-path: ellipse(100% 55% at 48% 44%);
 }
 
 .banner-header {
-  display: block;
   font-size: 1rem;
   margin-bottom: 10px;
 }
@@ -224,7 +224,6 @@ clip-path: ellipse(100% 55% at 48% 44%);
 
 .banner-button {
   margin-top: 10px;
-  display: block;
   align-self: flex-start;
   border: 2px solid white;
   cursor: pointer;
@@ -245,14 +244,9 @@ clip-path: ellipse(100% 55% at 48% 44%);
 /* What is jchain, Getting Started, and Meet the Team shared styling */
 
 .about, .getting-started, .news {
-  height: 50vh;
   width: 100vw;
-  padding: 5% 0% 5% 0%;
   text-align: center;
-  display: flex;
-  flex-direction: column;
   color: rgb(0,100,147);
-  justify-content: center;
 }
 
 .hidden {
@@ -290,7 +284,9 @@ clip-path: ellipse(100% 55% at 48% 44%);
 /* What is jchain */
 
 .about {
-  margin-top: 25%;
+  height: 100vh;
+  width: 100vw;
+  margin-bottom: 20%;
 }
 
 .about-grid {
@@ -319,12 +315,14 @@ clip-path: ellipse(100% 55% at 48% 44%);
 }
 
 .timeline {
-  margin-top: 20%;
+  height: 50vh;
+  width: 100vw;
+  margin-top: 15%;
 }
 
 #timeline {
   width: .1%;
-  height: 3px;
+  height: 2.5px;
   background-color: rgb(226,226,226);
   margin-top: 5%;
   margin-left: 2.5%;
@@ -380,7 +378,10 @@ clip-path: ellipse(100% 55% at 48% 44%);
 /* Getting Started */
 
 .getting-started {
-  margin-top: 50%;
+  height: 70vh;
+  width: 100vw;
+  margin-top: 10%;
+  margin-bottom: 15%;
 }
 
 .getting-started-overview {
@@ -441,13 +442,15 @@ clip-path: ellipse(100% 55% at 48% 44%);
 /* News */
 
 .news {
-  margin-top: 20%;
+  height: 70vh;
+  width: 90vw;
+  margin-bottom: 10%;
 }
 
 .news-items {
   position: relative;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 5%;
 }
@@ -457,10 +460,8 @@ clip-path: ellipse(100% 55% at 48% 44%);
   flex-direction: column;
   align-items: center;
   width: 30%;
-  margin-bottom: 10px;
-  background-color: rgb(232, 232, 232);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  margin-bottom: 6%;
+  border-radius: 5px;
   height: 150px;
   opacity: 0;
   cursor: pointer;
@@ -469,14 +470,13 @@ clip-path: ellipse(100% 55% at 48% 44%);
 .news-item img {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
 }
 
 .news-item-title {
-  margin-top: -7%;
-  background-color: rgba(232,232,232,.75);
   width: 100%;
-  height: 30%;
-  padding-bottom: 4px;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
   font-size: 1.1rem;
 }
 
@@ -542,259 +542,157 @@ clip-path: ellipse(100% 95% at 48% 100%);
 
 /* Media queries */
 
-/* Smartphones  */
+/* Smaller tablets  */
 
-@media only screen and (min-width: 200px) and (max-width: 1024px) {
-  .App {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    justify-content: space-around;
-  }
+@media only screen and (max-width: 768px) {
 
-  /* Nav elements */
-  .nav, .right-nav {
+  .nav {
     display: none;
   }
 
-  /* Banner */
-  .banner {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 100%;
-  }
-
-  .banner-content {
+  .banner-img {
     position: relative;
-    top: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    left: 10%;
   }
 
-  .banner-text {
-    font-size: 1.5rem;
+  .about-grid {
+    flex-direction: column;
     width: 90%;
   }
 
-  .banner-header {
-    font-size: 1rem;
+  .grid-item {
+    width: 100%;
     margin-bottom: 10px;
   }
 
-  .banner-button {
+  .timeline {
+    height: 60vh;
+  }
+
+  #timeline {
+    height: 95%;
+    width: 2.5px;
     position: relative;
-    left: 25%;
-    margin-top: 10px;
-    width: 45%;
-    background-color: #2a628f;
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    -webkit-box-shadow: 2px 10px 21px 0px rgba(0,0,0,0.55);
-    -moz-box-shadow: 2px 10px 21px 0px rgba(0,0,0,0.55);
-    box-shadow: 2px 10px 21px 0px rgba(0,0,0,0.55);
+    left: 50%;
   }
 
-  #banner-button-2, #banner-button-3 {
-    display: block;
-  }
-
-  .banner-image {
-    height: 300px;
-    width: 200px;
-    position: relative;
-    top: 30%;
-    left: 1%;
-  }
-
-  /* About, Getting Started, and Meet Team shared styling */
-  .about, .getting-started, .meet-team {
-    height: 100vh;
-    display: flex;
+  #timeline-items {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 100%;
   }
 
-  .about-content, .about-overview, .feature, .getting-started-content, .getting-started-overview, .meet-team, .meet-team-content, .meet-team-photos, footer, .footer, .footer-item1, .footer-item2, .footer-item3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* About */
-
-  .about-content {
-    padding-bottom: 100%;
-  }
-
-  .about-overview {
-    margin-top: -10%;
-  }
-
-  .feature p {
-    text-align: center;
-  }
-
-  #connect {
-    margin-left: -15%;
-  }
-
-  /* Getting Started */
-
-  .getting-started-text {
-    font-size: 1.25rem;
-    position: relative;
-    left: -8%;
-  }
-
-  .getting-started-button {
-    width: 60%;
-    align-self: center;
-    text-align: center;
-    background-color: #2a628f;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 20px;
-    -webkit-box-shadow: 2px 0px 21px 0px rgba(0,0,0,0.55);
-    -moz-box-shadow: 2px 0px 21px 0px rgba(0,0,0,0.55);
-    box-shadow: 2px 0px 21px 0px rgba(0,0,0,0.55);
-  }
-
-  /* Meet the Team */
-
-  .meet-team-photos {
-    margin-top: -30%;
-  }
-
-  .team-member {
-    margin-bottom: 10%;
-  }
-
-  /* Footer */
-
-  .footer-social {
-    width: 100%;
-    display: flex;
+  .timeline-item {
+    margin-left: 170px;
     flex-direction: row;
   }
 
-  .footer-social i {
-    margin: 0 50% 0 50%;
-    font-size: 2rem;
+  .timeline-item:nth-of-type(2) {
+    margin-right: 320px;
+    flex-direction: row-reverse;
   }
 
-  .footer-disclaimer {
-    font-size: .75rem;
-    margin-top: 10%;
-    text-align: center;
-    padding: 0 5% 0 5%;
-  }
-}
-
-/* Tablets - portrait */
-@media only screen and (min-width: 767px) and (max-width: 1025px) {
-  .nav {
-    position: -webkit-sticky;
-    position: -moz-sticky;
-    position: sticky;
-    top: 0;
+  .timeline-item:nth-of-type(4) {
+    margin-right: 300px;
+    flex-direction: row-reverse;
   }
 
-  .container {
-    width: 100vh;
+  .timeline-point {
+    margin-right: 10px;
   }
 
-  .banner {
-    width: 90%;
+  .timeline-text {
+    width: 150px;
+  }
+
+  .getting-started {
+    display: none;
+    height: 70vh;
+  }
+
+  .getting-started-overview {
+  }
+
+  .getting-started-steps {
+    flex-direction: column;
+  }
+
+  .getting-started-text {
+    font-size: 1.25rem;
+    width: 100%;
+    align-self: center;
     position: relative;
-    top: -3%;
-    left: -5%;
-  }
-
-  #banner-button-1, #banner-button-2, #banner-button-3 {
-    display: block;
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .banner-image {
-    height: 300px;
-    width: 300px;
-    left: 1%;
+    top: 25%;
   }
 
   .getting-started-button {
-    width: 40%;
+    font-size: 1rem;
+    z-index: 100;
   }
 
-  .team-member {
-    text-align: center;
+  .getting-started-img {
+    width: 100%;
+    position: relative;
+    top: 20%;
+  }
+
+  .news {
+    display: none;
+  }
+
+  .news-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    display: none;
   }
 
 }
 
-/* Yuge monitors */
-@media only screen and (min-width: 2560px) and (max-width: 3840px) {
-  body {
-    font-size: 1.5rem;
+/* Tablets */
+@media screen and (min-width: 768.5px) and (max-width: 1150px) {
+
+  .nav-link {
+    margin-left: -15%;
   }
 
-  .App {
-    animation: moveRight 60s linear infinite;
+  .banner-content {
+    top: -100%;
+    width: 50%;
   }
 
-  .nav-button {
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    border: 3px solid white;
-    margin-bottom: 30%;
+  #about, .about-grid {
+    margin-bottom: 20%;
   }
 
-  .right-nav-text-1, .right-nav-text-2, .right-nav-text-3 {
-    font-size: 1.5rem;
+  #timeline {
+    width: 95%;
   }
 
-  /* Banner */
+  .news {
 
-  .banner-text {
-    font-size: 2.5rem;
-    width: 30%;
   }
 
-  .banner-header {
-    font-size: 1.25rem;
-    margin-bottom: 5%;
+  .news-items {
+    justify-content: space-around;
   }
 
-  .banner-button {
-    margin-top: 5%;
-    width: 33%;
-    background-color: #2a628f;
-    text-align: center;
-    font-size: 1.25rem;
+  .news-item {
+    height: auto;
+    width: 40%;
+    margin-bottom: 2.5%;
   }
 
-  /* Getting Started */
-
-  .getting-started-text {
-    font-size: 1.5rem;
+  footer {
+    margin-top: 50%;
   }
 
-  /* Footer */
+}
 
-  .footer i {
-    font-size: 3rem;
+@media screen and (min-width: 1150.5px) and (max-width: 1440.5px){
+
+  .banner-content {
+    top: -90%;
   }
 
 }

@@ -70,38 +70,56 @@ class News extends React.Component {
         <div className="news-item">
           <img src={require('../assets/whitepaper.jpg')} />
           <div className="news-item-title">
-            whitepaper released - 1/1/2018
+            whitepaper released
           </div>
+          <small>
+          january 1, 2018
+          </small>
         </div>
         <div className="news-item">
           <img src={require('../assets/dev-team.jpg')} />
           <div className="news-item-title">
-            meet the dev team - 3/15/2018
+            meet the dev team
           </div>
+          <small>
+            march 15, 2018
+          </small>
         </div>
         <div className="news-item">
           <img src={require('../assets/gen-block.jpg')} />
           <div className="news-item-title">
             genesis block mined - 3/2019
           </div>
+          <small>
+            march 1, 2019
+          </small>
         </div>
         <div className="news-item">
           <img src={require('../assets/partnerships.jpg')} />
           <div className="news-item-title">
-            announcing exciting new partnerships - 10/2019
+            new partnerships
           </div>
+          <small>
+            october 20, 2019
+          </small>
         </div>
         <div className="news-item">
           <img src={require('../assets/sdk.jpg')} />
           <div className="news-item-title">
-            beta sdk update - 1/2020
+            beta sdk update
           </div>
+          <small>
+            january 1, 2020
+          </small>
         </div>
         <div className="news-item">
           <img src={require('../assets/qa.jpg')} />
           <div className="news-item-title">
-            dev team q&A - 1/2020
+            dev team q&A
           </div>
+          <small>
+            january 10, 2020
+          </small>
         </div>
       </div>
       </VisibilitySensor>
