@@ -15,14 +15,14 @@ class AboutTimeline extends React.Component {
     const item3 = document.querySelectorAll('.timeline-item')[2]
     const item4 = document.querySelectorAll('.timeline-item')[3]
     const item5 = document.querySelectorAll('.timeline-item')[4]
-    const timelineExpandV = new TimelineMax()
-    const timelineExpandH = new TimelineMax()
+    const timelineExpand = new TimelineMax()
+
     if (window.innerWidth > 768) {
 
-      timelineExpandH
-        .set(timeline, {width: '1%', height: '2.5px'})
+      timelineExpand
+        .set("#timeline", {width: '1%', height: '2.5px'})
         .set(items, {opacity: 0, y: 0})
-        .to(timeline, 1.25, {width: '95%', height: '2.5px'})
+        .to("#timeline", 1.25, {width: '95%', height: '2.5px'})
         .add(
           TweenMax.to(item1, .25, {
             y: -5,
@@ -49,10 +49,10 @@ class AboutTimeline extends React.Component {
                     opacity: 1
                   }))
       } else {
-        timelineExpandV
-          .set(timeline, {height: '1%', width: '1.5px'})
-          .set(items, {opacity: 0, x: 0})
-          .to(timeline, 1.25, {height: '95%', width: '1.5px'})
+        timelineExpand
+          .set("#timeline", {height: '.1%', width: '3px'})
+          .set(items, {opacity: 0})
+          .to("#timeline", 1.25, {height: '95%', width: '3px'})
           .add(
             TweenMax.to(item1, .25, {
               x: -5,
