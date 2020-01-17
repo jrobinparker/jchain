@@ -331,13 +331,13 @@ clip-path: ellipse(100% 55% at 48% 44%);
 #timeline-items {
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-around;
 }
 
 .timeline-item {
   display: flex;
   flex-direction: column;
+  align-self: flex-start;
   align-items: center;
   opacity: 0;
 }
@@ -570,8 +570,8 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   #timeline {
-    height: 95%;
-    width: 2.5px;
+    height: 1%;
+    width: 3px;
     position: relative;
     left: 50%;
   }
@@ -581,18 +581,19 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .timeline-item {
-    margin-left: 170px;
     flex-direction: row;
   }
 
   .timeline-item:nth-of-type(2) {
-    margin-right: 320px;
+    align-self: flex-end;
     flex-direction: row-reverse;
+    margin-right: -10px;
   }
 
   .timeline-item:nth-of-type(4) {
-    margin-right: 300px;
+    align-self: flex-end;
     flex-direction: row-reverse;
+    margin-right: -20px;
   }
 
   .timeline-point {
@@ -665,10 +666,6 @@ clip-path: ellipse(100% 95% at 48% 100%);
     margin-bottom: 20%;
   }
 
-  #timeline {
-    width: 95%;
-  }
-
   .news {
 
   }
@@ -689,7 +686,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
 
 }
 
-@media screen and (min-width: 1150.5px) and (max-width: 1440.5px){
+@media screen and (min-width: 1150.5px) and (max-width: 1437px){
 
   .banner-content {
     top: -90%;
