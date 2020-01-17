@@ -8,47 +8,88 @@ class AboutTimeline extends React.Component {
   }
 
   timelineExpand() {
+    const timeline = document.getElementById('#timeline')
+    const items = document.querySelectorAll('.timeline-item')
     const item1 = document.querySelectorAll('.timeline-item')[0]
     const item2 = document.querySelectorAll('.timeline-item')[1]
     const item3 = document.querySelectorAll('.timeline-item')[2]
     const item4 = document.querySelectorAll('.timeline-item')[3]
     const item5 = document.querySelectorAll('.timeline-item')[4]
+    const timelineExpandV = new TimelineMax()
+    const timelineExpandH = new TimelineMax()
+    if (window.innerWidth > 768) {
 
-    const timelineExpand = new TimelineMax()
-
-    timelineExpand
-      .to('#timeline', 1.25, {width: '95%'})
-      .add(
-        TweenMax.to(item1, .25, {
-          y: -5,
-          opacity: 1
-        }))
+      timelineExpandH
+        .set(timeline, {width: '1%', height: '2.5px'})
+        .set(items, {opacity: 0, y: 0})
+        .to(timeline, 1.25, {width: '95%', height: '2.5px'})
         .add(
-          TweenMax.to(item2, .25, {
+          TweenMax.to(item1, .25, {
             y: -5,
             opacity: 1
           }))
           .add(
-            TweenMax.to(item3, .25, {
+            TweenMax.to(item2, .25, {
               y: -5,
               opacity: 1
             }))
             .add(
-              TweenMax.to(item4, .25, {
+              TweenMax.to(item3, .25, {
                 y: -5,
                 opacity: 1
               }))
               .add(
-                TweenMax.to(item5, .25, {
+                TweenMax.to(item4, .25, {
                   y: -5,
                   opacity: 1
                 }))
+                .add(
+                  TweenMax.to(item5, .25, {
+                    y: -5,
+                    opacity: 1
+                  }))
+      } else {
+        timelineExpandV
+          .set(timeline, {height: '1%', width: '1.5px'})
+          .set(items, {opacity: 0, x: 0})
+          .to(timeline, 1.25, {height: '95%', width: '1.5px'})
+          .add(
+            TweenMax.to(item1, .25, {
+              x: -5,
+              opacity: 1
+            }))
+            .add(
+              TweenMax.to(item2, .25, {
+                x: 5,
+                opacity: 1
+              }))
+              .add(
+                TweenMax.to(item3, .25, {
+                  x: -5,
+                  opacity: 1
+                }))
+                .add(
+                  TweenMax.to(item4, .25, {
+                    x: -5,
+                    opacity: 1
+                  }))
+                  .add(
+                    TweenMax.to(item5, .25, {
+                      x: -5,
+                      opacity: 1
+                    }))
+      }
   }
 
   render() {
     if (this.state.visible) {
       this.timelineExpand()
     }
+
+    window.addEventListener('resize', () => {
+      this.timelineExpand()
+    }, false)
+
     return (
       <div className="timeline">
         <h1>development timeline</h1>
