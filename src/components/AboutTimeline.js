@@ -17,7 +17,7 @@ class AboutTimeline extends React.Component {
     const item5 = document.querySelectorAll('.timeline-item')[4]
     const timelineExpand = new TimelineMax()
 
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 680) {
 
       timelineExpand
         .set("#timeline", {width: '1%', height: '2.5px'})
@@ -52,7 +52,7 @@ class AboutTimeline extends React.Component {
         timelineExpand
           .set("#timeline", {height: '.1%', width: '3px'})
           .set(items, {opacity: 0})
-          .to("#timeline", 1.25, {height: '95%', width: '3px'})
+          .to("#timeline", 1.25, {height: '75%', width: '3px'})
           .add(
             TweenMax.to(item1, .25, {
               x: -5,
