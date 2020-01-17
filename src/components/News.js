@@ -88,7 +88,7 @@ class News extends React.Component {
         <div className="news-item">
           <img src={require('../assets/gen-block.jpg')} />
           <div className="news-item-title">
-            genesis block mined - 3/2019
+            genesis block mined
           </div>
           <small>
             march 1, 2019
