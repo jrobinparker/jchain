@@ -88,19 +88,17 @@ clip-path: ellipse(100% 55% at 48% 44%);
 .banner-img {
   width: 100%;
   height: 100%;
-  position: relative;
-  top: -2.5%;
-  left: 30%;
+  position: absolute;
+  left: 40%;
 }
 
 .banner-content {
-  position: relative;
-  left: 8%;
-  align-self: center;
+  position: absolute;
+  left: 6%;
 }
 
 .banner-text {
-  width: 200%;
+  width: 50%;
   font-size: 2rem;
   display: flex;
   flex-direction: column;
@@ -408,9 +406,9 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .banner-img {
-    top: 35%;
-    left: 70%;
-    width: 300%;
+    top: 50%;
+    left: -10%;
+    width: 250%;
     height: auto;
   }
 
@@ -419,11 +417,9 @@ clip-path: ellipse(100% 95% at 48% 100%);
     flex-direction: column;
     text-align: center;
     align-items: center;
-    position: absolute;
-    top: 25%;
-    left: 40%;
-    width: 30%;
-    font-size: 1rem;
+    top: 20%;
+    left: 5%;
+    width: 100%;
   }
 
   .banner-header {
@@ -583,10 +579,10 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .banner-img {
-    top: 30%;
-    left: 60%;
-    width: 240%;
+    width: 250%;
     height: auto;
+    top: 40%;
+    left: -20%;
   }
 
   .banner-content {
@@ -594,10 +590,9 @@ clip-path: ellipse(100% 95% at 48% 100%);
     flex-direction: column;
     text-align: center;
     align-items: center;
-    position: absolute;
-    top: 30%;
-    left: 40%;
-    width: 30%;
+    top: 20%;
+    left: 10%;
+    width: 90%;
     font-size: 1rem;
   }
 
@@ -754,10 +749,6 @@ clip-path: ellipse(100% 95% at 48% 100%);
     margin-top: -9%;
   }
 
-  .banner-content {
-    left: 20%;
-  }
-
   .about {
     height: 160vh;
   }
@@ -803,8 +794,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .banner-content {
-    left: 18%;
-    width: 40%;
+    width: 70%;
   }
 
   .about {
