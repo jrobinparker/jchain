@@ -21,36 +21,6 @@ a {
   cursor: pointer;
 }
 
-@keyframes moveRight {
-  from {
-    background-position: 0 0;
-   }
-  to {
-    background-position: -1500px 0;
-   }
-}
-
-@-webkit-keyframes moveRight {
-  from { background-position: 0 0; }
-    to { background-position: -1500px 0;
-     }
-}
-
-.App {
-
-}
-
-#canvas {
-  height: 500%;
-  width: 100%;
-  position: absolute;
-  top: 0%;
-}
-
-.bg {
-
-}
-
 /* Nav */
 
 .nav {
@@ -88,88 +58,8 @@ a {
   cursor: pointer;
 }
 
-/* Right side nav */
-
-.right-nav {
-  display: inline-block;
-  position: fixed;
-  z-index: 999;
-  top: 50%;
-  right: 1%;
-}
-
-.right-nav-links {
-  display: flex;
-  flex-direction: column;
-}
-
-.right-nav-link {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-.nav-button {
-  height: 10px;
-  width: 10px;
-  border-radius: 50px;
-  border: 1px solid white;
-  margin-bottom: 10px;
-}
-
-.right-nav-text-1 {
-  position: absolute;
-  transform: translate(-105%, -20%);
-  text-align: right;
-  font-size: 1rem;
-  color: white;
-  display: none;
-}
-
-.right-nav-text-2 {
-  position: absolute;
-  transform: translate(-105%, -20%);
-  text-align: right;
-  font-size: 1rem;
-  color: white;
-  display: none;
-}
-
-.right-nav-text-3 {
-  position: absolute;
-  transform: translate(-105%, -20%);
-  text-align: right;
-  font-size: 1rem;
-  color: white;
-  display: none;
-}
-
-.nav-button:hover {
-  background-color: white;
-  cursor: pointer;
-}
-
-.nav-button:hover + .right-nav-text-1 {
-  animation: fadeInLoad .5s;
-  display: inline-block;
-  width: 200px;
-}
-
-.nav-button:hover + .right-nav-text-2 {
-  animation: fadeInLoad .5s;
-  display: inline-block;
-  width: 200px;
-}
-
-.nav-button:hover + .right-nav-text-3 {
-  animation: fadeInLoad .5s;
-  display: inline-block;
-  width: 200px;
-}
-
 /* App content container */
 .container {
-  z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -187,26 +77,30 @@ background: -webkit-linear-gradient(342deg, rgba(0,100,147,1) 0%, rgba(0,0,0,1) 
 background: linear-gradient(342deg, rgba(0,100,147,1) 0%, rgba(0,0,0,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#006493",endColorstr="#000000",GradientType=1);
 clip-path: ellipse(100% 55% at 48% 44%);
-  margin-top: -51px;
+  margin-top: -3.7%;
   margin-bottom: 10%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner-img {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   position: relative;
-  left: 35%;
-  top: 0%;
+  top: -2.5%;
+  left: 30%;
 }
 
 .banner-content {
-  width: 30%;
   position: relative;
-  top: -75%;
-  left: 6%;
+  left: 8%;
+  align-self: center;
 }
 
 .banner-text {
+  width: 200%;
   font-size: 2rem;
   display: flex;
   flex-direction: column;
@@ -216,10 +110,6 @@ clip-path: ellipse(100% 55% at 48% 44%);
 .banner-header {
   font-size: 1rem;
   margin-bottom: 10px;
-}
-
-#banner-button-2, #banner-button-3 {
-  display: none;
 }
 
 .banner-button {
@@ -247,38 +137,6 @@ clip-path: ellipse(100% 55% at 48% 44%);
   width: 100vw;
   text-align: center;
   color: rgb(0,100,147);
-}
-
-.hidden {
-  visibility: hidden;
-}
-
-.fade-in-up {
-  animation: fadeInUp .5s ease-in;
-}
-
-@keyframes fadeInUp {
-    from {
-        transform: translate3d(0,40px,0);
-        opacity: 0
-    }
-
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
-}
-
-@-webkit-keyframes fadeInUp {
-    from {
-        transform: translate3d(0,40px,0);
-
-    }
-
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
 }
 
 /* What is jchain */
@@ -545,22 +403,27 @@ clip-path: ellipse(100% 95% at 48% 100%);
     display: none;
   }
 
+  .banner {
+    flex-direction: column-reverse;
+  }
+
   .banner-img {
-    position: relative;
-    left: 10%;
+    top: 35%;
+    left: 70%;
+    width: 300%;
+    height: auto;
   }
 
   .banner-content {
-    width: 50%;
-    top: -95%;
-    left: 28%;
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-content: center;
     align-items: center;
-    align-self: center;
-    justify-content: center;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    width: 30%;
+    font-size: 1rem;
   }
 
   .banner-header {
@@ -582,7 +445,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
   .about-grid {
     flex-direction: column;
     width: 90%;
-    padding-bottom: 10%;
+    padding-bottom: 15%;
   }
 
   .grid-item {
@@ -631,6 +494,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
 
   .getting-started {
     height: 90vh;
+    margin-bottom: 10%;
   }
 
   .getting-started-steps {
@@ -714,22 +578,27 @@ clip-path: ellipse(100% 95% at 48% 100%);
     display: none;
   }
 
+  .banner {
+    flex-direction: column-reverse;
+  }
+
   .banner-img {
-    position: relative;
-    left: 10%;
+    top: 30%;
+    left: 60%;
+    width: 240%;
+    height: auto;
   }
 
   .banner-content {
-    width: 50%;
-    top: -95%;
-    left: 28%;
     display: flex;
     flex-direction: column;
     text-align: center;
-    align-content: center;
     align-items: center;
-    align-self: center;
-    justify-content: center;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 30%;
+    font-size: 1rem;
   }
 
   .banner-header {
@@ -827,7 +696,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .news {
-    height: 100vh;
+    height: 110vh;
   }
 
   .news-items {
@@ -881,9 +750,12 @@ clip-path: ellipse(100% 95% at 48% 100%);
     margin-left: 30%;
   }
 
+  .banner {
+    margin-top: -9%;
+  }
+
   .banner-content {
-    top: -85%;
-    width: 50%;
+    left: 20%;
   }
 
   .about {
@@ -891,7 +763,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .about-grid {
-    margin-bottom: 25%;
+    margin-bottom: 35%;
   }
 
   .getting-started {
@@ -923,11 +795,15 @@ clip-path: ellipse(100% 95% at 48% 100%);
 @media screen and (min-width: 768.5px) and (max-width: 1150px) {
 
   .nav-link {
-    margin-left: -15%;
+    margin-left: -25%;
+  }
+
+  .banner {
+    margin-top: -7%;
   }
 
   .banner-content {
-    top: -85%;
+    left: 18%;
     width: 40%;
   }
 
@@ -965,13 +841,18 @@ clip-path: ellipse(100% 95% at 48% 100%);
 
 @media screen and (min-width: 1150.5px) and (max-width: 1439.5px){
 
-  .banner-content {
-    top: -85%;
-    width: 40%;
+  .banner {
+    margin-top: -5%;
   }
 
   .about {
     height: 165vh;
+    margin-bottom: -5%;
   }
+
+  .getting-started {
+    margin-bottom: 10%;
+  }
+
 
 }

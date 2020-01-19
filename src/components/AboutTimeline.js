@@ -52,7 +52,7 @@ class AboutTimeline extends React.Component {
         timelineExpand
           .set("#timeline", {height: '.1%', width: '3px'})
           .set(items, {opacity: 0})
-          .to("#timeline", 1.25, {height: '75%', width: '3px'})
+          .to("#timeline", 1.25, {height: '70%', width: '3px'})
           .add(
             TweenMax.to(item1, .25, {
               x: -5,
