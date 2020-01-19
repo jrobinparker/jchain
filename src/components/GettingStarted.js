@@ -1,5 +1,4 @@
 import React from 'react';
-import { ReactComponent as Start } from '../assets/backlink.svg';
 import { TweenMax } from "gsap/all";
 
 class GettingStarted extends React.Component {
