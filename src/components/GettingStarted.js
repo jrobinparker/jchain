@@ -31,7 +31,7 @@ class GettingStarted extends React.Component {
                 <div className="getting-started-button" onMouseEnter={this.addButtonStyle} onMouseLeave={this.removeButtonStyle}>get started <i className="fas fa-arrow-circle-right" /></div>
               </div>
               <div className="getting-started-img">
-                <img src={require('../assets/laptop.png')} id="laptop"/>
+                <img src={require('../assets/laptop.png')} id="laptop" alt="laptop"/>
               </div>
             </div>
           </div>

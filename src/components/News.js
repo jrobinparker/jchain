@@ -68,7 +68,7 @@ class News extends React.Component {
         }}>
       <div className="news-items">
         <div className="news-item">
-          <img src={require('../assets/whitepaper.jpg')} />
+          <img src={require('../assets/whitepaper.jpg')} alt="news-item1" />
           <div className="news-item-title">
             whitepaper released
           </div>
@@ -77,7 +77,7 @@ class News extends React.Component {
           </small>
         </div>
         <div className="news-item">
-          <img src={require('../assets/dev-team.jpg')} />
+          <img src={require('../assets/dev-team.jpg')} alt="news-item2" />
           <div className="news-item-title">
             meet the dev team
           </div>
@@ -86,7 +86,7 @@ class News extends React.Component {
           </small>
         </div>
         <div className="news-item">
-          <img src={require('../assets/gen-block.jpg')} />
+          <img src={require('../assets/gen-block.jpg')} alt="news-item3" />
           <div className="news-item-title">
             genesis block mined
           </div>
@@ -95,7 +95,7 @@ class News extends React.Component {
           </small>
         </div>
         <div className="news-item">
-          <img src={require('../assets/partnerships.jpg')} />
+          <img src={require('../assets/partnerships.jpg')} alt="news-item4" />
           <div className="news-item-title">
             new partnerships
           </div>
@@ -104,7 +104,7 @@ class News extends React.Component {
           </small>
         </div>
         <div className="news-item">
-          <img src={require('../assets/sdk.jpg')} />
+          <img src={require('../assets/sdk.jpg')} alt="news-item5" />
           <div className="news-item-title">
             beta sdk update
           </div>
@@ -113,7 +113,7 @@ class News extends React.Component {
           </small>
         </div>
         <div className="news-item">
-          <img src={require('../assets/qa.jpg')} />
+          <img src={require('../assets/qa.jpg')} alt="news-item6" />
           <div className="news-item-title">
             dev team q&A
           </div>

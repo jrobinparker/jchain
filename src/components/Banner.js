@@ -3,7 +3,7 @@ import React from 'react';
 export default function Banner() {
   return (
     <div className="banner" id="banner">
-      <img src={require('../assets/banner-bg.png')} className="banner-img"/>
+      <img src={require('../assets/banner-bg.png')} className="banner-img" alt="banner"/>
       <div className="banner-content">
         <div className="banner-text">
           <span className="banner-header">building the future</span>
