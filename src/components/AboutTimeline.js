@@ -8,7 +8,6 @@ class AboutTimeline extends React.Component {
   }
 
   timelineExpand() {
-    const timeline = document.getElementById('#timeline')
     const items = document.querySelectorAll('.timeline-item')
     const item1 = document.querySelectorAll('.timeline-item')[0]
     const item2 = document.querySelectorAll('.timeline-item')[1]
