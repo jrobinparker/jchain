@@ -6,6 +6,10 @@ import GettingStarted from './components/GettingStarted';
 import News from './components/News';
 import Footer from './components/Footer';
 import './App.css';
+import { gsap } from 'gsap';
+import { CSSPlugin } from 'gsap/CSSPlugin';
+
+gsap.registerPlugin(CSSPlugin)
 
 class App extends React.Component {
 

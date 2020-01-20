@@ -3,7 +3,7 @@ import { ReactComponent as Barrier } from '../assets/barrier.svg';
 import { ReactComponent as Timer } from '../assets/timer.svg';
 import { ReactComponent as Handshake } from '../assets/handshake.svg';
 import VisibilitySensor from 'react-visibility-sensor';
-import { TimelineMax, TweenMax } from "gsap/all";
+import { gsap } from "gsap";
 
 class AboutGrid extends React.Component {
   state = {
@@ -15,20 +15,12 @@ class AboutGrid extends React.Component {
     const item2 = document.querySelectorAll('.grid-item')[1]
     const item3 = document.querySelectorAll('.grid-item')[2]
 
-    const timelineExpand = new TimelineMax()
+    const timelineExpand = gsap.timeline();
 
     timelineExpand
-      .to(item1, .5, {y: -5, opacity: 1})
-      .add(
-        TweenMax.to(item2, .5, {
-          y: -5,
-          opacity: 1
-        }))
-        .add(
-          TweenMax.to(item3, .5, {
-            y: -5,
-            opacity: 1
-          }))
+      .to(item1, .5, { y: -5, opacity: 1 })
+      .to(item2, .5, { y: -5, opacity: 1 })
+      .to(item3, .5, { y: -5, opacity: 1 })
     }
 
   render() {

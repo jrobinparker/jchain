@@ -1,6 +1,6 @@
 import React from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
-import { TimelineMax, TweenMax } from "gsap/all";
+import { gsap } from "gsap";
 
 class News extends React.Component {
   state = {
@@ -15,35 +15,15 @@ class News extends React.Component {
     const item5 = document.querySelectorAll('.news-item')[4]
     const item6 = document.querySelectorAll('.news-item')[5]
 
-    const displayItems = new TimelineMax()
+    const displayItems = gsap.timeline();
 
     displayItems
-      .to(item1, .5, {y: -5, opacity: 1})
-      .add(
-        TweenMax.to(item2, .25, {
-          y: -5,
-          opacity: 1
-        }))
-        .add(
-          TweenMax.to(item3, .25, {
-            y: -5,
-            opacity: 1
-          }))
-          .add(
-            TweenMax.to(item4, .25, {
-              y: -5,
-              opacity: 1
-            }))
-            .add(
-              TweenMax.to(item5, .25, {
-                y: -5,
-                opacity: 1
-              }))
-              .add(
-                TweenMax.to(item6, .25, {
-                  y: -5,
-                  opacity: 1
-                }))
+      .to(item1, .5, { y: -5, opacity: 1 })
+      .to(item2, .25, { y: -5, opacity: 1 })
+      .to(item3, .25, { y: -5, opacity: 1 })
+      .to(item4, .25, { y: -5, opacity: 1 })
+      .to(item5, .25, { y: -5, opacity: 1 })
+      .to(item6, .25, { y: -5, opacity: 1 })
   }
 
   render() {
