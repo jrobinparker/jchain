@@ -238,26 +238,15 @@ clip-path: ellipse(100% 55% at 48% 44%);
   width: 100vw;
 }
 
-.getting-started-overview {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-}
-
 .getting-started-steps {
   display: flex;
+  align-items: center;
   width: 100%;
   background-color: rgb(232, 232, 232);
 }
 
 .getting-started-img {
   width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .getting-started-img img {
@@ -494,16 +483,14 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .getting-started-steps {
-    padding-bottom: 15%;
+    height: 60vh;
     flex-direction: column;
+    padding: 20% 0px 5% 0px;
   }
 
   .getting-started-text {
     font-size: 1.25rem;
     width: 100%;
-    align-self: center;
-    position: relative;
-    top: 25%;
   }
 
   .getting-started-button {
@@ -514,11 +501,10 @@ clip-path: ellipse(100% 95% at 48% 100%);
   .getting-started-img {
     width: 100%;
     position: relative;
-    top: 20%;
   }
 
   .news {
-    height: 165vh;
+    height: 175vh;
   }
 
   .news-items {
@@ -529,6 +515,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
 
   .news-item {
     width: 65%;
+    margin-bottom: 10%;
   }
 
   .footer {
@@ -668,16 +655,15 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .getting-started-steps {
-    padding-bottom: 15%;
+    height: 60vh;
     flex-direction: column;
+    padding: 20% 0px 5% 0px;
   }
 
   .getting-started-text {
     font-size: 1.25rem;
     width: 100%;
     align-self: center;
-    position: relative;
-    top: 25%;
   }
 
   .getting-started-button {
@@ -686,12 +672,10 @@ clip-path: ellipse(100% 95% at 48% 100%);
 
   .getting-started-img {
     width: 100%;
-    position: relative;
-    top: 20%;
   }
 
   .news {
-    height: 110vh;
+    height: 250vh;
   }
 
   .news-items {
@@ -701,7 +685,9 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .news-item {
-    width: 35%;
+    height: 100%;
+    width: 60%;
+    margin-bottom: 5%;
   }
 
   .footer {
@@ -709,6 +695,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
     flex-direction: column;
     width: 100%;
     align-items: center;
+    margin-top: 10%;
   }
 
   .footer-item1 {
@@ -766,17 +753,18 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .news {
-    height: 130vh;
+    height: 270vh;
   }
 
   .news-items {
+    flex-wrap: wrap;
     justify-content: space-around;
   }
 
   .news-item {
-    height: auto;
-    width: 40%;
-    margin-bottom: 2.5%;
+    height: 100%;
+    width: 60%;
+    margin-bottom: 5%;
   }
 
 
@@ -810,7 +798,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .getting-started-button {
-    font-size: 1.1rem;
+    width: 50%;
   }
 
   .news-items {

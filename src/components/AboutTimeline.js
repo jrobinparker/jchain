@@ -1,6 +1,6 @@
 import React from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
-import { TimelineMax, TweenMax } from "gsap/all";
+import { gsap } from "gsap";
 
 class AboutTimeline extends React.Component {
   state = {
@@ -14,7 +14,7 @@ class AboutTimeline extends React.Component {
     const item3 = document.querySelectorAll('.timeline-item')[2]
     const item4 = document.querySelectorAll('.timeline-item')[3]
     const item5 = document.querySelectorAll('.timeline-item')[4]
-    const timelineExpand = new TimelineMax()
+    const timelineExpand = gsap.timeline();
 
     if (window.innerWidth > 680) {
 
@@ -22,61 +22,21 @@ class AboutTimeline extends React.Component {
         .set("#timeline", {width: '1%', height: '2.5px'})
         .set(items, {opacity: 0, y: 0})
         .to("#timeline", 1.25, {width: '95%', height: '2.5px'})
-        .add(
-          TweenMax.to(item1, .25, {
-            y: -5,
-            opacity: 1
-          }))
-          .add(
-            TweenMax.to(item2, .25, {
-              y: -5,
-              opacity: 1
-            }))
-            .add(
-              TweenMax.to(item3, .25, {
-                y: -5,
-                opacity: 1
-              }))
-              .add(
-                TweenMax.to(item4, .25, {
-                  y: -5,
-                  opacity: 1
-                }))
-                .add(
-                  TweenMax.to(item5, .25, {
-                    y: -5,
-                    opacity: 1
-                  }))
+        .to(item1, .25, { y: -5, opacity: 1 })
+        .to(item2, .25, { y: -5, opacity: 1 })
+        .to(item3, .25, { y: -5, opacity: 1 })
+        .to(item4, .25, { y: -5, opacity: 1 })
+        .to(item5, .25, { y: -5, opacity: 1 })
       } else {
         timelineExpand
           .set("#timeline", {height: '.1%', width: '3px'})
           .set(items, {opacity: 0})
           .to("#timeline", 1.25, {height: '70%', width: '3px'})
-          .add(
-            TweenMax.to(item1, .25, {
-              x: -5,
-              opacity: 1
-            }))
-            .add(
-              TweenMax.to(item2, .25, {
-                x: 5,
-                opacity: 1
-              }))
-              .add(
-                TweenMax.to(item3, .25, {
-                  x: -5,
-                  opacity: 1
-                }))
-                .add(
-                  TweenMax.to(item4, .25, {
-                    x: -5,
-                    opacity: 1
-                  }))
-                  .add(
-                    TweenMax.to(item5, .25, {
-                      x: -5,
-                      opacity: 1
-                    }))
+          .to(item1, .25, { x: -5, opacity: 1 })
+          .to(item2, .25, { x: 5, opacity: 1 })
+          .to(item3, .25, { x: -5, opacity: 1 })
+          .to(item4, .25, { x: -5, opacity: 1 })
+          .to(item5, .25, { x: -5, opacity: 1 })
       }
   }
 

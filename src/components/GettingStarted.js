@@ -1,21 +1,15 @@
 import React from 'react';
-import { TweenMax } from "gsap/all";
+import { gsap } from "gsap";
 
 class GettingStarted extends React.Component {
   addButtonStyle() {
     const button = document.querySelector('.getting-started-button')
-
-
-    TweenMax
-      .to(button, .25, {color: 'white', backgroundColor: 'rgb(0, 92, 136)', boxShadow: '2px 10px 21px 0px rgba(0,0,0,0.55)'})
+    gsap.to(button, .25, {color: 'white', backgroundColor: 'rgb(0, 92, 136)', boxShadow: '2px 10px 21px 0px rgba(0,0,0,0.55)'})
     }
 
   removeButtonStyle() {
     const button = document.querySelector('.getting-started-button')
-
-
-    TweenMax
-      .to(button, .25, {color: 'rgb(0, 92, 136)', backgroundColor: '', boxShadow: ''})
+    gsap.to(button, .25, {color: 'rgb(0, 92, 136)', backgroundColor: '', boxShadow: ''})
     }
 
   render() {
