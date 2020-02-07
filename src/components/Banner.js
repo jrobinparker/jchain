@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Banner() {
+const Banner = () => {
   return (
     <div className="banner" id="banner">
       <img src={require('../assets/banner-bg.png')} className="banner-img" alt="banner"/>
@@ -20,3 +20,5 @@ export default function Banner() {
     </div>
   )
 }
+
+export default Banner

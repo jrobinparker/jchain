@@ -1,16 +1,17 @@
 import React from 'react';
+import SocialIcon from './SocialIcon';
 
-export default function Footer() {
+const Footer = () => {
   return (
     <footer>
       <div className="footer">
         <div className="footer-item1">
           <h2>jchain</h2>
           <div className="footer-social">
-            <i className="fab fa-twitter" />
-            <i className="fab fa-medium-m" />
-            <i className="fab fa-reddit-alien" />
-            <i class="fab fa-telegram-plane" />
+            <SocialIcon icon={'fa-twitter'} />
+            <SocialIcon icon={'fa-medium-m'} />
+            <SocialIcon icon={'fa-reddit-alien'} />
+            <SocialIcon icon={'fa-telegram-plane'} />
           </div>
         </div>
           <div className="footer-item2">
@@ -33,3 +34,5 @@ export default function Footer() {
     </footer>
   )
 }
+
+export default Footer

@@ -1,10 +1,10 @@
 import React from 'react';
 import Nav from './components/Nav';
 import Banner from './components/Banner';
-import About from './components/About';
+import About from './components/about/About';
 import GettingStarted from './components/GettingStarted';
-import News from './components/News';
-import Footer from './components/Footer';
+import News from './components/news/News';
+import Footer from './components/footer/Footer';
 import './App.css';
 import { gsap } from 'gsap';
 import { CSSPlugin } from 'gsap/CSSPlugin';
@@ -36,11 +36,8 @@ class App extends React.Component {
   return (
     <div className="App" id="App">
       <div className="bg">
-
         <Nav />
-
           <div className="container">
-
             <Banner />
             <About />
             <GettingStarted />
