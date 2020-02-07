@@ -2,8 +2,7 @@ import React from 'react';
 import AboutGrid from './AboutGrid';
 import AboutTimeline from './AboutTimeline';
 
-export default function About() {
-
+const About = () => {
   return (
     <div id="about">
       <div className="about">
@@ -12,5 +11,6 @@ export default function About() {
       </div>
     </div>
   )
-
 }
+
+export default About

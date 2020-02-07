@@ -1,4 +1,5 @@
 import React from 'react';
+import AboutTimelineItem from './AboutTimelineItem';
 import VisibilitySensor from 'react-visibility-sensor';
 import { gsap } from "gsap";
 
@@ -62,46 +63,11 @@ class AboutTimeline extends React.Component {
           }}>
           <div id="timeline">
             <div id="timeline-items">
-              <div className="timeline-item">
-                <div className="timeline-point">
-                </div>
-                <div className="timeline-text">
-                  <div className="timeline-date">1/2018</div>
-                  <div>released jchain whitepaper</div>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="timeline-point">
-                </div>
-                <div className="timeline-text">
-                  <div className="timeline-date">3/2018</div>
-                  <div>began development of blockchain</div>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="timeline-point">
-                </div>
-                <div className="timeline-text">
-                  <div className="timeline-date">3/2019</div>
-                  <div>mined genesis block</div>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="timeline-point">
-                </div>
-                <div className="timeline-text">
-                  <div className="timeline-date">10/2019</div>
-                  <div>partnered with 25 blockchains and 10 e-commerce apps</div>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="timeline-point">
-                </div>
-                <div className="timeline-text">
-                  <div className="timeline-date">5/2020</div>
-                  <div>beta sdk release date</div>
-                </div>
-              </div>
+              <AboutTimelineItem date={'1/2018'} about={'released jchain whitepaper'} />
+              <AboutTimelineItem date={'3/2018'} about={'began development of blockchain'} />
+              <AboutTimelineItem date={'3/2019'} about={'mined genesis block'} />
+              <AboutTimelineItem date={'10/2019'} about={'partnered with 25 blockchains and 10 e-commerce apps'} />
+              <AboutTimelineItem date={'5/202'} about={'beta sdk release date'} />
             </div>
           </div>
         </VisibilitySensor>

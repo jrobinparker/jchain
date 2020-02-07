@@ -1,7 +1,8 @@
 import React from 'react';
-import { ReactComponent as Barrier } from '../assets/barrier.svg';
-import { ReactComponent as Timer } from '../assets/timer.svg';
-import { ReactComponent as Handshake } from '../assets/handshake.svg';
+import AboutGridItem from './AboutGridItem';
+import { ReactComponent as Barrier } from '../../assets/barrier.svg';
+import { ReactComponent as Timer } from '../../assets/timer.svg';
+import { ReactComponent as Handshake } from '../../assets/handshake.svg';
 import VisibilitySensor from 'react-visibility-sensor';
 import { gsap } from "gsap";
 
@@ -41,24 +42,24 @@ class AboutGrid extends React.Component {
               })
           }}>
         <div className="about-grid">
-          <div className="grid-item">
-            <Barrier id="barrier" />
-            <h2>low barrier of entry</h2>
-            <p>easy to use transactions interface</p>
-            <p>quickly integrate with your website with widgets</p>
-          </div>
-          <div className="grid-item">
-            <Timer id="timer" />
-            <h2>blazing fast</h2>
-            <p>processes transactions faster than the leading blockchains</p>
-            <p>best-in-class server performance</p>
-          </div>
-          <div className="grid-item">
-            <Handshake id="handshake" />
-            <h2>easily compatible</h2>
-            <p>massively interoperablity for high-level integration and collaboration</p>
-            <p>handles fiat payments</p>
-          </div>
+          <AboutGridItem
+            img={<Barrier id="barrier" />}
+            heading={'low barrier of entry'}
+            p1={'easy to use transactions interface'}
+            p2={'quickly integrate with your website with widgets'}
+          />
+          <AboutGridItem
+            img={<Timer id="timer" />}
+            heading={'blazing fast'}
+            p1={'processes transactions faster than the leading blockchains'}
+            p2={'best-in-class server performance'}
+          />
+          <AboutGridItem
+            img={<Handshake id="handshake" />}
+            heading={'easily compatible'}
+            p1={'massively interoperablity for high-level integration and collaboration'}
+            p2={'handles fiat payments'}
+          />
         </div>
         </VisibilitySensor>
       </div>
