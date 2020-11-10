@@ -1,32 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import AboutGridItem from './AboutGridItem';
 import { ReactComponent as Barrier } from '../../assets/barrier.svg';
 import { ReactComponent as Timer } from '../../assets/timer.svg';
 import { ReactComponent as Handshake } from '../../assets/handshake.svg';
 import VisibilitySensor from 'react-visibility-sensor';
-import { gsap } from "gsap";
+import gsap from "gsap";
 
-class AboutGrid extends React.Component {
-  state = {
-    visible: false
-  }
+const AboutGrid = () => {
 
-  gridTimeline() {
+  function gridTimeline(isVisible) {
     const item1 = document.querySelectorAll('.grid-item')[0]
     const item2 = document.querySelectorAll('.grid-item')[1]
     const item3 = document.querySelectorAll('.grid-item')[2]
 
     const timelineExpand = gsap.timeline();
 
-    timelineExpand
-      .to(item1, .5, { y: -5, opacity: 1 })
-      .to(item2, .5, { y: -5, opacity: 1 })
-      .to(item3, .5, { y: -5, opacity: 1 })
+    if (isVisible) {
+      timelineExpand
+        .to(item1, .5, { y: -5, opacity: 1 })
+        .to(item2, .5, { y: -5, opacity: 1 })
+        .to(item3, .5, { y: -5, opacity: 1 })
     }
-
-  render() {
-    if (this.state.visible) {
-      this.gridTimeline()
     }
 
     return (
@@ -35,11 +29,9 @@ class AboutGrid extends React.Component {
         <p>first envisioned in 2018 by cryptocurrency pioneers, jchain's blockchain network offers unparalleled interoperability across blockchains.</p>
         <p>jchain has developed rapidly since inception and continues to expand by partnering with leading blockchains and exchanges.</p>
         <VisibilitySensor
-          partialVisibility
+            partialVisibility
             onChange={isVisible => {
-              this.setState({
-                visible: isVisible
-              })
+              gridTimeline(isVisible)
           }}>
         <div className="about-grid">
           <AboutGridItem
@@ -64,7 +56,6 @@ class AboutGrid extends React.Component {
         </VisibilitySensor>
       </div>
     )
-  }
 }
 
 export default AboutGrid
