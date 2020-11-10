@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import AboutGridItem from './AboutGridItem';
 import { ReactComponent as Barrier } from '../../assets/barrier.svg';
 import { ReactComponent as Timer } from '../../assets/timer.svg';

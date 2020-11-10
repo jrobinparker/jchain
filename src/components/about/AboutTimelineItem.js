@@ -1,7 +1,6 @@
 import React from 'react';
 
-const AboutTimelineItem = props => {
-  const { date, about } = props
+const AboutTimelineItem = ({ date, about }) => {
   return (
     <div className="timeline-item">
       <div className="timeline-point">

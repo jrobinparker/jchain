@@ -1,7 +1,6 @@
 import React from 'react';
 
-const AboutGridItem = props => {
-  const { img, heading, p1, p2 } = props
+const AboutGridItem = ({ img, heading, p1, p2 }) => {
   return (
     <div className="grid-item">
       {img}
