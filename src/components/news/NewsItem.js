@@ -1,7 +1,6 @@
 import React from 'react';
 
-const NewsItem = props => {
-  const { imgSrc, key, title, date } = props
+const NewsItem = ({ imgSrc, key, title, date }) => {
 
   return (
     <div className="news-item">
