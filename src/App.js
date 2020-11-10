@@ -6,14 +6,8 @@ import GettingStarted from './components/GettingStarted';
 import News from './components/news/News';
 import Footer from './components/footer/Footer';
 import './App.css';
-import { gsap } from 'gsap';
-import { CSSPlugin } from 'gsap/CSSPlugin';
 
-gsap.registerPlugin(CSSPlugin)
-
-class App extends React.Component {
-
-  render() {
+const App = () => {
 
     const app = document.body
 
@@ -47,7 +41,6 @@ class App extends React.Component {
         </div>
     </div>
   )
-}
 }
 
 export default App;
