@@ -3,12 +3,9 @@ import NewsItem from './NewsItem';
 import VisibilitySensor from 'react-visibility-sensor';
 import { gsap } from "gsap";
 
-class News extends React.Component {
-  state = {
-    visible: false
-  }
+const News = () => {
 
-  displayItems() {
+  function displayItems(isVisible) {
     const item1 = document.querySelectorAll('.news-item')[0]
     const item2 = document.querySelectorAll('.news-item')[1]
     const item3 = document.querySelectorAll('.news-item')[2]
@@ -18,19 +15,15 @@ class News extends React.Component {
 
     const displayItems = gsap.timeline();
 
-    displayItems
-      .to(item1, .5, { y: -5, opacity: 1 })
-      .to(item2, .25, { y: -5, opacity: 1 })
-      .to(item3, .25, { y: -5, opacity: 1 })
-      .to(item4, .25, { y: -5, opacity: 1 })
-      .to(item5, .25, { y: -5, opacity: 1 })
-      .to(item6, .25, { y: -5, opacity: 1 })
-  }
-
-  render() {
-
-  if (this.state.visible) {
-    this.displayItems()
+    if (isVisible) {
+      displayItems
+        .to(item1, .5, { y: -5, opacity: 1 })
+        .to(item2, .25, { y: -5, opacity: 1 })
+        .to(item3, .25, { y: -5, opacity: 1 })
+        .to(item4, .25, { y: -5, opacity: 1 })
+        .to(item5, .25, { y: -5, opacity: 1 })
+        .to(item6, .25, { y: -5, opacity: 1 })
+    }
   }
 
   return (
@@ -42,23 +35,19 @@ class News extends React.Component {
       </div>
       <VisibilitySensor
         partialVisibility
-        onChange={isVisible => {
-          this.setState({
-            visible: isVisible
-          })
-        }}>
+        onChange={isVisible => displayItems(isVisible)}>
       <div className="news-items">
         <NewsItem imgSrc={'whitepaper.jpg'} key={'1'} title={'whitepaper released'} date={'january 1, 2018'} />
         <NewsItem imgSrc={'dev-team.jpg'} key={'2'} title={'meet the dev team'} date={'march 15, 2018'} />
         <NewsItem imgSrc={'gen-block.jpg'} key={'3'} title={'genesis block mined'} date={'march 1, 2019'} />
-        <NewsItem imgSrc={'partnerships.jpg'} key={'4'} title={'new partnerships'} date={'october 20, 2019'} />
-        <NewsItem imgSrc={'sdk.jpg'} key={'5'} title={'beta sdk update'} date={'january 1, 2020'} />
-        <NewsItem imgSrc={'qa.jpg'} key={'6'} title={'dev team q&a'} date={'january 10, 2020'} />
+        <NewsItem imgSrc={'partnerships.jpg'} key={'4'} title={'new partnerships'} date={'january 20, 2020'} />
+        <NewsItem imgSrc={'sdk.jpg'} key={'5'} title={'beta sdk update'} date={'september 1, 2020'} />
+        <NewsItem imgSrc={'qa.jpg'} key={'6'} title={'dev team q&a'} date={'october 10, 2020'} />
       </div>
       </VisibilitySensor>
       </div>
     </div>
   )
-}}
+}
 
 export default News
