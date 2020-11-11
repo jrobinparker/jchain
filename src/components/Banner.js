@@ -1,13 +1,6 @@
-import React, { useEffect } from 'react';
-import gsap from 'gsap';
+import React from 'react';
 
 const Banner = () => {
-  useEffect(() => {
-    const element1 = document.getElementById('path9210')
-    if (element1) {
-      alert(element1)
-    }
-  })
   return (
     <div className="banner" id="banner">
       <img src={require('../assets/nodes-and-server3.png')} className="banner-img" alt="banner"/>
