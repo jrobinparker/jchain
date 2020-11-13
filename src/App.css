@@ -786,7 +786,9 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .banner-button {
-    width: 92%;
+    width: 50%;
+    position: relative;
+    left: 25%;
     text-align: center;
     background-color: rgba(0,53,77,.7);
   }
@@ -969,7 +971,9 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .banner-button {
-    width: 92%;
+    width: 50%;
+    position: relative;
+    left: 25%;
     text-align: center;
     background-color: rgba(0,53,77,.7);
   }
@@ -1153,9 +1157,9 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .banner-button {
-    width: 35%;
+    width: 50%;
     position: relative;
-    left: 30%;
+    left: 25%;
     text-align: center;
     background-color: rgba(0,53,77,.7);
   }

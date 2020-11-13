@@ -5,46 +5,57 @@ import gsap from "gsap";
 
 const AboutTimeline = () => {
 
-  function timelineExpand(isVisible) {
-    const items = document.querySelectorAll('.timeline-item')
+  function timelineExpand(isVisible, resize) {
     const item1 = document.querySelectorAll('.timeline-item')[0]
     const item2 = document.querySelectorAll('.timeline-item')[1]
     const item3 = document.querySelectorAll('.timeline-item')[2]
     const item4 = document.querySelectorAll('.timeline-item')[3]
     const item5 = document.querySelectorAll('.timeline-item')[4]
+    const timeline = document.getElementById('timeline')
     const tl = gsap.timeline();
 
-    if (isVisible && window.matchMedia('(orientation: landscape)').matches) {
+    if (isVisible || resize) {
+      if (window.matchMedia('(orientation: landscape)').matches) {
 
-      gsap.set("#timeline", {width: '1%', height: '2.5px'})
-      gsap.set(items, {opacity: 0, y: 0})
+          tl
+            .to(timeline, 1.25, {opacity: 1, width: '95%', height: '2.5px'})
+            .to(item1, .25, { y: -5, opacity: 1 })
+            .to(item2, .25, { y: -5, opacity: 1 })
+            .to(item3, .25, { y: -5, opacity: 1 })
+            .to(item4, .25, { y: -5, opacity: 1 })
+            .to(item5, .25, { y: -5, opacity: 1 })
 
-      tl
-        .to("#timeline", 1.25, {width: '95%', height: '2.5px'})
-        .to(item1, .25, { y: -5, opacity: 1 })
-        .to(item2, .25, { y: -5, opacity: 1 })
-        .to(item3, .25, { y: -5, opacity: 1 })
-        .to(item4, .25, { y: -5, opacity: 1 })
-        .to(item5, .25, { y: -5, opacity: 1 })
       }
 
-    if (isVisible && window.matchMedia('(orientation: portrait)').matches) {
-        gsap.set("#timeline", {height: '.1%', width: '3px'})
-        gsap.set(items, {opacity: 0})
+    if (window.matchMedia('(orientation: portrait)').matches) {
 
         tl
-          .to("#timeline", 1.25, {height: '70%', width: '3px'})
+          .to(timeline, 1.25, {opacity: 1, height: '70%', width: '2.5px'})
           .to(item1, .25, { x: -5, opacity: 1 })
           .to(item2, .25, { x: 5, opacity: 1 })
           .to(item3, .25, { x: -5, opacity: 1 })
           .to(item4, .25, { x: -5, opacity: 1 })
           .to(item5, .25, { x: -5, opacity: 1 })
+
       }
+    }
+
+  }
+
+  function resetTimeline() {
+    const items = document.querySelectorAll('.timeline-item')
+    const timeline = document.getElementById('timeline')
+
+    gsap.to(items, {opacity: 0, y: 0})
+    gsap.to(timeline, {opacity: 0, width: '2.5px', height: '2.5px'})
   }
 
   useEffect(() => {
     window.addEventListener('resize', () => {
-      timelineExpand()
+      resetTimeline()
+      setTimeout(() => {
+        timelineExpand(true)
+      }, 1000)
     })
   }, [])
 
