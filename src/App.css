@@ -611,14 +611,12 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .about {
-    height: 230vh;
-    margin-bottom: 20%;
+    height: 240vh;
   }
 
   .about-grid {
     flex-direction: column;
     width: 90%;
-    padding-bottom: 10%;
   }
 
   .grid-item {
@@ -627,7 +625,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .timeline {
-    height: 70vh;
+    height: 75vh;
     display: block;
   }
 
@@ -667,7 +665,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .getting-started {
-    height: 130vh;
+    height: 125vh;
   }
 
   .getting-started-content {
@@ -696,6 +694,184 @@ clip-path: ellipse(100% 95% at 48% 100%);
 
   .news {
     height: 150vh;
+  }
+
+  .news-content {
+    position: relative;
+    top: -20%;
+  }
+  .news-items {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .news-item {
+    height: 100%;
+    width: 60%;
+    margin-bottom: 5%;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 10%;
+  }
+
+  .footer-item1 {
+    width: 90%;
+    text-align: center;
+  }
+
+  .footer-social {
+    left: -1%;
+    margin: 5% 0 5% 0;
+  }
+
+  .footer-item2, .footer-item3 {
+    width: 90%;
+    text-align: center;
+  }
+
+  .footer-item2 div {
+    font-size: 1.25rem;
+  }
+
+  .footer-item3 {
+    margin-bottom: 5%;
+  }
+  .footer-item3 div {
+    font-size: 1.25rem;
+  }
+
+}
+
+/* iPhone X, iPhone 11 Pro, and iPhone 12 mini */
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .nav {
+    display: none;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+  }
+
+  .banner-img {
+    width: 80%;
+    height: auto;
+    top: 30%;
+    left: -1%;
+  }
+
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    top: 25%;
+    left: -35%;
+    width: 170%;
+    font-size: 1rem;
+  }
+
+  .banner-header {
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner-button {
+    width: 92%;
+    text-align: center;
+    background-color: rgba(0,53,77,.7);
+  }
+
+  .about {
+    height: 210vh;
+  }
+
+  .about-grid {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .grid-item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .timeline {
+    height: 75vh;
+    display: block;
+  }
+
+  #timeline {
+    height: 1%;
+    width: 3px;
+    position: relative;
+    left: 50%;
+  }
+
+  #timeline-items {
+    flex-direction: column;
+  }
+
+  .timeline-item {
+    flex-direction: row;
+  }
+
+  .timeline-item:nth-of-type(2) {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+    margin-right: -10px;
+  }
+
+  .timeline-item:nth-of-type(4) {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+    margin-right: -20px;
+  }
+
+  .timeline-point {
+    margin-right: 10px;
+  }
+
+  .timeline-text {
+    width: 150px;
+  }
+
+  .getting-started {
+    height: 125vh;
+  }
+
+  .getting-started-content {
+    position: relative;
+  }
+
+  .getting-started-steps {
+    height: 60vh;
+    flex-direction: column;
+    padding: 20% 0px 5% 0px;
+  }
+
+  .getting-started-text {
+    font-size: 1.25rem;
+    width: 100%;
+    align-self: center;
+  }
+
+  .getting-started-button {
+    font-size: 1rem;
+  }
+
+  .getting-started-img {
+    width: 100%;
+  }
+
+  .news {
+    height: 130vh;
   }
 
   .news-content {
@@ -794,14 +970,13 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .about {
-    height: 230vh;
+    height: 210vh;
     margin-bottom: 20%;
   }
 
   .about-grid {
     flex-direction: column;
     width: 90%;
-    padding-bottom: 10%;
   }
 
   .grid-item {
@@ -979,14 +1154,13 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .about {
-    height: 230vh;
+    height: 210vh;
     margin-bottom: 20%;
   }
 
   .about-grid {
     flex-direction: column;
     width: 90%;
-    padding-bottom: 10%;
   }
 
   .grid-item {
@@ -1165,14 +1339,12 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .about {
-    height: 230vh;
-    margin-bottom: 20%;
+    height: 220vh;
   }
 
   .about-grid {
     flex-direction: column;
     width: 90%;
-    padding-bottom: 10%;
   }
 
   .grid-item {
@@ -1251,7 +1423,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .news {
-    height: 80vh;
+    height: 70vh;
   }
 
   .news-content {
@@ -1370,7 +1542,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .about {
-    height: 160vh;
+    height: 100vh;
   }
 
   .about-grid {
@@ -1378,11 +1550,15 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .getting-started {
-    height: 90vh;
+    height: 70vh;
   }
 
   .getting-started-button {
     width: 50%;
+  }
+
+  .news {
+    height: 70vh;
   }
 
   .news-items {
@@ -1408,12 +1584,15 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .about {
-    height: 165vh;
-    margin-bottom: -5%;
+    height: 100vh;
   }
 
   .getting-started {
-    margin-bottom: 10%;
+    height: 80vh;
+  }
+
+  .news {
+    height: 80vh;
   }
 
 
