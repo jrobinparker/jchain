@@ -1,7 +1,7 @@
 {
   "name": "jchain",
   "version": "0.1.0",
-  "homepage": "http://jrobinparker.github.io/jchain",
+  "homepage": "https://j-chain.herokuapp.com/",
   "private": true,
   "dependencies": {
     "gsap": "^3.5.1",
