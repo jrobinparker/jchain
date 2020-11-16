@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/jchain/static/css/main.a34c4f93.chunk.css",
-    "main.js": "/jchain/static/js/main.8005aeb2.chunk.js",
-    "main.js.map": "/jchain/static/js/main.8005aeb2.chunk.js.map",
+    "main.css": "/jchain/static/css/main.a88d8bbc.chunk.css",
+    "main.js": "/jchain/static/js/main.0b1c7c01.chunk.js",
+    "main.js.map": "/jchain/static/js/main.0b1c7c01.chunk.js.map",
     "runtime~main.js": "/jchain/static/js/runtime~main.72ba0c62.js",
     "runtime~main.js.map": "/jchain/static/js/runtime~main.72ba0c62.js.map",
-    "static/js/2.85668df1.chunk.js": "/jchain/static/js/2.85668df1.chunk.js",
-    "static/js/2.85668df1.chunk.js.map": "/jchain/static/js/2.85668df1.chunk.js.map",
+    "static/js/2.a5b2bf36.chunk.js": "/jchain/static/js/2.a5b2bf36.chunk.js",
+    "static/js/2.a5b2bf36.chunk.js.map": "/jchain/static/js/2.a5b2bf36.chunk.js.map",
     "index.html": "/jchain/index.html",
-    "precache-manifest.d08716d887a39bce3379e14644820352.js": "/jchain/precache-manifest.d08716d887a39bce3379e14644820352.js",
+    "precache-manifest.65d2dcd7853409a2c326835708f4f0d1.js": "/jchain/precache-manifest.65d2dcd7853409a2c326835708f4f0d1.js",
     "service-worker.js": "/jchain/service-worker.js",
-    "static/css/main.a34c4f93.chunk.css.map": "/jchain/static/css/main.a34c4f93.chunk.css.map",
+    "static/css/main.a88d8bbc.chunk.css.map": "/jchain/static/css/main.a88d8bbc.chunk.css.map",
     "static/media/banner-bg.png": "/jchain/static/media/banner-bg.6f6c4776.png",
-    "static/media/barrier.3c45340d.svg": "/jchain/static/media/barrier.3c45340d.svg",
+    "static/media/barrier.svg": "/jchain/static/media/barrier.3c45340d.svg",
     "static/media/dev-team.jpg": "/jchain/static/media/dev-team.fe5cad5b.jpg",
-    "static/media/handshake.4b73f89a.svg": "/jchain/static/media/handshake.4b73f89a.svg",
+    "static/media/handshake.svg": "/jchain/static/media/handshake.4b73f89a.svg",
     "static/media/laptop.png": "/jchain/static/media/laptop.9a0ba910.png",
+    "static/media/nodes-and-server3.png": "/jchain/static/media/nodes-and-server3.98407e8d.png",
     "static/media/partnerships.jpg": "/jchain/static/media/partnerships.067ce8cf.jpg",
     "static/media/sdk.jpg": "/jchain/static/media/sdk.a14f4c4c.jpg",
-    "static/media/timer.114ab381.svg": "/jchain/static/media/timer.114ab381.svg"
+    "static/media/timer.svg": "/jchain/static/media/timer.114ab381.svg"
   }
 }
