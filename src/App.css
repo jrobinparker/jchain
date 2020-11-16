@@ -436,13 +436,12 @@ clip-path: ellipse(100% 95% at 48% 100%);
 
   .about {
     height: 230vh;
-    margin-bottom: 20%;
   }
 
   .about-grid {
     flex-direction: column;
     width: 90%;
-    padding-bottom: 10%;
+    height: 115vh;
   }
 
   .grid-item {
@@ -451,7 +450,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .timeline {
-    height: 90vh;
+    height: 60vh;
   }
 
   #timeline {
@@ -520,7 +519,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .news {
-    height: 180vh;
+    height: 190vh;
   }
 
   .news-items {
@@ -612,12 +611,13 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .about {
-    height: 240vh;
+    height: 250vh;
   }
 
   .about-grid {
     flex-direction: column;
     width: 90%;
+    height: 90vh;
   }
 
   .grid-item {
@@ -790,12 +790,13 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .about {
-    height: 210vh;
+    height: 220vh;
   }
 
   .about-grid {
     flex-direction: column;
     width: 90%;
+    height: 70vh;
   }
 
   .grid-item {
@@ -844,7 +845,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .getting-started {
-    height: 125vh;
+    height: 120vh;
   }
 
   .getting-started-content {
@@ -971,13 +972,14 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .about {
-    height: 210vh;
-    margin-bottom: 20%;
+    height: 300vh;
   }
 
   .about-grid {
     flex-direction: column;
     width: 90%;
+    height: 100vh;
+    background: black;
   }
 
   .grid-item {
@@ -1155,13 +1157,13 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .about {
-    height: 210vh;
-    margin-bottom: 20%;
+    height: 230vh;
   }
 
   .about-grid {
     flex-direction: column;
     width: 90%;
+    height: 50vh;
   }
 
   .grid-item {
@@ -1240,7 +1242,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .news {
-    height: 170vh;
+    height: 180vh;
   }
 
   .news-content {
@@ -1340,12 +1342,13 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .about {
-    height: 220vh;
+    height: 230vh;
   }
 
   .about-grid {
     flex-direction: column;
     width: 90%;
+    height: 50vh;
   }
 
   .grid-item {
@@ -1424,7 +1427,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .news {
-    height: 70vh;
+    height: 80vh;
   }
 
   .news-content {
