@@ -1060,7 +1060,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .news {
-    height: 120vh;
+    height: 150vh;
   }
 
   .news-content {
@@ -1076,7 +1076,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
 
   .news-item {
     height: 100%;
-    width: 40%;
+    width: 60%;
     margin-bottom: 5%;
   }
 
