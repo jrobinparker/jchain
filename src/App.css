@@ -980,7 +980,6 @@ clip-path: ellipse(100% 95% at 48% 100%);
     flex-direction: column;
     width: 90%;
     height: 100vh;
-    background: black;
   }
 
   .grid-item {
@@ -990,7 +989,8 @@ clip-path: ellipse(100% 95% at 48% 100%);
 
   .timeline {
     height: 80vh;
-    display: block;
+    position: relative;
+    top: 10%;
   }
 
   #timeline {
@@ -998,6 +998,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
     width: 3px;
     position: relative;
     left: 50%;
+
   }
 
   #timeline-items {
@@ -1066,6 +1067,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
     position: relative;
     top: -30%;
   }
+
   .news-items {
     flex-direction: row;
     align-items: center;
@@ -1074,7 +1076,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
 
   .news-item {
     height: 100%;
-    width: 60%;
+    width: 100%;
     margin-bottom: 5%;
   }
 
@@ -1543,7 +1545,6 @@ clip-path: ellipse(100% 95% at 48% 100%);
 
     .about {
       height: 250vh;
-      background: black;
     }
 
     .about-grid {
