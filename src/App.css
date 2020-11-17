@@ -1158,13 +1158,12 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .about {
-    height: 230vh;
+    height: 260vh;
   }
 
   .about-grid {
     flex-direction: column;
     width: 90%;
-    height: 100vh;
   }
 
   .grid-item {
@@ -1215,7 +1214,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .getting-started {
-    height: 90vh;
+    height: 100vh;
   }
 
   .getting-started-content {
@@ -1244,7 +1243,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .news {
-    height: 170vh;
+    height: 210vh;
   }
 
   .news-content {
