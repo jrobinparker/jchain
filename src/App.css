@@ -1344,7 +1344,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .about {
-    height: 260vh;
+    height: 270vh;
   }
 
   .about-grid {
@@ -1360,7 +1360,8 @@ clip-path: ellipse(100% 95% at 48% 100%);
 
   .timeline {
     height: 80vh;
-    display: block;
+    position: relative;
+    top: 25%;
   }
 
   #timeline {
@@ -1400,7 +1401,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .getting-started {
-    height: 110vh;
+    height: 100vh;
   }
 
   .getting-started-content {
