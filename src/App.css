@@ -1843,7 +1843,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
       }
 
       .about {
-        height: 100vh;
+        height: 130vh;
       }
 
       .about-grid {
@@ -1887,7 +1887,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
       }
 
       .getting-started {
-        height: 70vh;
+        height: 90vh;
       }
 
       .getting-started-text {
