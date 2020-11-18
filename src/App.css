@@ -1361,8 +1361,6 @@ clip-path: ellipse(100% 95% at 48% 100%);
 
   .timeline {
     height: 80vh;
-    position: relative;
-    top: -1%;
   }
 
   #timeline {
