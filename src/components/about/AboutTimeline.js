@@ -60,26 +60,26 @@ const AboutTimeline = () => {
   }, [])
 
     return (
-      <div className="timeline box">
-        <h1>development timeline</h1>
-        <p>we started in january 2018 and continue to develop, improve, and expand jchain</p>
-        <VisibilitySensor
-          partialVisibility
-            onChange={isVisible => {
-              timelineExpand(isVisible)
-            }
-          }>
-          <div id="timeline">
-            <div id="timeline-items">
-              <AboutTimelineItem date={'1/2018'} about={'released jchain whitepaper'} />
-              <AboutTimelineItem date={'3/2018'} about={'began development of blockchain'} />
-              <AboutTimelineItem date={'3/2019'} about={'mined genesis block'} />
-              <AboutTimelineItem date={'1/2020'} about={'partnered with 25 blockchains and 10 e-commerce apps'} />
-              <AboutTimelineItem date={'9/2020'} about={'beta sdk release date'} />
+        <div className="timeline">
+          <h1>development timeline</h1>
+          <p>we started in january 2018 and continue to develop, improve, and expand jchain</p>
+          <VisibilitySensor
+            partialVisibility
+              onChange={isVisible => {
+                timelineExpand(isVisible)
+              }
+            }>
+            <div id="timeline">
+              <div id="timeline-items">
+                <AboutTimelineItem date={'1/2018'} about={'released jchain whitepaper'} />
+                <AboutTimelineItem date={'3/2018'} about={'began development of blockchain'} />
+                <AboutTimelineItem date={'3/2019'} about={'mined genesis block'} />
+                <AboutTimelineItem date={'1/2020'} about={'partnered with 25 blockchains and 10 e-commerce apps'} />
+                <AboutTimelineItem date={'9/2020'} about={'beta sdk release date'} />
+              </div>
             </div>
-          </div>
-        </VisibilitySensor>
-      </div>
+          </VisibilitySensor>
+        </div>
     )
 }
 

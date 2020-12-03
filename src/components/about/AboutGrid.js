@@ -1,5 +1,4 @@
 import React from 'react';
-import Box from '../Box';
 import AboutGridItem from './AboutGridItem';
 import { ReactComponent as Barrier } from '../../assets/barrier.svg';
 import { ReactComponent as Timer } from '../../assets/timer.svg';
@@ -26,7 +25,6 @@ const AboutGrid = () => {
     }
 
     return (
-      <Box>
       <div className="about-content">
         <h1>what is jchain?</h1>
         <p>first envisioned in 2018 by cryptocurrency pioneers, jchain's blockchain network offers unparalleled interoperability across blockchains.</p>
@@ -58,7 +56,6 @@ const AboutGrid = () => {
         </div>
         </VisibilitySensor>
       </div>
-      </Box>
     )
 }
 

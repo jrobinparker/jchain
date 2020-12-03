@@ -160,6 +160,7 @@ a {
   padding-bottom: 2.5%;
   position: relative;
   left: 1%;
+  opacity: 0;
 }
 
 /* What is jchain */
@@ -171,6 +172,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 .about-content {
@@ -1045,6 +1047,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
 
   .timeline {
     height: 80vh;
+    width: 100%;
     position: relative;
     top: 10%;
   }
