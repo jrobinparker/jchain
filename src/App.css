@@ -1011,14 +1011,15 @@ clip-path: ellipse(100% 95% at 48% 100%);
     background-color: rgba(0,53,77,.7);
   }
 
+  .box {
+    width: 80%;
+  }
+
   .about {
     height: 270vh;
   }
 
   .about-content {
-    height: 36%;
-    position: relative;
-    left: 3.5%;
     padding-top: 0px;
     padding-bottom: 0px;
   }
@@ -1214,6 +1215,10 @@ clip-path: ellipse(100% 95% at 48% 100%);
     background-color: rgba(0,53,77,.7);
   }
 
+  .box {
+    width: 80%;
+  }
+
   .about {
     height: 260vh;
   }
@@ -1223,7 +1228,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
     padding-bottom: 0px;
     position: relative;
     left: 2.5%;
-    height: 40%;
+    height: 35%;
   }
 
   .about-content h1, .about-grid h2 {
@@ -1415,12 +1420,16 @@ clip-path: ellipse(100% 95% at 48% 100%);
     background-color: rgba(0,53,77,.7);
   }
 
+  .box {
+    width: 90%;
+  }
+
   .about {
     height: 210vh;
   }
 
   .about-content {
-    height: 45%;
+    height: 95vh;
     padding-top: 0px;
     padding-bottom: 0px;
   }
@@ -1622,9 +1631,8 @@ clip-path: ellipse(100% 95% at 48% 100%);
   }
 
   .about-content {
-    height: 46%;
-    width: 80%;
     padding: 10px;
+    height: 87vh;
   }
 
   .about-content h1, .about-grid h2 {
@@ -1830,6 +1838,10 @@ clip-path: ellipse(100% 95% at 48% 100%);
       background-color: rgba(0,53,77,.7);
     }
 
+    .box {
+      width: 90%;
+    }
+
     .about {
       height: 250vh;
     }
@@ -2004,6 +2016,10 @@ clip-path: ellipse(100% 95% at 48% 100%);
       background-color: rgba(0,53,77,.7);
     }
 
+    .box {
+      width: 90%;
+    }
+
     .about {
       height: 200vh;
     }
@@ -2144,6 +2160,10 @@ clip-path: ellipse(100% 95% at 48% 100%);
         height: auto;
         left: 30%;
         top: 5%;
+      }
+
+      .box {
+        width: 90%;
       }
 
       .about {
