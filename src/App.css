@@ -152,9 +152,13 @@ a {
   height: 135vh;
   width: 100vw;
   margin-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-content {
+  width: 80%;
   background: #00b4db; /* fallback for old browsers */
  background: -webkit-linear-gradient(left, #00b4db, #0083b0);
  background: -o-linear-gradient(left, #00b4db, #0083b0);
@@ -162,8 +166,7 @@ a {
  -webkit-box-shadow: 14px 17px 32px -13px rgba(0,0,0,0.75);
 -moz-box-shadow: 14px 17px 32px -13px rgba(0,0,0,0.75);
 box-shadow: 14px 17px 32px -13px rgba(0,0,0,0.75);
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+
   padding-top: 2.5%;
   padding-bottom: 2.5%;
   border-radius: 0.75%;
@@ -1003,6 +1006,22 @@ clip-path: ellipse(100% 95% at 48% 100%);
     height: 270vh;
   }
 
+  .about-content {
+    height: 36%;
+    position: relative;
+    left: 3.5%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .about-content h1, .about-grid h2 {
+    font-size: 3vh;
+  }
+
+  .about-content p {
+    font-size: 1.25vh;
+  }
+
   .about-grid {
     flex-direction: column;
     width: 90%;
@@ -1190,6 +1209,22 @@ clip-path: ellipse(100% 95% at 48% 100%);
     height: 260vh;
   }
 
+  .about-content {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: relative;
+    left: 2.5%;
+    height: 40%;
+  }
+
+  .about-content h1, .about-grid h2 {
+    font-size: 3vh;
+  }
+
+  .about-content p {
+    font-size: 1.5vh;
+  }
+
   .about-grid {
     flex-direction: column;
     width: 90%;
@@ -1375,6 +1410,20 @@ clip-path: ellipse(100% 95% at 48% 100%);
     height: 210vh;
   }
 
+  .about-content {
+    height: 45%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .about-content h1, .grid-item h2 {
+    font-size: 2.5vh;
+  }
+
+  .about-content p {
+    font-size: 1.5vh;
+  }
+
   .about-grid {
     flex-direction: column;
     width: 90%;
@@ -1517,7 +1566,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
 
 /* Large Tablets */
 
-@media only screen and (orientation: portrait) and (min-width: 769px) and (max-width: 1025px) {
+@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1025px) {
 
   .nav {
     display: none;
@@ -1561,6 +1610,20 @@ clip-path: ellipse(100% 95% at 48% 100%);
 
   .about {
     height: 180vh;
+  }
+
+  .about-content {
+    height: 46%;
+    width: 80%;
+    padding: 10px;
+  }
+
+  .about-content h1, .about-grid h2 {
+    font-size: 2vh;
+  }
+
+  .about-content p {
+    font-size: 1.25vh;
   }
 
   .about-grid {
@@ -1762,6 +1825,14 @@ clip-path: ellipse(100% 95% at 48% 100%);
       height: 250vh;
     }
 
+    .about-content h1 {
+      font-size: 5vh;
+    }
+
+    .about-content p {
+      font-size: 2vh;
+    }
+
     .about-grid {
       position: relative;
       left: -2%;
@@ -1777,7 +1848,7 @@ clip-path: ellipse(100% 95% at 48% 100%);
     }
 
     .grid-item h2 {
-      font-size: 1.25rem;
+      font-size: 5vh;
     }
 
     .timeline {
@@ -1928,6 +1999,14 @@ clip-path: ellipse(100% 95% at 48% 100%);
       height: 200vh;
     }
 
+    .about-content h1 {
+      font-size: 5vh;
+    }
+
+    .about-content p {
+      font-size: 2vh;
+    }
+
     .about-grid {
       position: relative;
       left: -2%;
@@ -2062,9 +2141,12 @@ clip-path: ellipse(100% 95% at 48% 100%);
         height: 130vh;
       }
 
-      .about-grid {
-        position: relative;
-        left: -2%;
+      .about-content h1 {
+        font-size: 4vh;
+      }
+
+      .about-content p {
+        font-size: 1.75vh;
       }
 
       .grid-item {
