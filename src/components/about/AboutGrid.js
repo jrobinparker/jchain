@@ -1,4 +1,5 @@
 import React from 'react';
+import Box from '../Box';
 import AboutGridItem from './AboutGridItem';
 import { ReactComponent as Barrier } from '../../assets/barrier.svg';
 import { ReactComponent as Timer } from '../../assets/timer.svg';
@@ -8,17 +9,16 @@ import gsap from "gsap";
 
 const AboutGrid = () => {
 
-  function gridTimeline(isVisible) {
-    const box = document.querySelector('.about-content')
+  function showAbout(isVisible) {
+    const content = document.querySelector('.about-content')
     const item1 = document.querySelectorAll('.grid-item')[0]
     const item2 = document.querySelectorAll('.grid-item')[1]
     const item3 = document.querySelectorAll('.grid-item')[2]
 
     const tl = gsap.timeline();
-    gsap.set(box, { y: 100 })
     if (isVisible) {
       tl
-        .to(box, .5, {y: -5, opacity: 1})
+        .to(content, .5, { y: -5, opacity: 1 })
         .to(item1, .5, { y: -5, opacity: 1 })
         .to(item2, .5, { y: -5, opacity: 1 })
         .to(item3, .5, { y: -5, opacity: 1 })
@@ -26,6 +26,7 @@ const AboutGrid = () => {
     }
 
     return (
+      <Box>
       <div className="about-content">
         <h1>what is jchain?</h1>
         <p>first envisioned in 2018 by cryptocurrency pioneers, jchain's blockchain network offers unparalleled interoperability across blockchains.</p>
@@ -33,7 +34,7 @@ const AboutGrid = () => {
         <VisibilitySensor
             partialVisibility
             onChange={isVisible => {
-              gridTimeline(isVisible)
+              showAbout(isVisible)
           }}>
         <div className="about-grid">
           <AboutGridItem
@@ -57,6 +58,7 @@ const AboutGrid = () => {
         </div>
         </VisibilitySensor>
       </div>
+      </Box>
     )
 }
 

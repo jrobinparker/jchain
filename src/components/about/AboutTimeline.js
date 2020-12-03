@@ -60,7 +60,7 @@ const AboutTimeline = () => {
   }, [])
 
     return (
-      <div className="timeline">
+      <div className="timeline box">
         <h1>development timeline</h1>
         <p>we started in january 2018 and continue to develop, improve, and expand jchain</p>
         <VisibilitySensor
