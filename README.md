@@ -6,6 +6,7 @@ Taking inspiration from a number of blockchain and EV company home pages, I crea
  
 # features / frameworks / npm packages used
 * React
+* React Hooks
 * React Visibility Sensor
 * GSAP
 * Vanilla JS event listener for window resizes and orientation changes
