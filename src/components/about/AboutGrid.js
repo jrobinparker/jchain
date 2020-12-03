@@ -17,7 +17,6 @@ const AboutGrid = () => {
     const tl = gsap.timeline();
     if (isVisible) {
       tl
-        .to(content, .5, { y: -5, opacity: 1 })
         .to(item1, .5, { y: -5, opacity: 1 })
         .to(item2, .5, { y: -5, opacity: 1 })
         .to(item3, .5, { y: -5, opacity: 1 })
