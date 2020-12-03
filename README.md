@@ -9,4 +9,4 @@ Taking inspiration from a number of blockchain and EV company home pages, I crea
 * React Visibility Sensor
 * GSAP
 * Vanilla JS event listener for window resizes and orientation changes
-* Custom CSS - no frameworks used
+* Custom CSS - responsive, no frameworks used
