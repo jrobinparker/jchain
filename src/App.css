@@ -154,6 +154,28 @@ a {
   margin-bottom: 10%;
 }
 
+.about-content {
+  width: 60%;
+  position: relative;
+  left: 5%;
+  background: #00b4db; /* fallback for old browsers */
+ background: -webkit-linear-gradient(left, #00b4db, #0083b0);
+ background: -o-linear-gradient(left, #00b4db, #0083b0);
+ background: linear-gradient(to right, #00b4db, #0083b0); /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ -webkit-box-shadow: 14px 17px 32px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: 14px 17px 32px -13px rgba(0,0,0,0.75);
+box-shadow: 14px 17px 32px -13px rgba(0,0,0,0.75);
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  border-radius: 0.75%;
+}
+
+.about-content {
+  color: white;
+}
+
 .about-grid {
   margin-top: 5%;
   margin-left: 5%;
@@ -163,7 +185,6 @@ a {
 
 .grid-item {
   width: 30%;
-  background-color: #E6E6EA;
   padding: 20px 0px 20px 0px;
   text-align: center;
   opacity: 0;
@@ -176,7 +197,7 @@ a {
 #barrier, #timer, #handshake {
   width: 80px;
   height: auto;
-  filter: invert(20%) sepia(61%) saturate(3097%) hue-rotate(180deg) brightness(91%) contrast(101%);
+  fill: white;
 }
 
 .timeline {
