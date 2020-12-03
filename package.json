@@ -1,7 +1,7 @@
 {
   "name": "jchain",
   "version": "0.1.0",
-  "homepage": "https://j-chain.herokuapp.com/",
+  "homepage": "https://jchain.netlify.app/",
   "private": true,
   "dependencies": {
     "gsap": "^3.5.1",
