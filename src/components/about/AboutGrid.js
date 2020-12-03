@@ -9,14 +9,16 @@ import gsap from "gsap";
 const AboutGrid = () => {
 
   function gridTimeline(isVisible) {
+    const box = document.querySelector('.about-content')
     const item1 = document.querySelectorAll('.grid-item')[0]
     const item2 = document.querySelectorAll('.grid-item')[1]
     const item3 = document.querySelectorAll('.grid-item')[2]
 
-    const timelineExpand = gsap.timeline();
-
+    const tl = gsap.timeline();
+    gsap.set(box, { y: 100 })
     if (isVisible) {
-      timelineExpand
+      tl
+        .to(box, .5, {y: -5, opacity: 1})
         .to(item1, .5, { y: -5, opacity: 1 })
         .to(item2, .5, { y: -5, opacity: 1 })
         .to(item3, .5, { y: -5, opacity: 1 })
