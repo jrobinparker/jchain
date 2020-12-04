@@ -9,7 +9,6 @@ import gsap from "gsap";
 const AboutGrid = () => {
 
   function showAbout(isVisible) {
-    const content = document.querySelector('.about-content')
     const item1 = document.querySelectorAll('.grid-item')[0]
     const item2 = document.querySelectorAll('.grid-item')[1]
     const item3 = document.querySelectorAll('.grid-item')[2]
