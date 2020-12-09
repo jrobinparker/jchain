@@ -50,15 +50,6 @@ a {
   cursor: pointer;
 }
 
-/* App content container */
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  margin-top: -5%;
-}
-
 /* Banner */
 
 .banner {
@@ -131,9 +122,8 @@ a {
 
 /* What is jchain, Getting Started, and Meet the Team shared styling */
 
-.about, .getting-started, .news {
+.getting-started, .news {
   width: 100vw;
-  text-align: center;
   color: rgb(0,100,147);
 }
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Nav from './components/Nav';
 import Banner from './components/Banner';
 import AboutContainer from './containers/AboutContainer';
@@ -24,22 +24,17 @@ const App = () => {
     }
 
     app.onscroll = () => {
-      setNavStyle()
+    //  setNavStyle()
     }
 
   return (
-    <div className="App" id="App">
-      <div className="bg">
-        <Nav />
-          <div className="container">
-            <Banner />
-            <AboutContainer />
-            <GettingStarted />
-            <News />
-          </div>
-          <Footer />
-        </div>
-    </div>
+    <Fragment>
+      <Banner />
+      <AboutContainer />
+      <GettingStarted />
+      <News />
+    <Footer />
+    </Fragment>
   )
 }
 

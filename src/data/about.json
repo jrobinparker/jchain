@@ -1,0 +1,17 @@
+[
+  {
+    "header": "Low barrier of entry",
+    "subtitle": "easy to use transactions interface allows you to quickly integrate with your website with widgets",
+    "image": "barrier"
+  },
+  {
+    "header": "Blazing fast",
+    "subtitle": "processes transactions faster than the leading blockchains with best-in-class server performance",
+    "image": "timer"
+  },
+  {
+    "header": "Easily compatible",
+    "subtitle": "Maximum interoperablity for high-level integration and collaboration with blockchains, cryptocurrency, and fiat currency",
+    "image": "handshake"
+  }
+]

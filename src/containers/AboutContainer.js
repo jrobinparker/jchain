@@ -1,10 +1,6 @@
 import React from 'react';
 import { About } from '../components';
-import { ReactComponent as Barrier } from '../assets/barrier.svg';
-import { ReactComponent as Timer } from '../assets/timer.svg';
-import { ReactComponent as Handshake } from '../assets/handshake.svg';
-import VisibilitySensor from 'react-visibility-sensor';
-import gsap from "gsap";
+import aboutData from '../data/about.json';
 
 export default function AboutContainer() {
   return (
@@ -16,6 +12,20 @@ export default function AboutContainer() {
       <About.Subtitle>
         jchain has developed rapidly since inception and continues to expand by partnering with leading blockchains and exchanges.
       </About.Subtitle>
+      {aboutData.map(item => {
+        return (
+          <About.Frame>
+          <About.Item>
+            <About.FrameHeader>
+              {item.header}
+            </About.FrameHeader>
+            <About.FrameSubtitle>
+              {item.subtitle}
+            </About.FrameSubtitle>
+          </About.Item>
+          <About.Image src={`${item.image}`} />
+        </About.Frame>
+        )})}
     </About>
   )
 }

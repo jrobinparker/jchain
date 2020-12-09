@@ -1,8 +1,17 @@
 import React from 'react';
-import { Container, Header, Subtitle, Image } from './styles/about';
+import { Item, Inner, Container, Frame, Header, Subtitle, Image, FrameHeader, FrameSubtitle } from './styles/about';
 
-export default function About({ children, ...restProps }) {
+export default function About({ direction, children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>
+}
+
+About.Frame = function AboutFrame({ children, ...restProps }) {
+  return <Frame {...restProps}>{children}</Frame>
+}
+
+
+About.Item = function AboutItem({ children, ...restProps }) {
+  return <Item {...restProps}>{children}</Item>
 }
 
 About.Header = function AboutHeader({ children, ...restProps }) {
@@ -14,5 +23,13 @@ About.Subtitle = function AboutSubtitle({ children, ...restProps }) {
 }
 
 About.Image = function AboutImage({ src, ...restProps }) {
-  return <Image src={`./assets/${src}.svg`} {...restProps} />
+  return <Image src={`./images/${src}.svg`} {...restProps} />
+}
+
+About.FrameHeader = function AboutFrameHeader({ children, ...restProps }) {
+  return <FrameHeader {...restProps}>{children}</FrameHeader>
+}
+
+About.FrameSubtitle = function AboutFrameSubtitle({ children, ...restProps }) {
+  return <FrameSubtitle {...restProps}>{children}</FrameSubtitle>
 }
