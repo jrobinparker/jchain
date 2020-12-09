@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from './components/Nav';
 import Banner from './components/Banner';
-import About from './components/about/About';
+import AboutContainer from './containers/AboutContainer';
 import GettingStarted from './components/GettingStarted';
 import News from './components/news/News';
 import Footer from './components/footer/Footer';
@@ -33,7 +33,7 @@ const App = () => {
         <Nav />
           <div className="container">
             <Banner />
-            <About />
+            <AboutContainer />
             <GettingStarted />
             <News />
           </div>
