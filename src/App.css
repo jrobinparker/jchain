@@ -122,7 +122,7 @@ a {
 
 /* What is jchain, Getting Started, and Meet the Team shared styling */
 
-.getting-started, .news {
+.news {
   width: 100vw;
   color: rgb(0,100,147);
 }
@@ -184,10 +184,6 @@ a {
   justify-content: center;
 }
 
-.getting-started-text p {
-  width: 70%;
-  margin-top: -10%;
-}
 
 .getting-started-button {
   width: 30%;

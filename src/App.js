@@ -3,7 +3,7 @@ import Nav from './components/Nav';
 import Banner from './components/Banner';
 import AboutContainer from './containers/AboutContainer';
 import TimelineContainer from './containers/TimelineContainer';
-import GettingStarted from './components/GettingStarted';
+import GettingStartedContainer from './containers/GettingStartedContainer';
 import News from './components/news/News';
 import Footer from './components/footer/Footer';
 import './App.css';
@@ -33,7 +33,7 @@ const App = () => {
       <Banner />
       <AboutContainer />
       <TimelineContainer />
-      <GettingStarted />
+      <GettingStartedContainer />
       <News />
     <Footer />
     </Fragment>

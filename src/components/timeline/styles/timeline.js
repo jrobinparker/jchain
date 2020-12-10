@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.section`
   color: black;
   margin: 0 50px;
+  height: 100vh;
 `;
 
 export const Header = styled.h1`
@@ -17,10 +18,10 @@ export const Subtitle = styled.p`
 
 export const Frame = styled.div`
   width: 100%;
-  height: 50vh;
   display: flex;
   align-items: center;
   align-self: center;
+  height: 50vh;
 `;
 
 export const Line = styled.div`
