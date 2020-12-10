@@ -6,7 +6,7 @@ export default function NewsContainer() {
   return (
     <News>
       <News.Header>News</News.Header>
-      <News.Subheader>Latest news, updates, and more from the dev team</News.Subheader>>
+      <News.Subheader>Latest news, updates, and more from the dev team</News.Subheader>
       <News.Frame>
         {newsData.map(item => {
           return (

@@ -22,15 +22,11 @@ News.Item = function NewsItem({ children, ...restProps }) {
 }
 
 News.Image = function NewsImage({ src, ...restProps }) {
-  return <Image src={`./images/${src}.png`} />
+  return <Image src={`./images/${src}.jpg`} />
 }
 
 News.Title = function NewsTitle({ children, ...restProps }) {
   return <Title {...restProps}>{children}</Title>
-}
-
-News.Text = function NewsText({ children, ...restProps }) {
-  return <Text {...restProps}>{children}</Text>
 }
 
 News.Date = function NewsDate({ children, ...restProps }) {

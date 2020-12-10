@@ -4,6 +4,7 @@ export const Container = styled.section`
   display: flex;
   flex-direction: row;
   margin: 0 50px;
+  height: 70vh;
 
   @media (max-width: 900px) {
     flex-direction: column-reverse;
@@ -47,8 +48,6 @@ export const Subtitle = styled.p`
 export const Image = styled.img`
   height: auto;
   width: 50%;
-  position: relative;
-  top: 40%;
 `;
 
 export const Button = styled.button`

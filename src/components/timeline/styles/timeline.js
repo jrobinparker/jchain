@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.section`
   color: black;
   margin: 0 50px;
-  height: 100vh;
+  height: 70vh;
+  margin-bottom: 10px;
 `;
 
 export const Header = styled.h1`
@@ -20,21 +21,19 @@ export const Frame = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  align-self: center;
-  height: 50vh;
+  height: 30vh;
 `;
 
 export const Line = styled.div`
-  width: 90%;
+  width: 100%;
   height: 2.5px;
   background-color: #E6E6EA;
-  margin-left: 2.5%;
 `;
 
 export const Group = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 `;
 
 export const Item = styled.div`
