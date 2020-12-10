@@ -25,7 +25,7 @@ const GettingStarted = () => {
                   <div className="getting-started-button" onMouseEnter={() => addButtonStyle()} onMouseLeave={() => removeButtonStyle()}>get started <i className="fas fa-arrow-circle-right" /></div>
                 </div>
                 <div className="getting-started-img">
-                  <img src={require('../assets/laptop.png')} id="laptop" alt="laptop"/>
+                  <img src='../../laptop.png' id="laptop" alt="laptop"/>
                 </div>
               </div>
             </div>

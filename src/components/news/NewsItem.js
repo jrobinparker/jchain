@@ -4,7 +4,7 @@ const NewsItem = ({ imgSrc, key, title, date }) => {
 
   return (
     <div className="news-item">
-      <img src={require(`../../assets/${imgSrc}`)} alt={`news-item${key}`} />
+      <img src={`../${imgSrc}`} alt={`news-item${key}`} />
       <div className="news-item-title">
         {title}
       </div>

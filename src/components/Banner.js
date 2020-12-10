@@ -3,7 +3,7 @@ import React from 'react';
 const Banner = () => {
   return (
     <div className="banner" id="banner">
-      <img src={require('../assets/nodes-and-server3.png')} className="banner-img" alt="banner"/>
+      <img src='../../images/nodes-and-server3.png' className="banner-img" alt="banner"/>
       <div className="banner-content">
         <div className="banner-text">
           <span className="banner-header">building the future</span>
