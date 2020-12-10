@@ -5,7 +5,7 @@ import AboutContainer from './containers/AboutContainer';
 import TimelineContainer from './containers/TimelineContainer';
 import GettingStartedContainer from './containers/GettingStartedContainer';
 import NewsContainer from './containers/NewsContainer';
-import Footer from './components/footer/Footer';
+import FooterContainer from './containers/FooterContainer';
 import './App.css';
 
 const App = () => {
@@ -35,7 +35,7 @@ const App = () => {
       <TimelineContainer />
       <GettingStartedContainer />
       <NewsContainer />
-    <Footer />
+      <FooterContainer />
     </Fragment>
   )
 }
