@@ -16,7 +16,7 @@ export const Container = styled.section`
 export const Frame = styled.div`
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 70%;
   padding: 15px 0;
 
   @media (max-width: 900px) {

@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Whitepaper released",
+    "date": "January 1, 2018",
+    "image": "whitepaper"
+  },
+  {
+    "title": "Meet the dev team",
+    "date": "March 15, 2018",
+    "image": "dev-team"
+  },
+  {
+    "title": "Genesis block mined",
+    "date": "March 1, 2019",
+    "image": "gen-block"
+  },
+  {
+    "title": "New partnerships",
+    "date": "January 20, 2020",
+    "image": "partnerships"
+  },
+  {
+    "title": "Beta SDK update",
+    "date": "September 1, 2020",
+    "image": "sdk"
+  },
+  {
+    "title": "Dev team Q&A",
+    "date": "Octber 10, 2020",
+    "image": "qa"
+  }
+]

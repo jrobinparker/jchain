@@ -4,7 +4,7 @@ import Banner from './components/Banner';
 import AboutContainer from './containers/AboutContainer';
 import TimelineContainer from './containers/TimelineContainer';
 import GettingStartedContainer from './containers/GettingStartedContainer';
-import News from './components/news/News';
+import NewsContainer from './containers/NewsContainer';
 import Footer from './components/footer/Footer';
 import './App.css';
 
@@ -34,7 +34,7 @@ const App = () => {
       <AboutContainer />
       <TimelineContainer />
       <GettingStartedContainer />
-      <News />
+      <NewsContainer />
     <Footer />
     </Fragment>
   )

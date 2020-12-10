@@ -23,7 +23,7 @@ export const Frame = styled.div`
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
-    
+
     &:nth-of-type(2) {
       flex-direction: column-reverse;
     }
