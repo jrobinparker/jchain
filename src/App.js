@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import Nav from './components/Nav';
+import NavContainer from './containers/NavContainer';
 import BannerContainer from './containers/BannerContainer';
 import AboutContainer from './containers/AboutContainer';
 import TimelineContainer from './containers/TimelineContainer';
@@ -30,6 +30,7 @@ const App = () => {
 
   return (
     <Fragment>
+      <NavContainer />
       <BannerContainer />
       <AboutContainer />
       <TimelineContainer />
