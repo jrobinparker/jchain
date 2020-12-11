@@ -21,7 +21,12 @@ export const Frame = styled.div`
 
 export const Header = styled.h2``;
 
-export const Link = styled.a``;
+export const Link = styled.a`
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+`;
 
 export const IconRow = styled.div`
   display: flex;
@@ -32,6 +37,7 @@ export const IconRow = styled.div`
 export const Icon = styled.i``;
 
 export const Disclaimer = styled.div`
+  font-size: 15px;
   margin-top: 50px;
   width: 80%;
 `;
