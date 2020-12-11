@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const Container = styled.section`
   height: 100vh;
   width: 100vw;
+  position: relative;
+  top: -10%;
   background: rgb(0,100,147);
   background: -moz-linear-gradient(342deg, rgba(0,100,147,1) 0%, rgba(0,0,0,1) 100%);
   background: -webkit-linear-gradient(342deg, rgba(0,100,147,1) 0%, rgba(0,0,0,1) 100%);
@@ -52,7 +54,7 @@ export const Button = styled.button`
 
   &:hover {
     cursor: pointer;
-    background-color: rgba(0,110,106,1);
+    background: rgb(0,100,147);
     color: white;
     backdrop-filter: blur(40px);
     border-color: transparent;

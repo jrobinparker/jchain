@@ -7,15 +7,17 @@ export default function NavContainer() {
       <Nav.Brand>
         jchain
       </Nav.Brand>
-      <Nav.Link>
-        getting started
-      </Nav.Link>
-      <Nav.Link>
-        news
-      </Nav.Link>
-      <Nav.Link>
+      <Nav.Group>
+        <Nav.Link>
+          getting started
+        </Nav.Link>
+        <Nav.Link>
           news
-      </Nav.Link>
+        </Nav.Link>
+        <Nav.Link>
+          login
+        </Nav.Link>
+      </Nav.Group>
     </Nav>
   )
 }
