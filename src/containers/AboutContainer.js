@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { About } from '../components';
 import aboutData from '../data/about.json';
+import gsap from "gsap";
+import VisibilitySensor from 'react-visibility-sensor';
 
 export default function AboutContainer() {
   return (
@@ -23,7 +25,9 @@ export default function AboutContainer() {
               {item.subtitle}
             </About.FrameSubtitle>
           </About.Item>
-          <About.Image src={`${item.image}`} />
+          <About.Image
+            src={`${item.image}`}
+          />
         </About.Frame>
         )})}
     </About>

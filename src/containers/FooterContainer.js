@@ -1,6 +1,5 @@
 import React from 'react';
 import { Footer } from '../components';
-import { Twitter } from '@styled-icons/fa-brands';
 
 export default function FooterContainer() {
   return (
@@ -8,7 +7,7 @@ export default function FooterContainer() {
         <Footer.Frame>
           <Footer.Header>jchain</Footer.Header>
           <Footer.IconRow>
-            <Twitter />
+            <Footer.Icon icon={'fa-twitter'} />
             <Footer.Icon icon={'fa-medium-m'} />
             <Footer.Icon icon={'fa-reddit-alien'} />
             <Footer.Icon icon={'fa-telegram-plane'} />

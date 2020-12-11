@@ -60,4 +60,5 @@ export const FrameSubtitle = styled.p`
 export const Image = styled.img`
   height: auto;
   width: 200px;
+  opacity: 1;
 `;

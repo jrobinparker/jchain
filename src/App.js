@@ -1,11 +1,7 @@
-import React, { Fragment } from 'react';
-import NavContainer from './containers/NavContainer';
-import BannerContainer from './containers/BannerContainer';
-import AboutContainer from './containers/AboutContainer';
-import TimelineContainer from './containers/TimelineContainer';
-import GettingStartedContainer from './containers/GettingStartedContainer';
-import NewsContainer from './containers/NewsContainer';
-import FooterContainer from './containers/FooterContainer';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import HomeContainer from './containers/HomeContainer';
+
 import './App.css';
 
 const App = () => {
@@ -29,15 +25,11 @@ const App = () => {
     }
 
   return (
-    <Fragment>
-      <NavContainer />
-      <BannerContainer />
-      <AboutContainer />
-      <TimelineContainer />
-      <GettingStartedContainer />
-      <NewsContainer />
-      <FooterContainer />
-    </Fragment>
+    <Router>
+      <Switch>
+        <Route exact path to='/' component={HomeContainer} />
+      </Switch>
+    </Router>
   )
 }
 
