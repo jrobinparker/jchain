@@ -22,15 +22,17 @@ export const Container = styled.section`
 export const Base = styled.form`
   background: rgba(255, 255, 255, 0.5);
   border-radius: 5px;
-  height: 40%;
+  height: 60%;
   width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  align-content: center;
+  padding: 0px 10px 0px 10px;
 `;
 
 export const Title = styled.h1`
+
   color: black;
   font-size: 30px;
 `;
@@ -38,17 +40,19 @@ export const Title = styled.h1`
 export const Text = styled.p``;
 
 export const TextSmall = styled.p`
+  font-family: 'Work Sans', sans-serif;
   color: black;
+  text-align: center;
 `;
 
 export const Input = styled.input`
   width: 90%;
   padding: 10px;
   font-family: 'Inconsolata', sans-serif;
-  margin-bottom: 10px;
   background-color: transparent;
   border: none;
   border-radius: 5px;
+  margin-bottom: 20px;
   font-size: 20px;
 
   &::placeholder {
