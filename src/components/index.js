@@ -5,3 +5,4 @@ export { default as News } from './news';
 export { default as Footer } from './footer';
 export { default as Banner } from './banner';
 export { default as Nav } from './nav';
+export { default as Form } from './form';

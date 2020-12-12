@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import HomeContainer from './containers/HomeContainer';
+import Home from './pages/Home';
+import SignIn from './pages/SignIn';
 
 import './App.css';
 
@@ -27,7 +28,8 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path to='/' component={HomeContainer} />
+        <Route exact path to='/' component={Home} />
+        <Route path to='/signin' component={SignIn} />
       </Switch>
     </Router>
   )

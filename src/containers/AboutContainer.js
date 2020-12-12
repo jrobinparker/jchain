@@ -5,6 +5,7 @@ import gsap from "gsap";
 import VisibilitySensor from 'react-visibility-sensor';
 
 export default function AboutContainer() {
+
   return (
     <About>
       <About.Header>What is jchain?</About.Header>
