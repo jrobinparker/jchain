@@ -8,14 +8,18 @@ export default function NavContainer() {
         jchain
       </Nav.Brand>
       <Nav.Group>
-        <Nav.Link>
+        <Nav.Link
+          onClick={() => document.querySelector(".about-frame").scrollIntoView({behavior: 'smooth'})}
+        >
           getting started
         </Nav.Link>
-        <Nav.Link>
+        <Nav.Link
+          onClick={() => document.querySelector(".news-container").scrollIntoView({behavior: 'smooth'})}
+        >
           news
         </Nav.Link>
-        <Nav.Link>
-          login
+        <Nav.Link to='/signin'>
+          sign in
         </Nav.Link>
       </Nav.Group>
     </Nav>

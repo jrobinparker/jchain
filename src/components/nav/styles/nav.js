@@ -21,11 +21,15 @@ export const Group = styled.div`
   display: flex;
   justify-content: space-between;
 
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
   @media (orientation: portrait) {
     width: 50%;
   }
 `;
 
 export const Link = styled.a`
-  cursor: pointer;
 `;
