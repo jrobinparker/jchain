@@ -7,6 +7,7 @@ export const Container = styled.div`
   padding: 10px 20px;
   border-radius: 5px;
   margin-bottom: 20px;
+  background: aliceblue;
 
   &:last-of-type {
     width: 90%;
