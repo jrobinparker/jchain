@@ -16,6 +16,10 @@ export const Container = styled.section`
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  @media (orientation: portrait) {
+    flex-direction: column;
+  }
 `;
 
 export const Frame = styled.div`
@@ -27,6 +31,12 @@ export const Frame = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @media (orientation: portrait) {
+    text-align: center;
+    width: 100%;
+    left: 0%;
+  }
 `;
 
 export const Title = styled.h1``;
@@ -40,6 +50,10 @@ export const Image = styled.img`
   right: -20%;
   top: 5%;
   animation: fadeIn 1s linear;
+
+  @media (orientation: portrait) {
+    display: none;
+  }
 `;
 
 export const Button = styled.button`
@@ -58,5 +72,10 @@ export const Button = styled.button`
     color: white;
     backdrop-filter: blur(40px);
     border-color: transparent;
+  }
+
+  @media (orientation: portrait) {
+    align-self: center;
+    width: 80%;
   }
 `;

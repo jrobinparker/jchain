@@ -13,7 +13,7 @@ export const Frame = styled.div.attrs(({ className }) => ({
   opacity: 0;
   text-align: center;
   position: relative;
-  top: 10%;
+  top: 20%;
 `;
 
 export const Item = styled.div`

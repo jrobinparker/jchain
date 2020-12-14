@@ -17,9 +17,13 @@ export const Brand = styled.a`
 export const Group = styled.div`
   margin-left: auto;
   margin-right: 10%;
-  width: 25%;
+  width: 35%;
   display: flex;
   justify-content: space-between;
+
+  @media (orientation: portrait) {
+    width: 50%;
+  }
 `;
 
 export const Link = styled.a`

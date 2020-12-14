@@ -3,8 +3,6 @@ import styled from 'styled-components';
 export const Inner = styled.div``;
 
 export const Container = styled.section`
-  display: flex;
-  flex-direction: column;
   margin: 0 50px;
 `;
 

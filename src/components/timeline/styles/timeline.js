@@ -9,8 +9,8 @@ export const Container = styled.section.attrs(({ className }) => ({
   margin-bottom: 10px;
   opacity: 0;
 
-  @media (max-width: 900px) {
-    height: 150vh;
+  @media (orientation: portrait) {
+    height: 130vh;
   }
 `;
 
@@ -30,9 +30,9 @@ export const Frame = styled.div`
   align-items: center;
   height: 30vh;
 
-  @media (max-width: 775px) {
+  @media (orientation: portrait) {
     flex-direction: column;
-    height: 80vh;
+    height: 100vh;
   }
 `;
 
@@ -42,9 +42,6 @@ export const Line = styled.div.attrs(({ className }) => ({
   width: 1%;
   height: 2.5px;
   background-color: #E6E6EA;
-
-  @media (max-width: 900px) {
-  }
 `;
 
 export const Group = styled.div`
@@ -53,7 +50,7 @@ export const Group = styled.div`
   flex-direction: row;
   justify-content: center;
 
-  @media (max-width: 775px) {
+  @media (orientation: portrait) {
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
@@ -68,9 +65,9 @@ export const Item = styled.div.attrs(({ className }) => ({
   align-items: center;
   opacity: 0;
 
-  @media (max-width: 775px) {
+  @media (orientation: portrait) {
     flex-direction: row;
-    width: 30vw;
+    width: 50vw;
   }
 `;
 
