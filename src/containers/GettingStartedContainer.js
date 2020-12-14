@@ -20,6 +20,7 @@ export default function GettingStartedContainer() {
 
   return (
     <VisibilitySensor
+      partialVisibility
       onChange={isVisible => displayItems(isVisible)}>
       <GettingStarted>
         <GettingStarted.Frame
