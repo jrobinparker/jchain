@@ -1,39 +1,24 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  display: flex;
-  flex-direction: row;
   margin: 0 50px;
-  height: 70vh;
-
-  @media (max-width: 900px) {
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
-
-  }
+  height: 75vh;
 `;
 
 export const Frame = styled.div.attrs(({ className }) => ({
   className: className
   }))`
-  display: flex;
-  flex-direction: column;
-  width: 70%;
+  width: 100%;
   padding: 15px 0;
   opacity: 0;
-  @media (max-width: 900px) {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
+  text-align: center;
+  position: relative;
+  top: 10%;
 `;
 
 export const Item = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 70%;
+  width: 100%;
+  text-align: center;
 `;
 
 

@@ -7,7 +7,7 @@ export default function BannerContainer() {
         <Banner.Image src='nodes-and-server3' />
         <Banner.Frame>
           <Banner.Title>jchain: the next generation blockchain network</Banner.Title>
-          <Banner.Button>What is jchain?</Banner.Button>
+          <Banner.Button onClick={() => document.querySelector(".about-frame").scrollIntoView({behavior: 'smooth'})}>What is jchain?</Banner.Button>
         </Banner.Frame>
       </Banner>
   )
