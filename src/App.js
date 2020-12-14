@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Home, SignIn, SignUp, Dashboard } from './pages';
+import { Home, SignIn, SignUp, DashboardPage } from './pages';
 
 import './App.css';
 
@@ -30,7 +30,7 @@ const App = () => {
         <Route exact path='/' component={Home} />
         <Route exact path='/signin' component={SignIn} />
         <Route exact path='/signup' component={SignUp} />
-        <Route exact path='/dashboard' component={Dashboard} />
+        <Route exact path='/dashboard' component={DashboardPage} />
       </Switch>
     </Router>
   )

@@ -2,12 +2,12 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   height: 100vh;
-  width: 10vw;
+  width: 15vw;
   background: rgb(0,100,147);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 10px;
 `;
 
 export const Avatar = styled.img`

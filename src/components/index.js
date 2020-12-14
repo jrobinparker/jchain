@@ -7,3 +7,5 @@ export { default as Banner } from './banner';
 export { default as Nav } from './nav';
 export { default as Form } from './form';
 export { default as Sidebar } from './sidebar';
+export { default as Card } from './card';
+export { default as Dashboard } from './dashboard';
