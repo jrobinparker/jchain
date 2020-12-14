@@ -1,10 +1,17 @@
 import styled from 'styled-components';
 
-export const Container = styled.section`
+export const Container = styled.section.attrs(({ className }) => ({
+  className: className
+}))`
   color: black;
   margin: 0 50px;
   height: 70vh;
   margin-bottom: 10px;
+  opacity: 0;
+
+  @media (max-width: 900px) {
+    height: 150vh;
+  }
 `;
 
 export const Header = styled.h1`
@@ -22,25 +29,49 @@ export const Frame = styled.div`
   display: flex;
   align-items: center;
   height: 30vh;
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+    height: 80vh;
+  }
 `;
 
-export const Line = styled.div`
-  width: 100%;
+export const Line = styled.div.attrs(({ className }) => ({
+  className: className
+}))`
+  width: 1%;
   height: 2.5px;
   background-color: #E6E6EA;
+
+  @media (max-width: 900px) {
+  }
 `;
 
 export const Group = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+
+  @media (max-width: 750px) {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 `;
 
-export const Item = styled.div`
+export const Item = styled.div.attrs(({ className }) => ({
+  className: className
+}))`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -5px;
+  opacity: 0;
+
+  @media (max-width: 750px) {
+    flex-direction: row;
+    width: 30vw;
+  }
 `;
 
 export const Point = styled.div`
