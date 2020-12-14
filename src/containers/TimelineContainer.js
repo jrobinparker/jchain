@@ -78,6 +78,7 @@ export default function TimelineContainer() {
       <Timeline.Header>Development timeline</Timeline.Header>
       <Timeline.Subtitle>We started in january 2018 and continue to develop, improve, and expand jchain</Timeline.Subtitle>
       <VisibilitySensor
+        partialVisibility
         onChange={isVisible => {
           displayItems(isVisible)
           timelineExpand(isVisible)
