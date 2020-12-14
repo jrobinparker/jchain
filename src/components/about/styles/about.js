@@ -8,12 +8,15 @@ export const Container = styled.section`
   margin: 0 50px;
 `;
 
-export const Frame = styled.div`
+export const Frame = styled.div.attrs(({ className }) => ({
+  className: className
+  }))`
   display: flex;
   flex-direction: row;
   width: 100%;
   padding: 50px 0;
   justify-content: space-around;
+  opacity: 0;
 
   &:nth-of-type(2) {
     flex-direction: row-reverse;
@@ -57,8 +60,9 @@ export const FrameSubtitle = styled.p`
   font-size: 30px;
 `;
 
-export const Image = styled.img`
+export const Image = styled.img.attrs(({ className }) => ({
+  className: className
+}))`
   height: auto;
   width: 200px;
-  opacity: 1;
 `;
