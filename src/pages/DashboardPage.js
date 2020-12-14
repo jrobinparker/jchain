@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import SidebarContainer from '../containers/SidebarContainer';
 import { Dashboard } from '../components';
 import { Card } from '../components';
+import GraphContainer from '../containers/GraphContainer';
 
 export default function DashboardPage() {
   return (
@@ -29,9 +30,7 @@ export default function DashboardPage() {
               <Card.Item>12/13/2020: 30,000 JCHN DEPOSIT</Card.Item>
             </Card.List>
           </Card>
-          <Card>
-            <Card.Title>Graph</Card.Title>
-          </Card>
+          <GraphContainer />
         </Dashboard.Cards>
       </Dashboard.Content>
     </Dashboard>

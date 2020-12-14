@@ -20,6 +20,11 @@ export const Title = styled.h1`
   font-size: 20px;
 `;
 
+export const Graph = styled.div`
+  display: flex;
+  background: black;
+`
+
 export const List = styled.ul`
   list-style: none;
   color: black;

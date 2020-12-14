@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Title, List, Item } from './styles/card';
+import { Container, Title, Graph, List, Item } from './styles/card';
 
 export default function Card({ children, ...restProps}) {
   return <Container {...restProps}>{children}</Container>
@@ -7,6 +7,10 @@ export default function Card({ children, ...restProps}) {
 
 Card.Title = function CardTitle({ children, ...restProps }) {
   return <Title {...restProps}>{children}</Title>
+}
+
+Card.Graph = function CardGraph({ children, ...restProps }) {
+  return <Graph {...restProps}>{children}</Graph>
 }
 
 Card.List = function CardList({ children, ...restProps }) {

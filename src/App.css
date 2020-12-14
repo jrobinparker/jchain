@@ -8,6 +8,16 @@ li {
   list-style: none;
 }
 
+.card-graph {
+  height: 60%;
+  width: 85%;
+  border: .25px solid lightgray;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background: aliceblue;
+}
+
 /* Nav */
 
 .nav {
