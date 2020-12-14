@@ -30,7 +30,7 @@ export const Frame = styled.div`
   align-items: center;
   height: 30vh;
 
-  @media (max-width: 750px) {
+  @media (max-width: 775px) {
     flex-direction: column;
     height: 80vh;
   }
@@ -53,7 +53,7 @@ export const Group = styled.div`
   flex-direction: row;
   justify-content: center;
 
-  @media (max-width: 750px) {
+  @media (max-width: 775px) {
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
@@ -68,7 +68,7 @@ export const Item = styled.div.attrs(({ className }) => ({
   align-items: center;
   opacity: 0;
 
-  @media (max-width: 750px) {
+  @media (max-width: 775px) {
     flex-direction: row;
     width: 30vw;
   }
