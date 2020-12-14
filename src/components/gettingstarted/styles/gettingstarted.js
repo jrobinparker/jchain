@@ -14,12 +14,14 @@ export const Container = styled.section`
   }
 `;
 
-export const Frame = styled.div`
+export const Frame = styled.div.attrs(({ className }) => ({
+  className: className
+  }))`
   display: flex;
   flex-direction: column;
   width: 70%;
   padding: 15px 0;
-
+  opacity: 0;
   @media (max-width: 900px) {
     flex-direction: column;
     align-items: center;
@@ -45,9 +47,12 @@ export const Subtitle = styled.p`
   font-size: 30px;
 `;
 
-export const Image = styled.img`
+export const Image = styled.img.attrs(({ className }) => ({
+  className: className
+  }))`
   height: auto;
   width: 50%;
+  opacity: 0;
 `;
 
 export const Button = styled.button`
@@ -57,7 +62,7 @@ export const Button = styled.button`
   border: 2px solid black;
   border-radius: 5px;
   background-color: transparent;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 
   &:hover {
     cursor: pointer;
