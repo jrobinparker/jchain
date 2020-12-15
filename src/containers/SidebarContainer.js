@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { Fragment, useState } from 'react';
 import { Sidebar } from '../components';
 
 export default function SidebarContainer() {
+  const [ open, setOpen ] = useState(false);
+
   return (
-    <Sidebar>
+    <Fragment>
+    <Sidebar.Icon
+      open={open}
+      onClick={() => setOpen(!open)}
+    />
+    <Sidebar open={open}>
       <Sidebar.Avatar src={'avatar'} />
       <Sidebar.Group>
         <Sidebar.Link>Home</Sidebar.Link>
@@ -12,6 +19,7 @@ export default function SidebarContainer() {
         <Sidebar.Link>Sign Out</Sidebar.Link>
       </Sidebar.Group>
     </Sidebar>
+    </Fragment>
   )
 
 }

@@ -4,7 +4,7 @@ export const Container = styled.div`
   height: 100vh;
   width: 100vw;
   display: flex;
-  background: lightgray;
+  background: #E6EBE0;
   overflow-x: hidden;
   overflow-y: hidden
 `;
@@ -16,7 +16,8 @@ export const Title = styled.h1`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
+  position: relative;
+  left: -5%;
   align-items: center;
   padding-top: 10px;
 `;

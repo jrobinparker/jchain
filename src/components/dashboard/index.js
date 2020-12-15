@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Title, Cards, Content } from './styles/dashboard';
 
 export default function Dashboard({ children, ...restProps }) {

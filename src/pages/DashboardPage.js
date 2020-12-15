@@ -1,7 +1,6 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import SidebarContainer from '../containers/SidebarContainer';
-import { Dashboard } from '../components';
-import { Card } from '../components';
+import { Dashboard, Card } from '../components';
 import GraphContainer from '../containers/GraphContainer';
 
 export default function DashboardPage() {
@@ -22,8 +21,8 @@ export default function DashboardPage() {
           </Card>
           <Card>
             <Card.Title>Current holdings</Card.Title>
-            <Card.Title>200,000 JCHN</Card.Title>
             <Card.List>
+              <Card.Item>200,000 JCHN</Card.Item>
               <Card.Item>12/14/2020: 1000 JCHN DEPOSIT</Card.Item>
               <Card.Item>12/14/2020: 1000 JCHN DEPOSIT</Card.Item>
               <Card.Item>12/14/2020: 2000 JCHN WITHDRAWAL</Card.Item>

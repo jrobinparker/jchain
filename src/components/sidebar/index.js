@@ -1,8 +1,20 @@
 import React from 'react';
-import { Container, Avatar, Group, Link } from './styles/sidebar';
+import { Container, Icon, Avatar, Group, Link } from './styles/sidebar';
 
 export default function Sidebar({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>
+}
+
+
+Sidebar.Icon = function SidebarIcon({ children, ...restProps }) {
+
+  return (
+    <Icon {...restProps}>
+      <div />
+      <div />
+      <div />
+    </Icon>
+  )
 }
 
 Sidebar.Avatar = function SidebarAvatar({ src, ...restProps }) {

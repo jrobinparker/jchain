@@ -4,7 +4,7 @@ export const Container = styled.div`
   height: 30%;
   width: 40%;
   border: .25px solid lightgray;
-  padding: 10px 20px;
+  padding: 0px;
   border-radius: 5px;
   margin-bottom: 20px;
   background: aliceblue;
@@ -16,8 +16,14 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-  color: black;
+  color: #E6EBE0;
   font-size: 20px;
+  background: #22817F;
+  margin: 0;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 `;
 
 export const Graph = styled.div`
@@ -28,7 +34,7 @@ export const Graph = styled.div`
 export const List = styled.ul`
   list-style: none;
   color: black;
-  margin-left: -40px;
+  margin-left: -30px;
 `;
 
 export const Item = styled.li`
