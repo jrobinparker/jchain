@@ -4,9 +4,10 @@ export const Container = styled.div`
   height: 100vh;
   width: 100vw;
   display: flex;
-  background: #E6EBE0;
+  flex-direction: row;
+  background: #16113A;
   overflow-x: hidden;
-  overflow-y: hidden
+  overflow-y: hidden;
 `;
 
 export const Title = styled.h1`
@@ -16,18 +17,20 @@ export const Title = styled.h1`
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
+  align-self: center;
+  width: 100%;
+  padding: 10px;
   position: relative;
   left: -5%;
-  align-items: center;
-  padding-top: 10px;
+
+  &:last-of-type {
+    width: 30%;
+  }
 `;
 
 export const Cards = styled.div`
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  flex-direction: column;
   width: 100%;
   height: 100%;
-  padding: 30px 20px;
 `;

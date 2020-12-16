@@ -1,8 +1,12 @@
 import React from 'react';
-import { Container, Title, Graph, List, Item } from './styles/card';
+import { Container, Large, Title, Graph, List, Item, Table, TableRow, TableHeader, TableText } from './styles/card';
 
 export default function Card({ children, ...restProps}) {
   return <Container {...restProps}>{children}</Container>
+}
+
+Card.Large = function CardLarge({ children, ...restProps }) {
+  return <Large {...restProps}>{children}</Large>
 }
 
 Card.Title = function CardTitle({ children, ...restProps }) {
@@ -19,4 +23,20 @@ Card.List = function CardList({ children, ...restProps }) {
 
 Card.Item = function CardItem({ children, ...restProps }) {
   return <Item {...restProps}>{children}</Item>
+}
+
+Card.Table = function CardTable({ children, ...restProps }) {
+  return <Table {...restProps}>{children}</Table>
+}
+
+Card.TableRow = function CardRow({ children, ...restProps }) {
+  return <TableRow {...restProps}>{children}</TableRow>
+}
+
+Card.TableHeader = function CardTableHeader({ children, ...restProps }) {
+  return <TableHeader {...restProps}>{children}</TableHeader>
+}
+
+Card.TableText = function CardTableText({ children, ...restProps }) {
+  return <TableText {...restProps}>{children}</TableText>
 }

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.section`
   height: 100vh;
   width: 20vw;
-  background: rgb(0,100,147);
+  background: #272953;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +24,7 @@ export const Icon = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: black;
+    background-color: white;
     border-radius: 10px;
     transform-origin: 1px;
     margin-bottom: 5px;
