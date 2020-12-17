@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Large, Title, Graph, List, Item, Table, TableRow, TableHeader, TableText } from './styles/card';
+import { Container, Large, Title, Graph, List, Item, Info, Table, TableRow, TableHeader, TableText } from './styles/card';
 
 export default function Card({ children, ...restProps}) {
   return <Container {...restProps}>{children}</Container>
@@ -23,6 +23,10 @@ Card.List = function CardList({ children, ...restProps }) {
 
 Card.Item = function CardItem({ children, ...restProps }) {
   return <Item {...restProps}>{children}</Item>
+}
+
+Card.Info = function CardInfo({ children, ...restProps }) {
+  return <Info {...restProps}>{children}</Info>
 }
 
 Card.Table = function CardTable({ children, ...restProps }) {

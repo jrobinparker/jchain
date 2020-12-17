@@ -88,7 +88,7 @@ export default function ChartContainer({ data, type }) {
         </div>
       );
       case 'line': return (
-        <div style={{ width: '90%', height: '75%', backgroundColor: 'transparent', padding: '10px', borderRadius:'5px' }}>
+        <div style={{ width: '97%', height: '80%', backgroundColor: 'transparent', padding: '10px', borderRadius:'5px' }}>
                 <Line
                   data={chartData}
                   options={{ responsive: true, maintainAspectRatio: false, legend: false }}

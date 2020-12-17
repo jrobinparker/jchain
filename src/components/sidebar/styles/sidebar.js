@@ -3,13 +3,23 @@ import styled from 'styled-components';
 export const Container = styled.section`
   height: 100vh;
   width: 20vw;
-  background: #272953;
+  background: #9F9FED;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 10px;
   z-index: 100;
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
+
+  @media (orientation: portrait) {
+    flex-direction: row;
+    height: 5vh;
+    width: 100vw;
+    justify-content: center;
+    position: relative;
+    top: -10%;
+    transform: ${({ open }) => open ? 'translateY(160%)' : 'translateY(0%)'};
+  }
 `;
 
 export const Icon = styled.div`
@@ -31,18 +41,21 @@ export const Icon = styled.div`
     transition: all 0.3s linear;
 
     &:nth-child(1) {
-      transform: ${({ open }) => open ? 'rotate(45.5deg)' : 'rotate(0)'};
+      transform: ${({ open }) => open ? 'rotate(35deg)' : 'rotate(0)'};
     }
 
     &:nth-child(2) {
-      transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
       opacity: ${({ open }) => open ? 0 : 1};
     }
 
     &:nth-child(3) {
-      transform: ${({ open }) => open ? 'rotate(-45.5deg)' : 'rotate(0)'};
+      transform: ${({ open }) => open ? 'rotate(-40deg)' : 'rotate(0)'};
     }
 
+  }
+
+  @media (orientation: portrait) {
+    position: relative;
   }
 `;
 
@@ -52,12 +65,22 @@ export const Avatar = styled.img`
   height: 100px;
   margin-bottom: 40px;
   margin-left: 15px;
+
+  @media (orientation: portrait) {
+    display: none;
+  }
 `;
 
 export const Group = styled.div`
   height: 75%;
   display: flex;
   flex-direction: column;
+
+  @media (orientation: portrait) {
+    flex-direction: row;
+    width: 75%;
+    justify-content: space-between;
+  }
 `;
 
 export const Link = styled.a`
@@ -68,5 +91,12 @@ export const Link = styled.a`
   &:last-of-type {
     margin-top: auto;
     margin-bottom: 0;
+  }
+
+  @media (orientation: portrait) {
+
+    &:last-of-type {
+      margin: 0;
+    }
   }
 `;
