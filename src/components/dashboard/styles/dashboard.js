@@ -8,6 +8,7 @@ export const Container = styled.div`
   background: #16113A;
   overflow-x: hidden;
   overflow-y: hidden;
+
   @media (orientation: portrait) {
     flex-direction: column;
     height: 100vh;
@@ -75,8 +76,32 @@ export const Cards = styled.div`
         text-align: center;
       }
     }
+  }
 
-    @media (orientation: portrait) {
+  @media (max-width: 1440px) {
+    &:nth-of-type(3) {
+      display: flex;
+      flex-direction: row;
+
+      div {
+        width: 49%;
+      }
+    }
+  }
+
+  @media (orientation: portrait) {
+    &:nth-of-type(3) {
+
+      div {
+        height: 95%;
+      }
+
+      table {
+        margin-left: 1px;
+      }
+    }
+
+    &:last-of-type {
       flex-direction: row;
       justify-content: space-around;
       width: 100%;

@@ -27,6 +27,7 @@ export default function DashboardPage() {
             <Card.Title>Sales activity</Card.Title>
             <ChartContainer data='sales' type='line' />
           </Card.Large>
+          <Dashboard.Cards>
           <Card>
             <Card.Title>All activity</Card.Title>
             <Card.Table>
@@ -132,6 +133,7 @@ export default function DashboardPage() {
               </Card.TableRow>
             </Card.Table>
           </Card>
+        </Dashboard.Cards>
       </Dashboard.Content>
       <Dashboard.Content>
         <Dashboard.Cards>

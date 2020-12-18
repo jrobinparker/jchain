@@ -4,7 +4,6 @@
   "homepage": "https://jchain.netlify.app/",
   "private": true,
   "dependencies": {
-    "@styled-icons/fa-brands": "^10.22.0",
     "chart.js": "^2.9.4",
     "gsap": "^3.5.1",
     "react": "^16.14.0",

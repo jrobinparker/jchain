@@ -19,12 +19,21 @@ export const Title = styled.h1`
   color: white;
   font-size: 20px;
   margin-left: 10px;
+
+  @media (max-width: 1440px) {
+    font-size: 15px;
+  }
 `;
 
 export const Info = styled.p`
   color: white;
   font-size: 20px;
   margin-left: 10px;
+
+  @media (max-width: 1440px) {
+    font-size: 15px;
+    line-height: 1px;
+  }
 `;
 
 export const Graph = styled.div`
@@ -62,8 +71,16 @@ export const TableRow = styled.tr`
 export const TableHeader = styled.th`
   font-size: 20px;
   text-align: left;
+
+  @media (max-width: 1440px) {
+    font-size: 15px;
+  }
 `;
 
 export const TableText = styled.td`
   width: 25%;
+
+  @media (max-width: 1440px) {
+    font-size: 15px;
+  }
 `;
