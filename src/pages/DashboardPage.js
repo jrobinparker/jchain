@@ -13,8 +13,8 @@ export default function DashboardPage() {
       <Dashboard.Content>
         <Dashboard.Cards>
           <Card>
-            <Card.Title>Balance</Card.Title>
-            <Card.Info>200,000 JCHN</Card.Info>
+            <Card.Title>JCHN Balance</Card.Title>
+            {holdings.filter(data => data.currency === 'JCHN').map(data => <Card.Info>{data.amount} {data.currency}</Card.Info>)}
           </Card>
           <Card>
             <Card.Title>Transfers</Card.Title>
