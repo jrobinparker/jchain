@@ -9,6 +9,7 @@ import ChartContainer from '../containers/ChartContainer';
 export default function DashboardPage() {
   const { holdings } = useContent('holdings');
   const { activity } = useContent('activity');
+  const { messages } = useContent('messages');
 
   return (
     <Dashboard>
@@ -64,51 +65,17 @@ export default function DashboardPage() {
                 <Card.TableHeader>Sender</Card.TableHeader>
                 <Card.TableHeader>Date</Card.TableHeader>
               </Card.TableRow>
-              <Card.TableRow>
-                <Card.TableText>Help</Card.TableText>
-                <Card.TableText>Customer</Card.TableText>
-                <Card.TableText>12/15/2020</Card.TableText>
-              </Card.TableRow>
-              <Card.TableRow>
-                <Card.TableText>Help</Card.TableText>
-                <Card.TableText>Customer</Card.TableText>
-                <Card.TableText>12/15/2020</Card.TableText>
-              </Card.TableRow>
-              <Card.TableRow>
-                <Card.TableText>Help</Card.TableText>
-                <Card.TableText>Customer</Card.TableText>
-                <Card.TableText>12/15/2020</Card.TableText>
-              </Card.TableRow>
-              <Card.TableRow>
-                <Card.TableText>Help</Card.TableText>
-                <Card.TableText>Customer</Card.TableText>
-                <Card.TableText>12/15/2020</Card.TableText>
-              </Card.TableRow>
-              <Card.TableRow>
-                <Card.TableText>Help</Card.TableText>
-                <Card.TableText>Customer</Card.TableText>
-                <Card.TableText>12/15/2020</Card.TableText>
-              </Card.TableRow>
-              <Card.TableRow>
-                <Card.TableText>Help</Card.TableText>
-                <Card.TableText>Customer</Card.TableText>
-                <Card.TableText>12/15/2020</Card.TableText>
-              </Card.TableRow>
-              <Card.TableRow>
-                <Card.TableText>Help</Card.TableText>
-                <Card.TableText>Customer</Card.TableText>
-                <Card.TableText>12/15/2020</Card.TableText>
-              </Card.TableRow>
-              <Card.TableRow>
-                <Card.TableText>Help</Card.TableText>
-                <Card.TableText>Customer</Card.TableText>
-                <Card.TableText>12/15/2020</Card.TableText>
-              </Card.TableRow>
-              <Card.TableRow>
-                <Card.TableText>Help</Card.TableText>
-                <Card.TableText>Customer</Card.TableText>
-                <Card.TableText>12/15/2020</Card.TableText>
-              </Card.TableRow>
+              {messages.sort((a, b) => b.date - a.date).map(data => {
+                return (
+                  <Card.TableRow>
+                    <Card.TableText>{data.subject}</Card.TableText>
+                    <Card.TableText>{data.customer}</Card.TableText>
+                    <Card.TableText>
+                      {moment(data.date.toDate()).format("MM/DD/YYYY")}
+                    </Card.TableText>
+                  </Card.TableRow>
+                )
+              })}
             </Card.Table>
           </Card>
         </Dashboard.Cards>
