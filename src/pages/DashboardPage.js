@@ -1,8 +1,10 @@
 import React from 'react';
+import moment from 'moment';
 import SidebarContainer from '../containers/SidebarContainer';
 import useContent from '../hooks/useContent';
 import { Dashboard, Card } from '../components';
 import ChartContainer from '../containers/ChartContainer';
+
 
 export default function DashboardPage() {
   const { holdings } = useContent('holdings');
@@ -41,46 +43,17 @@ export default function DashboardPage() {
                 <Card.TableHeader>Amount</Card.TableHeader>
                 <Card.TableHeader>Date</Card.TableHeader>
               </Card.TableRow>
-              <Card.TableRow>
-                <Card.TableText>Item purchased</Card.TableText>
-                <Card.TableText>250 JCHN</Card.TableText>
-                <Card.TableText>12/15/2020</Card.TableText>
-              </Card.TableRow>
-              <Card.TableRow>
-                <Card.TableText>Item purchased</Card.TableText>
-                <Card.TableText>250 JCHN</Card.TableText>
-                <Card.TableText>12/15/2020</Card.TableText>
-              </Card.TableRow>
-              <Card.TableRow>
-                <Card.TableText>Item purchased</Card.TableText>
-                <Card.TableText>250 JCHN</Card.TableText>
-                <Card.TableText>12/15/2020</Card.TableText>
-              </Card.TableRow>
-              <Card.TableRow>
-                <Card.TableText>Item purchased</Card.TableText>
-                <Card.TableText>250 JCHN</Card.TableText>
-                <Card.TableText>12/15/2020</Card.TableText>
-              </Card.TableRow>
-              <Card.TableRow>
-                <Card.TableText>Item purchased</Card.TableText>
-                <Card.TableText>250 JCHN</Card.TableText>
-                <Card.TableText>12/15/2020</Card.TableText>
-              </Card.TableRow>
-              <Card.TableRow>
-                <Card.TableText>Item purchased</Card.TableText>
-                <Card.TableText>250 JCHN</Card.TableText>
-                <Card.TableText>12/15/2020</Card.TableText>
-              </Card.TableRow>
-              <Card.TableRow>
-                <Card.TableText>Item purchased</Card.TableText>
-                <Card.TableText>250 JCHN</Card.TableText>
-                <Card.TableText>12/15/2020</Card.TableText>
-              </Card.TableRow>
-              <Card.TableRow>
-                <Card.TableText>Item purchased</Card.TableText>
-                <Card.TableText>250 JCHN</Card.TableText>
-                <Card.TableText>12/15/2020</Card.TableText>
-              </Card.TableRow>
+              {activity.sort((a, b) => b.date - a.date).map(data => {
+                return (
+                <Card.TableRow>
+                  <Card.TableText>{data.type}</Card.TableText>
+                  <Card.TableText>{data.cost} {data.currency}</Card.TableText>
+                  <Card.TableText>
+                      {moment(data.date.toDate()).format("MM/DD/YYYY")}
+                  </Card.TableText>
+                </Card.TableRow>
+                )
+              })}
             </Card.Table>
           </Card>
           <Card>
