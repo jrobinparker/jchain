@@ -16,8 +16,6 @@ export default function ChartContainer({ dataType, chartType, firebaseData }) {
       labels.push(dataObj.currency)
     })
 
-    console.log(amounts, labels)
-
     setChartData({
       datasets: [
         {
@@ -35,18 +33,35 @@ export default function ChartContainer({ dataType, chartType, firebaseData }) {
   }
 
 
-  const walletActivityChart = () => {
+  const walletActivityChart = firebaseData => {
+    let purchases = [], withdrawals = [], transfers = [], totalPurchases, totalWithdrawals, totalTransfers
+
+    console.log(firebaseData)
+    firebaseData.map(dataObj => {
+      switch (dataObj.type) {
+        case 'purchase': purchases.push(dataObj.cost);
+        case 'withdrawal': withdrawals.push(dataObj.cost);
+        case 'transfer': transfers.push(dataObj.cost);
+        default: return null
+      }
+    })
+
+    totalPurchases = purchases.reduce((a, b) => a + b, 0)
+    totalWithdrawals = withdrawals.reduce((a, b) => a + b, 0)
+    totalTransfers = transfers.reduce((a, b) => a + b, 0)
+
     setChartData({
       datasets: [
         {
-          data: [1000, 2000],
+          data: [purchases.length, withdrawals.length, transfers.length],
           backgroundColor: [
             '#56C6C8',
-            '#993955'
+            '#993955',
+            '#2D898B'
           ]
         }
       ],
-      labels: ['Deposits', 'Withdrawals']
+      labels: ['Purchases', 'Withdrawals', 'Transfers']
     })
   }
 
@@ -71,7 +86,7 @@ export default function ChartContainer({ dataType, chartType, firebaseData }) {
       }
 
       if (dataType === 'wallet') {
-        walletActivityChart()
+        walletActivityChart(firebaseData)
       }
 
       if (dataType === 'sales') {

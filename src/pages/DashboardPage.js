@@ -6,6 +6,7 @@ import ChartContainer from '../containers/ChartContainer';
 
 export default function DashboardPage() {
   const { holdings } = useContent('holdings');
+  const { activity } = useContent('activity');
 
   return (
     <Dashboard>
@@ -17,9 +18,10 @@ export default function DashboardPage() {
             {holdings.filter(data => data.currency === 'JCHN').map(data => <Card.Info>{data.amount} {data.currency}</Card.Info>)}
           </Card>
           <Card>
-            <Card.Title>Transfers</Card.Title>
-            <Card.Info>100 widthdrawals</Card.Info>
-            <Card.Info>200 deposits</Card.Info>
+            <Card.Title>Pending items</Card.Title>
+            <Card.Info>Purchases: 0</Card.Info>
+            <Card.Info>Withdrawals: {activity.filter(data => data.type === 'withdrawal').length}</Card.Info>
+            <Card.Info>Transfers: {activity.filter(data => data.type === 'transfer').length}</Card.Info>
           </Card>
           <Card>
             <Card.Title>Sales</Card.Title>
@@ -151,9 +153,10 @@ export default function DashboardPage() {
           </Card>
           <Card>
             <Card.Title>Wallet overall activity</Card.Title>
-            <ChartContainer dataType='wallet' chartType='doughnut' />
-            <Card.Info>Deposits: 1000 JCHN</Card.Info>
-            <Card.Info>Withdrawals: 2000 JCHN</Card.Info>
+            <ChartContainer firebaseData={activity} dataType='wallet' chartType='doughnut' />
+            <Card.Info>Purchases: {activity.filter(data => data.type === 'purchase').length}</Card.Info>
+            <Card.Info>Withdrawals: {activity.filter(data => data.type === 'withdrawal').length}</Card.Info>
+            <Card.Info>Transfers: {activity.filter(data => data.type === 'transfer').length}</Card.Info>
           </Card>
         </Dashboard.Cards>
       </Dashboard.Content>
