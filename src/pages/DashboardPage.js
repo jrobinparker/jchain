@@ -1,6 +1,6 @@
 import React from 'react';
-import useContent from '../hooks/useContent';
 import SidebarContainer from '../containers/SidebarContainer';
+import useContent from '../hooks/useContent';
 import { Dashboard, Card } from '../components';
 import ChartContainer from '../containers/ChartContainer';
 
@@ -28,7 +28,7 @@ export default function DashboardPage() {
         </Dashboard.Cards>
           <Card.Large>
             <Card.Title>Sales activity</Card.Title>
-            <ChartContainer data={holdings} dataType='sales' type='line' />
+            <ChartContainer dataType='sales' chartType='line' />
           </Card.Large>
           <Dashboard.Cards>
           <Card>
@@ -142,15 +142,16 @@ export default function DashboardPage() {
         <Dashboard.Cards>
           <Card>
             <Card.Title>Current holdings</Card.Title>
-            <ChartContainer data='holdings' type='doughnut'/>
-            <Card.Info>32 JCHN</Card.Info>
-            <Card.Info>45 BTC</Card.Info>
-            <Card.Info>15 ETH</Card.Info>
-            <Card.Info>76 VET</Card.Info>
+            <ChartContainer firebaseData={holdings} dataType='holdings' chartType='doughnut'/>
+            {holdings.sort((a, b) => b.amount - a.amount).map(data => {
+              return (
+                <Card.Info>{data.amount} {data.currency}</Card.Info>
+              )
+            })}
           </Card>
           <Card>
             <Card.Title>Wallet overall activity</Card.Title>
-            <ChartContainer data='wallet' type='doughnut' />
+            <ChartContainer dataType='wallet' chartType='doughnut' />
             <Card.Info>Deposits: 1000 JCHN</Card.Info>
             <Card.Info>Withdrawals: 2000 JCHN</Card.Info>
           </Card>

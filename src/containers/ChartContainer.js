@@ -1,22 +1,27 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Doughnut, Bar, Line } from 'react-chartjs-2';
-import { FirebaseContext } from '../context/firebase';
 import { defaults } from 'react-chartjs-2'
 
 defaults.global.defaultFontFamily = 'Work Sans'
 defaults.global.defaultFontColor = 'white'
 
-export default function ChartContainer({ data, dataType, type }) {
-  const [ firebaseData, setFirebaseData ] = useState({});
+export default function ChartContainer({ dataType, chartType, firebaseData }) {
   const [ chartData, setChartData ] = useState({});
-  const { firebase } = useContext(FirebaseContext);
 
+  const holdingsActivityChart = firebaseData => {
+    let amounts = [], labels = []
 
-  const holdingsActivityChart = () => {
+    firebaseData.map(dataObj => {
+      amounts.push(dataObj.amount)
+      labels.push(dataObj.currency)
+    })
+
+    console.log(amounts, labels)
+
     setChartData({
       datasets: [
         {
-          data: [ ...data ],
+          data: amounts,
           backgroundColor: [
             '#736CED',
             '#9F9FED',
@@ -25,7 +30,7 @@ export default function ChartContainer({ data, dataType, type }) {
           ]
         }
       ],
-      labels: ['JCHN', 'BTC', 'ETH', 'VET']
+      labels: labels
     })
   }
 
@@ -62,7 +67,7 @@ export default function ChartContainer({ data, dataType, type }) {
 
     useEffect(() => {
       if (dataType === 'holdings') {
-        holdingsActivityChart()
+        holdingsActivityChart(firebaseData)
       }
 
       if (dataType === 'wallet') {
@@ -72,9 +77,9 @@ export default function ChartContainer({ data, dataType, type }) {
       if (dataType === 'sales') {
         salesActivityChart()
       }
-    }, [dataType])
+    }, [dataType, firebaseData])
 
-    switch (dataType) {
+    switch (chartType) {
       case 'doughnut': return (
       <div style={{ width: '90%', height: '50%', backgroundColor: 'transparent', padding: '10px', borderRadius:'5px' }}>
           <Doughnut
