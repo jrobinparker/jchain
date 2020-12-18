@@ -1,9 +1,12 @@
 import React from 'react';
+import useContent from '../hooks/useContent';
 import SidebarContainer from '../containers/SidebarContainer';
 import { Dashboard, Card } from '../components';
 import ChartContainer from '../containers/ChartContainer';
 
 export default function DashboardPage() {
+  const { holdings } = useContent('holdings');
+
   return (
     <Dashboard>
       <SidebarContainer />
@@ -25,7 +28,7 @@ export default function DashboardPage() {
         </Dashboard.Cards>
           <Card.Large>
             <Card.Title>Sales activity</Card.Title>
-            <ChartContainer data='sales' type='line' />
+            <ChartContainer data={holdings} dataType='sales' type='line' />
           </Card.Large>
           <Dashboard.Cards>
           <Card>

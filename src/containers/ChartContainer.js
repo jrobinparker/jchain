@@ -1,18 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Doughnut, Bar, Line } from 'react-chartjs-2';
+import { FirebaseContext } from '../context/firebase';
 import { defaults } from 'react-chartjs-2'
 
 defaults.global.defaultFontFamily = 'Work Sans'
 defaults.global.defaultFontColor = 'white'
 
-export default function ChartContainer({ data, type }) {
-  const [ chartData, setChartData ] = useState({})
+export default function ChartContainer({ data, dataType, type }) {
+  const [ firebaseData, setFirebaseData ] = useState({});
+  const [ chartData, setChartData ] = useState({});
+  const { firebase } = useContext(FirebaseContext);
+
 
   const holdingsActivityChart = () => {
     setChartData({
       datasets: [
         {
-          data: [32, 45, 12, 76],
+          data: [ ...data ],
           backgroundColor: [
             '#736CED',
             '#9F9FED',
@@ -57,20 +61,20 @@ export default function ChartContainer({ data, type }) {
   }
 
     useEffect(() => {
-      if (data === 'holdings') {
+      if (dataType === 'holdings') {
         holdingsActivityChart()
       }
 
-      if (data === 'wallet') {
+      if (dataType === 'wallet') {
         walletActivityChart()
       }
 
-      if (data === 'sales') {
+      if (dataType === 'sales') {
         salesActivityChart()
       }
-    }, [data])
+    }, [dataType])
 
-    switch (type) {
+    switch (dataType) {
       case 'doughnut': return (
       <div style={{ width: '90%', height: '50%', backgroundColor: 'transparent', padding: '10px', borderRadius:'5px' }}>
           <Doughnut

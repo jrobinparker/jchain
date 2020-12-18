@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Home, SignIn, SignUp, DashboardPage } from './pages';
-
 import './App.css';
 
 const App = () => {

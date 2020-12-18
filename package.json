@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "chart.js": "^2.9.4",
+    "dotenv": "^8.2.0",
     "gsap": "^3.5.1",
     "react": "^16.14.0",
     "react-chartjs-2": "^2.11.1",
