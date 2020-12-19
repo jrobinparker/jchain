@@ -32,7 +32,7 @@ export const Info = styled.p`
 
   @media (max-width: 1440px) {
     font-size: 15px;
-    line-height: 1px;
+    line-height: 0.75px;
   }
 `;
 

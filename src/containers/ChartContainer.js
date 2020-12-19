@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Doughnut, Bar, Line } from 'react-chartjs-2';
-import { defaults } from 'react-chartjs-2'
+import { defaults } from 'react-chartjs-2';
+import moment from 'moment';
 
 defaults.global.defaultFontFamily = 'Work Sans'
 defaults.global.defaultFontColor = 'white'
@@ -34,49 +35,68 @@ export default function ChartContainer({ dataType, chartType, firebaseData }) {
 
 
   const walletActivityChart = firebaseData => {
-    let purchases = [], withdrawals = [], transfers = [], totalPurchases, totalWithdrawals, totalTransfers
-
-    console.log(firebaseData)
-    firebaseData.map(dataObj => {
-      switch (dataObj.type) {
-        case 'purchase': purchases.push(dataObj.cost);
-        case 'withdrawal': withdrawals.push(dataObj.cost);
-        case 'transfer': transfers.push(dataObj.cost);
-        default: return null
-      }
-    })
-
-    totalPurchases = purchases.reduce((a, b) => a + b, 0)
-    totalWithdrawals = withdrawals.reduce((a, b) => a + b, 0)
-    totalTransfers = transfers.reduce((a, b) => a + b, 0)
+    const purchases = firebaseData.filter(data => data.type === 'purchase')
+    const withdrawals = firebaseData.filter(data => data.type === 'withdrawal')
+    const transfers = firebaseData.filter(data => data.type === 'transfer')
+    const refunds = firebaseData.filter(data => data.type === 'refund')
 
     setChartData({
       datasets: [
         {
-          data: [purchases.length, withdrawals.length, transfers.length],
+          data: [purchases.length, withdrawals.length, transfers.length, refunds.length],
           backgroundColor: [
+            '#3e95cd',
             '#56C6C8',
             '#993955',
             '#2D898B'
           ]
         }
       ],
-      labels: ['Purchases', 'Withdrawals', 'Transfers']
+      labels: ['Purchases', 'Withdrawals', 'Transfers', 'Refunds']
     })
   }
 
-  const salesActivityChart = () => {
+  const salesActivityChart = (firebaseData) => {
+    let purchases = [], withdrawals = [], transfers = [], refunds = []
+
+    firebaseData.map(data => {
+      switch(data.type) {
+        case 'purchase': purchases.push(data.cost);
+        case 'withdrawal': withdrawals.push(data.cost);
+        case 'transfer': transfers.push(data.cost);
+        case 'refund': refunds.push(data.cost);
+      }
+    })
+
+    while (purchases.length < 7) purchases.push(0)
+    while (withdrawals.length < 7) withdrawals.push(0)
+    while (transfers.length < 7) transfers.push(0)
+    while (refunds.length < 7) refunds.push(0)
+
     setChartData({
-      labels: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'],
       datasets: [
         {
-          label: 'sales',
-          data: [32, 45, 12, 76, 69],
-          borderColor: [
-            'rgba(75, 192, 192, 0.6)'
-          ]
-        }
-      ]
+          data: purchases,
+          borderColor: '#3e95cd',
+          label: 'purchase'
+        },
+        {
+          data: withdrawals,
+          borderColor: '#56C6C8',
+          label: 'withdrawal'
+        },
+        {
+          data: transfers,
+          borderColor: '#993955',
+          label: 'transfer'
+        },
+        {
+          data: refunds,
+          borderColor: '#2D898B',
+          label: 'refund'
+        },
+      ],
+      labels: ['12/12', '12/13', '12/14', '12/15', '12/16', '12/17', '12/18']
     })
   }
 
@@ -90,7 +110,7 @@ export default function ChartContainer({ dataType, chartType, firebaseData }) {
       }
 
       if (dataType === 'sales') {
-        salesActivityChart()
+        salesActivityChart(firebaseData)
       }
     }, [dataType, firebaseData])
 
@@ -104,7 +124,7 @@ export default function ChartContainer({ dataType, chartType, firebaseData }) {
       </div>
       );
       case 'bar': return (
-        <div style={{ width: '90%', height: '50%', backgroundColor: 'transparent', padding: '10px', borderRadius:'5px' }}>
+        <div style={{ width: '97%', height: '80%', backgroundColor: 'transparent', padding: '10px', borderRadius:'5px' }}>
             <Bar
               data={chartData}
               options={{ responsive: true, maintainAspectRatio: false, legend: false }}

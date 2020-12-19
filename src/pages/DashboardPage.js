@@ -22,9 +22,10 @@ export default function DashboardPage() {
           </Card>
           <Card>
             <Card.Title>Pending items</Card.Title>
-            <Card.Info>Purchases: 0</Card.Info>
+            <Card.Info>Purchases: {activity.filter(data => data.type === 'purchase').length}</Card.Info>
             <Card.Info>Withdrawals: {activity.filter(data => data.type === 'withdrawal').length}</Card.Info>
             <Card.Info>Transfers: {activity.filter(data => data.type === 'transfer').length}</Card.Info>
+            <Card.Info>Refunds: {activity.filter(data => data.type === 'refund').length}</Card.Info>
           </Card>
           <Card>
             <Card.Title>Sales</Card.Title>
@@ -32,8 +33,8 @@ export default function DashboardPage() {
           </Card>
         </Dashboard.Cards>
           <Card.Large>
-            <Card.Title>Sales activity</Card.Title>
-            <ChartContainer dataType='sales' chartType='line' />
+            <Card.Title>Sales activity - last 7 days</Card.Title>
+            <ChartContainer firebaseData={activity} dataType='sales' chartType='line' />
           </Card.Large>
           <Dashboard.Cards>
           <Card>
@@ -97,6 +98,7 @@ export default function DashboardPage() {
             <Card.Info>Purchases: {activity.filter(data => data.type === 'purchase').length}</Card.Info>
             <Card.Info>Withdrawals: {activity.filter(data => data.type === 'withdrawal').length}</Card.Info>
             <Card.Info>Transfers: {activity.filter(data => data.type === 'transfer').length}</Card.Info>
+            <Card.Info>Refunds: {activity.filter(data => data.type === 'refund').length}</Card.Info>
           </Card>
         </Dashboard.Cards>
       </Dashboard.Content>
