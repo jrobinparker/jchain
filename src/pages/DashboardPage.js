@@ -28,7 +28,7 @@ export default function DashboardPage() {
             <Card.Info>Refunds: {activity.filter(data => data.type === 'refund').length}</Card.Info>
           </Card>
           <Card>
-            <Card.Title>Sales</Card.Title>
+            <Card.Title>Total sales</Card.Title>
             <Card.Info>200 items sold</Card.Info>
           </Card>
         </Dashboard.Cards>
