@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { About } from '../components';
 import aboutData from '../data/about.json';
 import gsap from "gsap";
