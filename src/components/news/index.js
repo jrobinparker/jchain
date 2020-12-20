@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Header, Subheader, Frame, Item, Image, Title, Text, Date } from './styles/news';
+import { Container, Header, Subheader, Frame, Item, Image, Title, Date } from './styles/news';
 
 export default function News({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>
