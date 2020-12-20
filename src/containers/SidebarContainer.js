@@ -21,7 +21,7 @@ export default function SidebarContainer() {
     />
     <Sidebar open={open}>
       <Sidebar.Avatar src={'avatar'} />
-      <Sidebar.DisplayName>Hi {user.displayName}!</Sidebar.DisplayName>
+      <Sidebar.DisplayName>Hi {user && user.displayName}!</Sidebar.DisplayName>
       <Sidebar.Group>
         <Sidebar.Link>Home</Sidebar.Link>
         <Sidebar.Link>Transactions</Sidebar.Link>
