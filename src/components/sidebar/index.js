@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Icon, Avatar, Group, Link } from './styles/sidebar';
+import { Container, Icon, Avatar, DisplayName, Group, Link } from './styles/sidebar';
 
 export default function Sidebar({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>
@@ -19,6 +19,10 @@ Sidebar.Icon = function SidebarIcon({ children, ...restProps }) {
 
 Sidebar.Avatar = function SidebarAvatar({ src, ...restProps }) {
   return <Avatar src={`./images/${src}.png`} {...restProps} />
+}
+
+Sidebar.DisplayName = function SidebarDisplayName({ children, ...restProps }) {
+  return <DisplayName {...restProps}>{children}</DisplayName>
 }
 
 Sidebar.Group = function SidebarGroup({ children, ...restProps }) {

@@ -63,13 +63,14 @@ export const Avatar = styled.img`
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  margin-bottom: 40px;
   margin-left: 15px;
 
   @media (orientation: portrait) {
     display: none;
   }
 `;
+
+export const DisplayName = styled.h1``;
 
 export const Group = styled.div`
   height: 75%;
@@ -91,6 +92,7 @@ export const Link = styled.a`
   &:last-of-type {
     margin-top: auto;
     margin-bottom: 0;
+    cursor: pointer;
   }
 
   @media (orientation: portrait) {
