@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useContext } from 'react';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { FirebaseContext } from '../context/firebase';
 import { Form } from '../components/';
 
@@ -67,7 +67,7 @@ export default function SignUp() {
         >
           Create Account
         </Form.Submit>
-        <Form.TextSmall>Already have an account? Click here to sign in.</Form.TextSmall>
+        <Form.TextSmall>Already have an account? <Link to='/signin'>Click here to sign in.</Link></Form.TextSmall>
       </Form.Base>
     </Form>
   )
