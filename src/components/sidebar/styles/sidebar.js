@@ -18,7 +18,7 @@ export const Container = styled.section`
     justify-content: center;
     position: relative;
     top: -10%;
-    transform: ${({ open }) => open ? 'translateY(160%)' : 'translateY(0%)'};
+    transform: ${({ open }) => open ? 'translateY(120%)' : 'translateY(0%)'};
   }
 `;
 
@@ -41,7 +41,7 @@ export const Icon = styled.div`
     transition: all 0.3s linear;
 
     &:nth-child(1) {
-      transform: ${({ open }) => open ? 'rotate(35deg)' : 'rotate(0)'};
+      transform: ${({ open }) => open ? 'translateY(1px) rotateZ(45deg)' : 'rotate(0)'};
     }
 
     &:nth-child(2) {
@@ -49,13 +49,48 @@ export const Icon = styled.div`
     }
 
     &:nth-child(3) {
-      transform: ${({ open }) => open ? 'rotate(-40deg)' : 'rotate(0)'};
+      transform: ${({ open }) => open ? 'translateY(4px) rotateZ(-45deg)' : 'rotate(0)'};
+    }
+
+    @media only screen and (orientation: landscape) and (max-width: 1350px) {
+      width: 1.25rem;
+      height: 0.15rem;
+
+      &:nth-child(1) {
+        transform: ${({ open }) => open ? 'translateY(-1px) rotateZ(45deg)' : 'rotate(0)'};
+      }
+
+      &:nth-child(2) {
+        opacity: ${({ open }) => open ? 0 : 1};
+      }
+
+      &:nth-child(3) {
+        transform: ${({ open }) => open ? 'translateY(-3px) rotateZ(-45deg)' : 'rotate(0)'};
+      }
     }
 
   }
 
   @media (orientation: portrait) {
     position: relative;
+    top: 1%;
+
+    div {
+      width: 1.25rem;
+      height: 0.15rem;
+
+      &:nth-child(1) {
+        transform: ${({ open }) => open ? 'translateY(-1px) rotateZ(45deg)' : 'rotate(0)'};
+      }
+
+      &:nth-child(2) {
+        opacity: ${({ open }) => open ? 0 : 1};
+      }
+
+      &:nth-child(3) {
+        transform: ${({ open }) => open ? 'translateY(-2px) rotateZ(-45deg)' : 'rotate(0)'};
+      }
+    }
   }
 `;
 
@@ -65,12 +100,22 @@ export const Avatar = styled.img`
   height: 100px;
   margin-left: 15px;
 
+  @media only screen and (orientation: landscape) and (max-width: 1350px) {
+    width: 50px;
+    height: 50px;
+  }
+
   @media (orientation: portrait) {
     display: none;
   }
 `;
 
-export const DisplayName = styled.h1``;
+export const DisplayName = styled.h1`
+
+  @media (orientation: portrait) {
+    display: none;
+  }
+`;
 
 export const Group = styled.div`
   height: 75%;
@@ -93,6 +138,10 @@ export const Link = styled.a`
     margin-top: auto;
     margin-bottom: 0;
     cursor: pointer;
+  }
+
+  @media only screen and (orientation: landscape) and (max-width: 1350px) {
+    padding: 0px 10px 0px 10px;
   }
 
   @media (orientation: portrait) {

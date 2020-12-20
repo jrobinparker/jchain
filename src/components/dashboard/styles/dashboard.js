@@ -6,7 +6,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   background: #16113A;
-  overflow-x: hidden;
   overflow-y: hidden;
 
   @media (orientation: portrait) {
