@@ -1,7 +1,6 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Doughnut, Bar, Line } from 'react-chartjs-2';
 import { defaults } from 'react-chartjs-2';
-import moment from 'moment';
 
 defaults.global.defaultFontFamily = 'Work Sans'
 defaults.global.defaultFontColor = 'white'
@@ -15,6 +14,7 @@ export default function ChartContainer({ dataType, chartType, firebaseData }) {
     firebaseData.map(dataObj => {
       amounts.push(dataObj.amount)
       labels.push(dataObj.currency)
+      return null
     })
 
     setChartData({
@@ -61,11 +61,25 @@ export default function ChartContainer({ dataType, chartType, firebaseData }) {
 
     firebaseData.map(data => {
       switch(data.type) {
-        case 'purchase': purchases.push(data.cost);
-        case 'withdrawal': withdrawals.push(data.cost);
-        case 'transfer': transfers.push(data.cost);
-        case 'refund': refunds.push(data.cost);
+        case 'purchase':
+          purchases.push(data.cost)
+          break
+        ;
+        case 'withdrawal':
+          withdrawals.push(data.cost)
+          break
+        ;
+        case 'transfer':
+          transfers.push(data.cost)
+          break
+        ;
+        case 'refund':
+          refunds.push(data.cost)
+          break
+        ;
+        default: return null
       }
+      return null
     })
 
     while (purchases.length < 7) purchases.push(0)

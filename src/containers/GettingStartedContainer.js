@@ -8,8 +8,6 @@ export default function GettingStartedContainer() {
   function displayItems(isVisible, order) {
     const frame = document.querySelector('.getting-started')
 
-    const displayItems = gsap.timeline();
-
     if (isVisible) {
       gsap
         .to(frame, 1, { x: -5, opacity: 1 })
