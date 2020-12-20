@@ -7,10 +7,10 @@ export default function FooterContainer() {
         <Footer.Frame>
           <Footer.Header>jchain</Footer.Header>
           <Footer.IconRow>
-            <Footer.Icon icon={'fa-twitter'} />
-            <Footer.Icon icon={'fa-medium-m'} />
-            <Footer.Icon icon={'fa-reddit-alien'} />
-            <Footer.Icon icon={'fa-telegram-plane'} />
+            <i className="fab fa-twitter" />
+            <i className="fab fa-medium-m" />
+            <i className="fab fa-reddit-alien" />
+            <i className="fab fa-telegram-plane" />
           </Footer.IconRow>
         </Footer.Frame>
         <Footer.Frame>

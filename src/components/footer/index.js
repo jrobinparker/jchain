@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Frame, Header, Link, IconRow, Icon, Disclaimer } from './styles/footer';
+import {Twitter} from '@styled-icons/fa-brands/';
 
 export default function Footer({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>
@@ -19,10 +20,6 @@ Footer.Link = function FooterLink({ children, ...restProps }) {
 
 Footer.IconRow = function FooterIconRow({ children, ...restProps }) {
   return <IconRow {...restProps}>{children}</IconRow>
-}
-
-Footer.Icon = function FooterIcon({ ...restProps }) {
-  return <Icon {...restProps} />
 }
 
 Footer.Disclaimer = function FooterDisclaimer({ children, ...restProps }) {

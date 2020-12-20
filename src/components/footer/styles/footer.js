@@ -11,12 +11,23 @@ export const Container = styled.footer`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+
+  @media (orientation: portrait) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const Frame = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (orientation: portrait) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 `;
 
 export const Header = styled.h2``;
@@ -30,11 +41,20 @@ export const Link = styled.a`
 
 export const IconRow = styled.div`
   display: flex;
-  text-align: left;
+  flex-direction: row;
   justify-content: space-around;
-`;
+  width: 150%;
 
-export const Icon = styled.i``;
+  i {
+    font-size: 40px;
+  }
+
+  @media (orientation: portrait) {
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+`;
 
 export const Disclaimer = styled.div`
   font-size: 15px;
