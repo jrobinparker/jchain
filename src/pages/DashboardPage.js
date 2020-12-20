@@ -1,7 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 import SidebarContainer from '../containers/SidebarContainer';
-import useContent from '../hooks/useContent';
+import { useContent } from '../hooks';
 import { Dashboard, Card } from '../components';
 import ChartContainer from '../containers/ChartContainer';
 
