@@ -36,9 +36,9 @@ export default function SignUp() {
 
   return (
     <Form>
-    {error && <Form.Error>{error}</Form.Error>}
       <Form.Base onSubmit={handleSignUp} method='POST'>
         <Form.Title>Create a jchain account</Form.Title>
+        {error && <Form.Error>{error}</Form.Error>}
         <Form.Input
           placeholder='First Name'
           value={firstName}

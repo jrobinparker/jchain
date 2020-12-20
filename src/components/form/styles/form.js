@@ -54,6 +54,10 @@ export const Input = styled.input`
   margin-bottom: 20px;
   font-size: 20px;
 
+  &[type=text] {
+    background-color: transparent;
+  }
+
   &::placeholder {
     color: black;
   }
@@ -69,6 +73,16 @@ export const Submit = styled.button`
   color: white;
   font-family: 'Inconsolata', sans-serif;
 
+  &:disabled {
+    background: gray;
+
+    &:hover {
+      cursor: not-allowed;
+      background: gray;
+      border-color: transparent;
+    }
+  }
+
   &:hover {
     cursor: pointer;
     background: rgb(0,100,147);
@@ -77,6 +91,11 @@ export const Submit = styled.button`
   }
 `;
 
-export const Error = styled.p``;
+export const Error = styled.p`
+  color: white;
+  background: #38023B;
+  padding: 10px;
+  border-radius: 5px;
+`;
 
 export const Link = styled.a``;
