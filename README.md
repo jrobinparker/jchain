@@ -2,11 +2,15 @@
 https://jchain.netlify.app/
 
 # about
-Taking inspiration from a number of blockchain and EV company home pages, I created a site for a fictional blockchain. This site uses React Visibility Sensor and GSAP for animations. The timeline resizes and reorients with an event listener that watches for window resizes and orientation changes.
+Taking inspiration from a number of blockchain and EV company home pages, I created a site with a dashboard mockup for a fictional blockchain. This serverless SPA uses Firebase for authentication and data storage, styled components, Chart.js graphs, and React Visibility Sensor and GSAP for animations. 
  
 # features / frameworks / npm packages used
 * React
-* React Hooks
+* React Hooks and custom hooks
+* React Router
+* Firebase
+* styled-components
+* Chart.js
 * React Visibility Sensor
 * GSAP
 * Vanilla JS event listener for window resizes and orientation changes
