@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link as ReactRouterLink } from 'react-router-dom';
-import { Container, Group, Brand, Link } from './styles/nav';
+import { Container, Group, Brand } from './styles/nav';
 
 export default function Nav({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>
