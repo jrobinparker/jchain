@@ -54,6 +54,7 @@ export const Group = styled.div`
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
+    align-self: center;
   }
 `;
 
@@ -68,6 +69,16 @@ export const Item = styled.div.attrs(({ className }) => ({
   @media (orientation: portrait) {
     flex-direction: row;
     width: 50vw;
+
+    &:nth-child(odd) {
+      align-self: flex-end;
+      flex-direction: row-reverse;
+      margin-right: -10px;
+    }
+
+    &:nth-child(4) {
+      margin-left: 10px;
+    }
   }
 `;
 
