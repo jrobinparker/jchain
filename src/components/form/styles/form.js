@@ -22,7 +22,6 @@ export const Container = styled.section`
 export const Base = styled.form`
   background: rgba(255, 255, 255, 0.5);
   border-radius: 5px;
-  height: 60%;
   width: 25%;
   display: flex;
   flex-direction: column;

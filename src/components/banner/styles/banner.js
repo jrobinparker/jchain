@@ -26,7 +26,7 @@ export const Frame = styled.div`
   position: absolute;
   left: 4%;
   animation: fadeIn 1s linear;
-  width: 50%;
+  width: 40%;
   font-size: 2rem;
   display: flex;
   flex-direction: column;
