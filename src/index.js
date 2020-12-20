@@ -4,16 +4,15 @@ import App from './App';
 import { GlobalStyles } from './global-styles';
 import { FirebaseContext } from './context/firebase';
 import * as serviceWorker from './serviceWorker';
-require('dotenv').config()
 
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_APP_ID,
-    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_APP_ID,
-    measurementId: process.env.REACT_APP_MEASUREMENT_ID
+    apiKey: "AIzaSyAQw9UOukrDPYGjBPu7XWEnzzIzrHvzXvw",
+    authDomain: "jchain-dd07f.firebaseapp.com",
+    projectId: "jchain-dd07f",
+    storageBucket: "jchain-dd07f.appspot.com",
+    messagingSenderId: "892647016255",
+    appId: "1:892647016255:web:0a0d2dbb7abaa43b87b58a",
+    measurementId: "G-NH0977BCDJ"
 };
 
 const firebase = window.firebase.initializeApp(firebaseConfig);

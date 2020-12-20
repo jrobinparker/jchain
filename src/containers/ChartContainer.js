@@ -22,10 +22,10 @@ export default function ChartContainer({ dataType, chartType, firebaseData }) {
         {
           data: amounts,
           backgroundColor: [
-            '#736CED',
-            '#9F9FED',
-            '#D4C1EC',
-            '#2D898B'
+            '#38023B',
+            '#A288E3',
+            '#AECDEA',
+            '#99FCFF'
           ]
         }
       ],
