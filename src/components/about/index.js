@@ -1,5 +1,5 @@
 import React from 'react';
-import { Item, Inner, Container, Frame, Header, Subtitle, Image, FrameHeader, FrameSubtitle } from './styles/about';
+import { Item, Container, Frame, Header, Subtitle, Image, FrameHeader, FrameSubtitle } from './styles/about';
 
 export default function About({ direction, children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>
